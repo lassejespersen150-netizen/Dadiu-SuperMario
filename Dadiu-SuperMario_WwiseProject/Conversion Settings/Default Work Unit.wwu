@@ -8,7 +8,7 @@
 						<Property Name="Channels" Type="int32">
 							<ValueList>
 								<Value Platform="Mac">4</Value>
-								<Value Platform="Windows">4</Value>
+								<Value Platform="Windows">8</Value>
 							</ValueList>
 						</Property>
 						<Property Name="LRMix" Type="Real64">
@@ -31,17 +31,17 @@
 						</Property>
 						<Property Name="SampleRate" Type="int32">
 							<ValueList>
-								<Value Platform="Mac">0</Value>
-								<Value Platform="Windows">0</Value>
+								<Value Platform="Mac">44100</Value>
+								<Value Platform="Windows">44100</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ConversionPluginInfoList>
 						<ConversionPluginInfo Platform="Mac">
-							<ConversionPlugin Name="" ID="{848FB2FB-B133-4DAA-8C3C-FC51B822DC93}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{7DB91B01-FBB6-47CD-A8A3-0F75FE5EE53E}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
-							<ConversionPlugin Name="" ID="{77C45467-8BF1-440C-B46A-1878FD7793AB}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{B2DFF649-5822-4EBE-B0DF-9B7ACE37B661}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
