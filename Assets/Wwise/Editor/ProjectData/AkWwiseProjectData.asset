@@ -337,6 +337,33 @@ MonoBehaviour:
         ObjectType: 13
         guid: 0420d4074aa8784fa8ad8a572424b611
       Path: Game Parameters\Default Work Unit\TimeOfDay
+  - PhysicalPath: Game Parameters\GameStates.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: GameStates
+      ObjectType: 12
+      guid: a625a6f63fe41f4f9c5af3c48c713750
+    ParentPath: Game Parameters\GameStates
+    guid: a625a6f63fe41f4f9c5af3c48c713750
+    GuidInternal: 
+    m_lastTime: -8584756423568547952
+    List:
+    - name: RTPC_TimeLeft
+      guid: b71ab99f54ee0b4a89cea1811fa10643
+      id: 3058023719
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GameStates
+        ObjectType: 12
+        guid: a625a6f63fe41f4f9c5af3c48c713750
+      - ElementName: RTPC_TimeLeft
+        ObjectType: 13
+        guid: b71ab99f54ee0b4a89cea1811fa10643
+      Path: Game Parameters\GameStates\RTPC_TimeLeft
   - PhysicalPath: Game Parameters\Mario.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -376,7 +403,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0ffdf406761fc24da56d7c1e7c297c93
     GuidInternal: 
-    m_lastTime: -8584757292835062168
+    m_lastTime: -8584756349683099129
     List:
     - name: DayNight
       guid: d83d3c97ba15df4491aafca495c43a88
@@ -441,6 +468,104 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 4127e76a39dd5d4aaa89cf7cb1689428
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: MarioState
+      guid: 4f765cbe5ae55144bf46383d03a67e2c
+      id: 3891672790
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0ffdf406761fc24da56d7c1e7c297c93
+      - ElementName: MarioState
+        ObjectType: 9
+        guid: 4f765cbe5ae55144bf46383d03a67e2c
+      Path: States\Default Work Unit\MarioState
+      values:
+      - name: None
+        guid: 17c8173e0bc6394d987a9e75aabf8251
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0ffdf406761fc24da56d7c1e7c297c93
+        - ElementName: MarioState
+          ObjectType: 9
+          guid: 4f765cbe5ae55144bf46383d03a67e2c
+        - ElementName: None
+          ObjectType: 8
+          guid: 17c8173e0bc6394d987a9e75aabf8251
+      - name: ST_MarioDead
+        guid: 926d85b800789e448763f6d2f43e1d6b
+        id: 3280622839
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0ffdf406761fc24da56d7c1e7c297c93
+        - ElementName: MarioState
+          ObjectType: 9
+          guid: 4f765cbe5ae55144bf46383d03a67e2c
+        - ElementName: ST_MarioDead
+          ObjectType: 8
+          guid: 926d85b800789e448763f6d2f43e1d6b
+      - name: ST_MarioLarge
+        guid: 7fdbc754fe44df4c885a6c1cfa11bd6b
+        id: 1268394730
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0ffdf406761fc24da56d7c1e7c297c93
+        - ElementName: MarioState
+          ObjectType: 9
+          guid: 4f765cbe5ae55144bf46383d03a67e2c
+        - ElementName: ST_MarioLarge
+          ObjectType: 8
+          guid: 7fdbc754fe44df4c885a6c1cfa11bd6b
+      - name: ST_MarioSmall
+        guid: 12efebc17227dd4095f96a27a31a36ee
+        id: 3407194134
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0ffdf406761fc24da56d7c1e7c297c93
+        - ElementName: MarioState
+          ObjectType: 9
+          guid: 4f765cbe5ae55144bf46383d03a67e2c
+        - ElementName: ST_MarioSmall
+          ObjectType: 8
+          guid: 12efebc17227dd4095f96a27a31a36ee
+      - name: ST_MarioStar
+        guid: b20dc41a792f084cbf8a7dfb7cd269bc
+        id: 2935428005
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0ffdf406761fc24da56d7c1e7c297c93
+        - ElementName: MarioState
+          ObjectType: 9
+          guid: 4f765cbe5ae55144bf46383d03a67e2c
+        - ElementName: ST_MarioStar
+          ObjectType: 8
+          guid: b20dc41a792f084cbf8a7dfb7cd269bc
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -523,7 +648,7 @@ MonoBehaviour:
     m_lastTime: -8584757321680220547
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d000000170000001a000000
+  ExpandedWaapiItemIds: 050000000700000008000000090000000b0000000c0000000d0000000f000000170000001a0000001d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

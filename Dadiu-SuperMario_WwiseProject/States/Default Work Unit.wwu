@@ -10,6 +10,15 @@
 						<State Name="Night" ID="{FFA973F7-CDD0-421D-B3AF-B06F2DF40F93}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="MarioState" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}">
+					<ChildrenList>
+						<State Name="None" ID="{3E17C817-C60B-4D39-987A-9E75AABF8251}"/>
+						<State Name="ST_MarioSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
+						<State Name="ST_MarioLarge" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
+						<State Name="ST_MarioStar" ID="{1AC40DB2-2F79-4C08-BF8A-7DFB7CD269BC}"/>
+						<State Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

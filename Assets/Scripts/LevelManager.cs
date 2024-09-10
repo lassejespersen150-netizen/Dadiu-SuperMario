@@ -31,17 +31,31 @@ public class LevelManager : MonoBehaviour {
 	private Animator mario_Animator;
 	private Rigidbody2D mario_Rigidbody2D;
 
+	[Header ("Game Data")]
 	public Text scoreText;
 	public Text coinText;
 	public Text timeText;
 	public GameObject FloatingTextEffect;
 	private const float floatingTextOffsetY = 2f;
 
+		[Header ("Game Stats")]
+	public int coinBonus = 200;
+	public int powerupBonus = 1000;
+	public int starmanBonus = 1000;
+	public int oneupBonus = 0;
+	public int breakBlockBonus = 50;
+
+	public Vector2 stompBounceVelocity = new Vector2 (0, 15);
+
+	public bool gamePaused;
+	public bool timerPaused;
+	public bool musicPaused;
+
 
 	//Wwise Source files?
 	public AK.Wwise.Event WwMusicSource;
 
-	//Wwise music events
+	[Header ("Wwise Music Events")]
 	public AK.Wwise.Event WwLevelMusic;
 	public AK.Wwise.Event WwLevelMusicHurry;
 	public AK.Wwise.Event WwStarmanMusic;
@@ -50,7 +64,7 @@ public class LevelManager : MonoBehaviour {
 	public AK.Wwise.Event WwcastleCompleteMusic;
 
 
-	//Wwise Sound Events
+	[Header ("Wwise Sound Events")]
 	public AK.Wwise.Event WwoneUpSound;
 	public AK.Wwise.Event WwbowserFallSound;
 	public AK.Wwise.Event WwbowserFireSound;
@@ -69,8 +83,17 @@ public class LevelManager : MonoBehaviour {
 	public AK.Wwise.Event WwstompSound;
 	public AK.Wwise.Event WwwarningSound;
 
-	public AK.Wwise.Event WwJumpSmallSound;
+	//Wwise RTPCs
+	[Header ("Wwise RTPC")]
+	public AK.Wwise.RTPC RTPC_TimeLeft;
 
+	[Header ("Wwise States")]
+	public AK.Wwise.State ST_MarioSmall;
+	public AK.Wwise.State ST_MarioLarge;
+	public AK.Wwise.State ST_MarioStar;
+
+
+	[Header ("Unity AUdio Clips")]
 	public AudioSource musicSource;
 	public AudioSource soundSource;
 	public AudioSource pauseSoundSource;
@@ -100,17 +123,8 @@ public class LevelManager : MonoBehaviour {
 	public AudioClip stompSound;
 	public AudioClip warningSound;
 
-	public int coinBonus = 200;
-	public int powerupBonus = 1000;
-	public int starmanBonus = 1000;
-	public int oneupBonus = 0;
-	public int breakBlockBonus = 50;
 
-	public Vector2 stompBounceVelocity = new Vector2 (0, 15);
 
-	public bool gamePaused;
-	public bool timerPaused;
-	public bool musicPaused;
 
 
 	void Awake() {
@@ -153,6 +167,8 @@ public class LevelManager : MonoBehaviour {
 		scores = t_GameStateManager.scores;
 		timeLeft = t_GameStateManager.timeLeft;
 		hurryUp = t_GameStateManager.hurryUp;
+
+
 	}
 
 
@@ -161,6 +177,7 @@ public class LevelManager : MonoBehaviour {
 		if (!timerPaused) {
 			timeLeft -= Time.deltaTime / .4f; // 1 game sec ~ 0.4 real time sec
 			SetHudTime ();
+			RTPC_TimeLeft.SetValue(gameObject, timeLeft);
 		}
 
 		if (timeLeftInt < 100 && !hurryUp) {
@@ -187,17 +204,17 @@ public class LevelManager : MonoBehaviour {
 
 		if (mario.currentSpeedX == 0) // Corrected the if statement syntax and property access
 			{
-   				 AkSoundEngine.ExecuteActionOnEvent(WwLevelMusic.Id, AkActionOnEventType.AkActionOnEventType_Pause, gameObject);
+   				 //AkSoundEngine.ExecuteActionOnEvent(WwLevelMusic.Id, AkActionOnEventType.AkActionOnEventType_Pause, gameObject);
 			}
 		else
 			{
-    			AkSoundEngine.ExecuteActionOnEvent(WwLevelMusic.Id, AkActionOnEventType.AkActionOnEventType_Resume, gameObject);
+    			//AkSoundEngine.ExecuteActionOnEvent(WwLevelMusic.Id, AkActionOnEventType.AkActionOnEventType_Resume, gameObject);
 			}
 
 			}
 
 	void PauseMusicFromScript(){
-				 AkSoundEngine.ExecuteActionOnEvent(WwLevelMusic.Id, AkActionOnEventType.AkActionOnEventType_Pause, gameObject);
+				 //AkSoundEngine.ExecuteActionOnEvent(WwLevelMusic.Id, AkActionOnEventType.AkActionOnEventType_Pause, gameObject);
 	}
 
 	/****************** Game pause */
@@ -300,7 +317,8 @@ public class LevelManager : MonoBehaviour {
 
 	/****************** Powerup / Powerdown / Die */
 	public void MarioPowerUp() {
-		soundSource.PlayOneShot (powerupSound); // should play sound regardless of size
+		WwpowerupSound.Post(gameObject);
+		//soundSource.PlayOneShot (powerupSound); // should play sound regardless of size
 		if (marioSize < 2) {
 			StartCoroutine (MarioPowerUpCo ());
 		}
@@ -308,6 +326,7 @@ public class LevelManager : MonoBehaviour {
 	}
 
 	IEnumerator MarioPowerUpCo() {
+		ST_MarioLarge.SetValue();
 		mario_Animator.SetBool ("isPoweringUp", true);
 		Time.timeScale = 0f;
 		mario_Animator.updateMode = AnimatorUpdateMode.UnscaledTime;
@@ -321,6 +340,7 @@ public class LevelManager : MonoBehaviour {
 		marioSize++;
 		mario.UpdateSize ();
 		mario_Animator.SetBool ("isPoweringUp", false);
+	
 	}
 
 	public void MarioPowerDown() {
@@ -342,6 +362,7 @@ public class LevelManager : MonoBehaviour {
 	}
 
 	IEnumerator MarioPowerDownCo() {
+		ST_MarioSmall.SetValue();
 		mario_Animator.SetBool ("isPoweringDown", true);
 		Time.timeScale = 0f;
 		mario_Animator.updateMode = AnimatorUpdateMode.UnscaledTime;
@@ -357,6 +378,7 @@ public class LevelManager : MonoBehaviour {
 		mario.UpdateSize ();
 		mario_Animator.SetBool ("isPoweringDown", false);
 		isPoweringDown = false;
+	
 	}
 
 	public void MarioRespawn(bool timeup = false) {

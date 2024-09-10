@@ -37,6 +37,20 @@ namespace AK
             } // namespace STATE
         } // namespace DAYNIGHT
 
+        namespace MARIOSTATE
+        {
+            static const AkUniqueID GROUP = 3891672790U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ST_MARIODEAD = 3280622839U;
+                static const AkUniqueID ST_MARIOLARGE = 1268394730U;
+                static const AkUniqueID ST_MARIOSMALL = 3407194134U;
+                static const AkUniqueID ST_MARIOSTAR = 2935428005U;
+            } // namespace STATE
+        } // namespace MARIOSTATE
+
     } // namespace STATES
 
     namespace SWITCHES
@@ -57,6 +71,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID RTPC_MARIOSPEED = 2826881650U;
+        static const AkUniqueID RTPC_TIMELEFT = 3058023719U;
         static const AkUniqueID TIMEOFDAY = 3729505769U;
     } // namespace GAME_PARAMETERS
 

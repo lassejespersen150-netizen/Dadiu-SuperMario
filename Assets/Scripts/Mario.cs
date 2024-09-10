@@ -12,6 +12,7 @@ public class Mario : MonoBehaviour {
 
 	//Wwise Events
 	public AK.Wwise.RTPC MarioSpeed;
+	public AK.Wwise.Event InAirSound;
 
 	private LevelManager t_LevelManager;
 	private Transform m_GroundCheck1, m_GroundCheck2;
@@ -176,6 +177,7 @@ public class Mario : MonoBehaviour {
 
 		/******** Horizontal movement on air */
 		} else {
+		
 			SetMidairParams ();
 
 			// Holding Dash while in midair has no effect
@@ -214,9 +216,9 @@ public class Mario : MonoBehaviour {
 				speedXBeforeJump = currentSpeedX;
 				wasDashingBeforeJump = isDashing;
 				if (t_LevelManager.marioSize == 0) {
-					t_LevelManager.WwJumpSmallSound.Post(t_LevelManager.gameObject);
+					t_LevelManager.WwjumpSmallSound.Post(t_LevelManager.gameObject);
 				} else {
-					t_LevelManager.WwJumpSmallSound.Post(t_LevelManager.gameObject);
+					t_LevelManager.WwjumpSmallSound.Post(t_LevelManager.gameObject);
 				}
 			}
 		} else {  // lower gravity if Jump button held; increased gravity if released

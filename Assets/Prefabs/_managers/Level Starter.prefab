@@ -92,6 +92,15 @@ MonoBehaviour:
   timeText: {fileID: 114793167711461314}
   FloatingTextEffect: {fileID: 1196479104050882, guid: 1ad1e9f06ef1b47b0ba83ef5484e63cf,
     type: 3}
+  coinBonus: 200
+  powerupBonus: 1000
+  starmanBonus: 1000
+  oneupBonus: 0
+  breakBlockBonus: 50
+  stompBounceVelocity: {x: 0, y: 15}
+  gamePaused: 0
+  timerPaused: 0
+  musicPaused: 0
   WwMusicSource:
     idInternal: 0
     valueGuidInternal: 
@@ -195,10 +204,31 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
-  WwJumpSmallSound:
+  RTPC_TimeLeft:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 06b8c3c8b6b8ff64c899b883c4b488d2,
+    WwiseObjectReference: {fileID: 11400000, guid: 3adf6ec37df14284c81805074ff335c4,
+      type: 2}
+  ST_MarioSmall:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: dba0245adc96d2642b0387b7c30d2ad8,
+      type: 2}
+  ST_MarioLarge:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 89ba2857a677f134ba603c972d63f98b,
+      type: 2}
+  ST_MarioStar:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f68fb83036d8ba84185424368409c2bb,
       type: 2}
   musicSource: {fileID: 82793086007151078}
   soundSource: {fileID: 82989831986403836}
@@ -226,15 +256,6 @@ MonoBehaviour:
   powerupAppearSound: {fileID: 8300000, guid: 97a450c65284a4a3094ba5c2221a492b, type: 3}
   stompSound: {fileID: 8300000, guid: d84415726495b4d46b5a557ed2a97cfa, type: 3}
   warningSound: {fileID: 8300000, guid: c0ea6c25686884e1a9547efdebf43492, type: 3}
-  coinBonus: 200
-  powerupBonus: 1000
-  starmanBonus: 1000
-  oneupBonus: 0
-  breakBlockBonus: 50
-  stompBounceVelocity: {x: 0, y: 15}
-  gamePaused: 0
-  timerPaused: 0
-  musicPaused: 0
 --- !u!114 &1813169380907857607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,6 +797,11 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 225a957932186fe4abfa7d7b3260f3de,
+      type: 2}
+  InAirSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: abd22dd59c7a1f34e977b0d11bf2aa4a,
       type: 2}
   LevelManager: {fileID: 1004064948157000}
   GroundLayers:

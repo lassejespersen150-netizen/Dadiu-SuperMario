@@ -1,10 +1,16 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1705516017	DayNight			\Default Work Unit\DayNight	
+	3891672790	MarioState			\Default Work Unit\MarioState	
 
 State	ID	Name	State Group			Notes
 	311764537	Day	DayNight			
 	748895195	None	DayNight			
 	1011622525	Night	DayNight			
+	748895195	None	MarioState			
+	1268394730	ST_MarioLarge	MarioState			
+	2935428005	ST_MarioStar	MarioState			
+	3280622839	ST_MarioDead	MarioState			
+	3407194134	ST_MarioSmall	MarioState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

@@ -69,6 +69,43 @@
 							</ObjectLists>
 						</MusicTrack>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo MusicSyncType="3">
+								<StateGroupRef Name="MarioState" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="ST_MarioSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
+								<CustomState Name="" ID="{3C603FF3-EE5B-4EE7-8375-45607E93ECEB}" ShortID="1067064109">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}"/>
+								<CustomState Name="" ID="{1B2B97DB-0A75-4EE2-984C-16E4CAE3E30E}" ShortID="261881915">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="ST_MarioStar" ID="{1AC40DB2-2F79-4C08-BF8A-7DFB7CD269BC}"/>
+								<CustomState Name="" ID="{FC017FA7-D97F-4D3F-BCC5-E91E7DEB2EC5}" ShortID="965999405"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="ST_MarioLarge" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
+								<CustomState Name="" ID="{B7A7A97F-22F9-4D1D-950A-82576A1E1AE9}" ShortID="470338618">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="9"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists>
 						<ObjectList Name="Cues">
 							<Reference>
@@ -84,43 +121,6 @@
 											<Property Name="TimeMs" Type="Real64" Value="305902.244923785"/>
 										</PropertyList>
 									</MusicCue>
-								</Local>
-							</Reference>
-						</ObjectList>
-						<ObjectList Name="RTPC">
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{2A63BA8D-F1D9-4C85-A371-851BD4987BC4}" ShortID="747190833">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="RTPC_MarioSpeed" ID="{966CA1C4-99E1-47D1-875D-46278331CCA5}" WorkUnitID="{4C6CF63E-8105-470C-A820-EC50E4FE9245}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{F1E6BEAA-6946-4331-8163-B4E6F68724DE}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0.25</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>5</XPos>
-																<YPos>1</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
 								</Local>
 							</Reference>
 						</ObjectList>

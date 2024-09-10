@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1020463552" Type="User" Language="SFX" Hash="{CCF28FF1-0B2C-74B3-EB6F-1ACBF6A13D7D}">
+		<SoundBank Id="1020463552" Type="User" Language="SFX" Hash="{AD145F4C-DBA6-3D69-DFF2-15A92768B72E}">
 			<ShortName>BNK_Main</ShortName>
 			<Path>BNK_Main.bnk</Path>
 			<Media>
@@ -85,7 +85,7 @@
 				<GameParameter Id="2826881650" Name="RTPC_MarioSpeed"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B8E6218F-F5F2-0972-44E0-9248D0274BA3}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CB44B23D-C94C-F4A7-90FE-48788F9F4241}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -99,6 +99,7 @@
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="2826881650" Name="RTPC_MarioSpeed"/>
+				<GameParameter Id="3058023719" Name="RTPC_TimeLeft"/>
 				<GameParameter Id="3729505769" Name="TimeOfDay"/>
 			</GameParameters>
 			<StateGroups>
@@ -107,6 +108,15 @@
 						<State Id="311764537" Name="Day"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="1011622525" Name="Night"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3891672790" Name="MarioState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1268394730" Name="ST_MarioLarge"/>
+						<State Id="2935428005" Name="ST_MarioStar"/>
+						<State Id="3280622839" Name="ST_MarioDead"/>
+						<State Id="3407194134" Name="ST_MarioSmall"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -120,5 +130,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{49367F8D-B885-BBC7-79A3-6093C2D776C4}</FileHash>
+	<FileHash>{E75E29FA-C17C-82F5-E931-D0D5B42EAB18}</FileHash>
 </SoundBanksInfo>

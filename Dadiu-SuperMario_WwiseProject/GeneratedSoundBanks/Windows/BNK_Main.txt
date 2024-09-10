@@ -8,6 +8,16 @@ Event	ID	Name			Wwise Object Path	Notes
 	3136715220	Play_DB_Synth_2D_Os_p400			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p400	
 	3782120104	Play_Overworld_1_1			\Music\Play_Overworld_1_1	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3891672790	MarioState			\Default Work Unit\MarioState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	MarioState			
+	1268394730	ST_MarioLarge	MarioState			
+	2935428005	ST_MarioStar	MarioState			
+	3280622839	ST_MarioDead	MarioState			
+	3407194134	ST_MarioSmall	MarioState			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2826881650	RTPC_MarioSpeed			\Mario\RTPC_MarioSpeed	
 
