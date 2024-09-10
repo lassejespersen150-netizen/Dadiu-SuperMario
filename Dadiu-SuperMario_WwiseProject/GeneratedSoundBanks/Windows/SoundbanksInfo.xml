@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1020463552" Type="User" Language="SFX" Hash="{B75CAE88-06D0-F3DA-1818-1D9C491A6544}">
+			<ShortName>BNK_Main</ShortName>
+			<Path>BNK_Main.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="482002093" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="509538054" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="560563047" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="318505690" Name="Play_DB_Synth_200Hz_2D_Lp" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="560563047"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2517391619" Name="Play_DB_Synth_2D_Lp" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="482002093"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2534169461" Name="Play_DB_Synth_2D_Os" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2834276857" Name="Play_DB_Synth_2D_Os_p100" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2935089634" Name="Play_DB_Synth_2D_Os_p200" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3035902443" Name="Play_DB_Synth_2D_Os_p300" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3136715220" Name="Play_DB_Synth_2D_Os_p400" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="2826881650" Name="RTPC_MarioSpeed"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0880BD01-0CF2-8FF9-9413-72FB41A00198}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="2826881650" Name="RTPC_MarioSpeed"/>
+				<GameParameter Id="3729505769" Name="TimeOfDay"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1705516017" Name="DayNight">
+					<States>
+						<State Id="311764537" Name="Day"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1011622525" Name="Night"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="206060290" Name="SwitchGroup">
+					<Switches>
+						<Switch Id="833827773" Name="DB_Switch_Two"/>
+						<Switch Id="1220551583" Name="DB_Switch_One"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{081EC792-EB3C-EF83-F3E9-F9CA52E49256}</FileHash>
+</SoundBanksInfo>

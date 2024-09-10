@@ -1,0 +1,530 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947c78a7c21ada841b75140f84388f8c, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 052dccbae81d3343a2f17ded9462f37d
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: 052dccbae81d3343a2f17ded9462f37d
+    GuidInternal: 
+    m_lastTime: -8584757321680140509
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 3ebcbf1e8cc6d64480e621b11fc75df9
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: 3ebcbf1e8cc6d64480e621b11fc75df9
+    GuidInternal: 
+    m_lastTime: -8584757321680860951
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3ebcbf1e8cc6d64480e621b11fc75df9
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 02f7410ab97ef146ab512498035c6ce4
+    ParentPath: SoundBanks\Default Work Unit
+    guid: 02f7410ab97ef146ab512498035c6ce4
+    GuidInternal: 
+    m_lastTime: -8584757297490801226
+    List: []
+  - PhysicalPath: SoundBanks\Soundbanks.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Soundbanks
+      ObjectType: 12
+      guid: 2b248c1807126d4da58bf81dd9e1e1e0
+    ParentPath: SoundBanks\Soundbanks
+    guid: 2b248c1807126d4da58bf81dd9e1e1e0
+    GuidInternal: 
+    m_lastTime: -8584757297366775446
+    List:
+    - name: BNK_Main
+      guid: 770abb4f429b2043bfc9ca6642c05aba
+      id: 1020463552
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Soundbanks
+        ObjectType: 12
+        guid: 2b248c1807126d4da58bf81dd9e1e1e0
+      - ElementName: BNK_Main
+        ObjectType: 7
+        guid: 770abb4f429b2043bfc9ca6642c05aba
+      Path: SoundBanks\Soundbanks\BNK_Main
+  EventWwu:
+  - PhysicalPath: Events\Debug.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Debug
+      ObjectType: 12
+      guid: fcbc16d4bdbe1642901ddb504af6c02b
+    ParentPath: Events\Debug
+    guid: fcbc16d4bdbe1642901ddb504af6c02b
+    GuidInternal: 
+    m_lastTime: -8584757031665928531
+    List:
+    - name: DebugEvents
+      guid: 48f1f12c111cd14f88629d5aa9a50b3e
+      id: 4124916281
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Debug
+        ObjectType: 12
+        guid: fcbc16d4bdbe1642901ddb504af6c02b
+      - ElementName: DebugEvents
+        ObjectType: 4
+        guid: 48f1f12c111cd14f88629d5aa9a50b3e
+      Path: Events\Debug\DebugEvents
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DB_Synth_200Hz_2D_Lp
+      guid: eecdb9575c4d1047823289307a21c23d
+      id: 318505690
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Debug
+        ObjectType: 12
+        guid: fcbc16d4bdbe1642901ddb504af6c02b
+      - ElementName: DebugEvents
+        ObjectType: 4
+        guid: 48f1f12c111cd14f88629d5aa9a50b3e
+      - ElementName: Play_DB_Synth_200Hz_2D_Lp
+        ObjectType: 3
+        guid: eecdb9575c4d1047823289307a21c23d
+      Path: Events\Debug\DebugEvents\Play_DB_Synth_200Hz_2D_Lp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DB_Synth_2D_Lp
+      guid: 47f8bca50f6f464f967ddee0f26a6e58
+      id: 2517391619
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Debug
+        ObjectType: 12
+        guid: fcbc16d4bdbe1642901ddb504af6c02b
+      - ElementName: DebugEvents
+        ObjectType: 4
+        guid: 48f1f12c111cd14f88629d5aa9a50b3e
+      - ElementName: Play_DB_Synth_2D_Lp
+        ObjectType: 3
+        guid: 47f8bca50f6f464f967ddee0f26a6e58
+      Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Lp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DB_Synth_2D_Os
+      guid: 9fa105fdc448be459b0871a060a0d59d
+      id: 2534169461
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Debug
+        ObjectType: 12
+        guid: fcbc16d4bdbe1642901ddb504af6c02b
+      - ElementName: DebugEvents
+        ObjectType: 4
+        guid: 48f1f12c111cd14f88629d5aa9a50b3e
+      - ElementName: Play_DB_Synth_2D_Os
+        ObjectType: 3
+        guid: 9fa105fdc448be459b0871a060a0d59d
+      Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Os
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DB_Synth_2D_Os_p100
+      guid: a484dd2cd28be040826291146a7828c8
+      id: 2834276857
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Debug
+        ObjectType: 12
+        guid: fcbc16d4bdbe1642901ddb504af6c02b
+      - ElementName: DebugEvents
+        ObjectType: 4
+        guid: 48f1f12c111cd14f88629d5aa9a50b3e
+      - ElementName: Play_DB_Synth_2D_Os_p100
+        ObjectType: 3
+        guid: a484dd2cd28be040826291146a7828c8
+      Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Os_p100
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DB_Synth_2D_Os_p200
+      guid: bcea540655659c4eaa2c83839c7cbe32
+      id: 2935089634
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Debug
+        ObjectType: 12
+        guid: fcbc16d4bdbe1642901ddb504af6c02b
+      - ElementName: DebugEvents
+        ObjectType: 4
+        guid: 48f1f12c111cd14f88629d5aa9a50b3e
+      - ElementName: Play_DB_Synth_2D_Os_p200
+        ObjectType: 3
+        guid: bcea540655659c4eaa2c83839c7cbe32
+      Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Os_p200
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DB_Synth_2D_Os_p300
+      guid: a2d6bae058238f44b508cd71d87b1b28
+      id: 3035902443
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Debug
+        ObjectType: 12
+        guid: fcbc16d4bdbe1642901ddb504af6c02b
+      - ElementName: DebugEvents
+        ObjectType: 4
+        guid: 48f1f12c111cd14f88629d5aa9a50b3e
+      - ElementName: Play_DB_Synth_2D_Os_p300
+        ObjectType: 3
+        guid: a2d6bae058238f44b508cd71d87b1b28
+      Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Os_p300
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_DB_Synth_2D_Os_p400
+      guid: c153fa6dc5538d479e4f0aac4fdcf956
+      id: 3136715220
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Debug
+        ObjectType: 12
+        guid: fcbc16d4bdbe1642901ddb504af6c02b
+      - ElementName: DebugEvents
+        ObjectType: 4
+        guid: 48f1f12c111cd14f88629d5aa9a50b3e
+      - ElementName: Play_DB_Synth_2D_Os_p400
+        ObjectType: 3
+        guid: c153fa6dc5538d479e4f0aac4fdcf956
+      Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Os_p400
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 49d2996c306e7742af87c05271be0944
+    ParentPath: Events\Default Work Unit
+    guid: 49d2996c306e7742af87c05271be0944
+    GuidInternal: 
+    m_lastTime: -8584757023683118662
+    List: []
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: ba89fe5b2c85444b8206423618247de9
+    ParentPath: Events\Music
+    guid: ba89fe5b2c85444b8206423618247de9
+    GuidInternal: 
+    m_lastTime: -8584757023683078474
+    List:
+    - name: Play_Overworld_1_1
+      guid: 485cd832519964479044f9d0506f0c8b
+      id: 3782120104
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: ba89fe5b2c85444b8206423618247de9
+      - ElementName: Play_Overworld_1_1
+        ObjectType: 3
+        guid: 485cd832519964479044f9d0506f0c8b
+      Path: Events\Music\Play_Overworld_1_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 62c2f836d84ae242b1d8dbe80cbe507e
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 62c2f836d84ae242b1d8dbe80cbe507e
+    GuidInternal: 
+    m_lastTime: -8584757289789010899
+    List:
+    - name: TimeOfDay
+      guid: 0420d4074aa8784fa8ad8a572424b611
+      id: 3729505769
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 62c2f836d84ae242b1d8dbe80cbe507e
+      - ElementName: TimeOfDay
+        ObjectType: 13
+        guid: 0420d4074aa8784fa8ad8a572424b611
+      Path: Game Parameters\Default Work Unit\TimeOfDay
+  - PhysicalPath: Game Parameters\Mario.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Mario
+      ObjectType: 12
+      guid: 3ef66c4c05810c47a820ec50e4fe9245
+    ParentPath: Game Parameters\Mario
+    guid: 3ef66c4c05810c47a820ec50e4fe9245
+    GuidInternal: 
+    m_lastTime: -8584757028524754676
+    List:
+    - name: RTPC_MarioSpeed
+      guid: c4a16c96e199d147875d46278331cca5
+      id: 2826881650
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Mario
+        ObjectType: 12
+        guid: 3ef66c4c05810c47a820ec50e4fe9245
+      - ElementName: RTPC_MarioSpeed
+        ObjectType: 13
+        guid: c4a16c96e199d147875d46278331cca5
+      Path: Game Parameters\Mario\RTPC_MarioSpeed
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 0ffdf406761fc24da56d7c1e7c297c93
+    ParentPath: States\Default Work Unit
+    guid: 0ffdf406761fc24da56d7c1e7c297c93
+    GuidInternal: 
+    m_lastTime: -8584757292835062168
+    List:
+    - name: DayNight
+      guid: d83d3c97ba15df4491aafca495c43a88
+      id: 1705516017
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0ffdf406761fc24da56d7c1e7c297c93
+      - ElementName: DayNight
+        ObjectType: 9
+        guid: d83d3c97ba15df4491aafca495c43a88
+      Path: States\Default Work Unit\DayNight
+      values:
+      - name: Day
+        guid: 464982f63fcab44ebd82f931449ad7a6
+        id: 311764537
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0ffdf406761fc24da56d7c1e7c297c93
+        - ElementName: DayNight
+          ObjectType: 9
+          guid: d83d3c97ba15df4491aafca495c43a88
+        - ElementName: Day
+          ObjectType: 8
+          guid: 464982f63fcab44ebd82f931449ad7a6
+      - name: Night
+        guid: f773a9ffd0cd1d42b3afb06f2df40f93
+        id: 1011622525
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0ffdf406761fc24da56d7c1e7c297c93
+        - ElementName: DayNight
+          ObjectType: 9
+          guid: d83d3c97ba15df4491aafca495c43a88
+        - ElementName: Night
+          ObjectType: 8
+          guid: f773a9ffd0cd1d42b3afb06f2df40f93
+      - name: None
+        guid: 4127e76a39dd5d4aaa89cf7cb1689428
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0ffdf406761fc24da56d7c1e7c297c93
+        - ElementName: DayNight
+          ObjectType: 9
+          guid: d83d3c97ba15df4491aafca495c43a88
+        - ElementName: None
+          ObjectType: 8
+          guid: 4127e76a39dd5d4aaa89cf7cb1689428
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 7094c8337df30a46a03432e80f44db67
+    ParentPath: Switches\Default Work Unit
+    guid: 7094c8337df30a46a03432e80f44db67
+    GuidInternal: 
+    m_lastTime: -8584757294288425562
+    List:
+    - name: SwitchGroup
+      guid: 2ac66a6dcead0240821eaa467115b747
+      id: 206060290
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7094c8337df30a46a03432e80f44db67
+      - ElementName: SwitchGroup
+        ObjectType: 11
+        guid: 2ac66a6dcead0240821eaa467115b747
+      Path: Switches\Default Work Unit\SwitchGroup
+      values:
+      - name: DB_Switch_One
+        guid: 46539966b90544499f937e717e803547
+        id: 1220551583
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7094c8337df30a46a03432e80f44db67
+        - ElementName: SwitchGroup
+          ObjectType: 11
+          guid: 2ac66a6dcead0240821eaa467115b747
+        - ElementName: DB_Switch_One
+          ObjectType: 10
+          guid: 46539966b90544499f937e717e803547
+      - name: DB_Switch_Two
+        guid: 6db27125e560dc478f1780dec28d94bb
+        id: 833827773
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7094c8337df30a46a03432e80f44db67
+        - ElementName: SwitchGroup
+          ObjectType: 11
+          guid: 2ac66a6dcead0240821eaa467115b747
+        - ElementName: DB_Switch_Two
+          ObjectType: 10
+          guid: 6db27125e560dc478f1780dec28d94bb
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6cf02459ff2f5a4d95f851ec589f9712
+    ParentPath: Triggers\Default Work Unit
+    guid: 6cf02459ff2f5a4d95f851ec589f9712
+    GuidInternal: 
+    m_lastTime: -8584757321680220547
+    List: []
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000d000000170000001a000000
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 0
+  CurrentPluginConfig: 

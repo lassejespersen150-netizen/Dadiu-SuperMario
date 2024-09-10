@@ -37,6 +37,10 @@ public class LevelManager : MonoBehaviour {
 	public GameObject FloatingTextEffect;
 	private const float floatingTextOffsetY = 2f;
 
+	//Wwise Sounds are added here
+
+	public AK.Wwise.Event WwJumpSmallSound;
+
 	public AudioSource musicSource;
 	public AudioSource soundSource;
 	public AudioSource pauseSoundSource;

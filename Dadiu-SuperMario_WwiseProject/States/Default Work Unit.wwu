@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{06F4FD0F-1F76-4DC2-A56D-7C1E7C297C93}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{06F4FD0F-1F76-4DC2-A56D-7C1E7C297C93}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="DayNight" ID="{973C3DD8-15BA-44DF-91AA-FCA495C43A88}">
+					<ChildrenList>
+						<State Name="None" ID="{6AE72741-DD39-4A5D-AA89-CF7CB1689428}"/>
+						<State Name="Day" ID="{F6824946-CA3F-4EB4-BD82-F931449AD7A6}"/>
+						<State Name="Night" ID="{FFA973F7-CDD0-421D-B3AF-B06F2DF40F93}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
