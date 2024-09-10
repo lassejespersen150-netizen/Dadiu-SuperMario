@@ -37,10 +37,37 @@ public class LevelManager : MonoBehaviour {
 	public GameObject FloatingTextEffect;
 	private const float floatingTextOffsetY = 2f;
 
-	//Wwise Sounds are added here
 
+	//Wwise Source files?
 	public AK.Wwise.Event WwMusicSource;
+
+	//Wwise music events
 	public AK.Wwise.Event WwLevelMusic;
+	public AK.Wwise.Event WwLevelMusicHurry;
+	public AK.Wwise.Event WwStarmanMusic;
+	public AK.Wwise.Event WwStarmanMusicHurry;
+	public AK.Wwise.Event WwlevelCompleteMusic;
+	public AK.Wwise.Event WwcastleCompleteMusic;
+
+
+	//Wwise Sound Events
+	public AK.Wwise.Event WwoneUpSound;
+	public AK.Wwise.Event WwbowserFallSound;
+	public AK.Wwise.Event WwbowserFireSound;
+	public AK.Wwise.Event WwbreakBlockSound;
+	public AK.Wwise.Event WwbumpSound;
+	public AK.Wwise.Event WwcoinSound;
+	public AK.Wwise.Event WwdeadSound;
+	public AK.Wwise.Event WwfireballSound;
+	public AK.Wwise.Event WwflagpoleSound;
+	public AK.Wwise.Event WwjumpSmallSound;
+	public AK.Wwise.Event WwjumpSuperSound;
+	public AK.Wwise.Event WwkickSound;
+	public AK.Wwise.Event WwpipePowerdownSound;
+	public AK.Wwise.Event WwpowerupSound;
+	public AK.Wwise.Event WwpowerupAppearSound;
+	public AK.Wwise.Event WwstompSound;
+	public AK.Wwise.Event WwwarningSound;
 
 	public AK.Wwise.Event WwJumpSmallSound;
 
@@ -303,7 +330,8 @@ public class LevelManager : MonoBehaviour {
 
 			if (marioSize > 0) {
 				StartCoroutine (MarioPowerDownCo ());
-				soundSource.PlayOneShot (pipePowerdownSound);
+				WwpipePowerdownSound.Post(gameObject);
+				//soundSource.PlayOneShot (pipePowerdownSound);
 			} else {
 				MarioRespawn ();
 			}
@@ -341,7 +369,8 @@ public class LevelManager : MonoBehaviour {
 			soundSource.Stop ();
 			musicSource.Stop ();
 			musicPaused = true;
-			soundSource.PlayOneShot (deadSound);
+			WwdeadSound.Post(gameObject);
+			//soundSource.PlayOneShot (deadSound);
 
 			Time.timeScale = 0f;
 			mario.FreezeAndDie ();
@@ -365,21 +394,24 @@ public class LevelManager : MonoBehaviour {
 	public void MarioStompEnemy(Enemy enemy) {
 		mario_Rigidbody2D.velocity = new Vector2 (mario_Rigidbody2D.velocity.x + stompBounceVelocity.x, stompBounceVelocity.y);
 		enemy.StompedByMario ();
-		soundSource.PlayOneShot (stompSound);
+		WwstompSound.Post(gameObject);
+		//soundSource.PlayOneShot (stompSound);
 		AddScore (enemy.stompBonus, enemy.gameObject.transform.position);
 		Debug.Log (this.name + " MarioStompEnemy called on " + enemy.gameObject.name);
 	}
 
 	public void MarioStarmanTouchEnemy(Enemy enemy) {
 		enemy.TouchedByStarmanMario ();
-		soundSource.PlayOneShot (kickSound);
+		WwkickSound.Post(gameObject);
+		//soundSource.PlayOneShot (kickSound);
 		AddScore (enemy.starmanBonus, enemy.gameObject.transform.position);
 		Debug.Log (this.name + " MarioStarmanTouchEnemy called on " + enemy.gameObject.name);
 	}
 
 	public void RollingShellTouchEnemy(Enemy enemy) {
 		enemy.TouchedByRollingShell ();
-		soundSource.PlayOneShot (kickSound);
+		WwkickSound.Post(gameObject);
+		//soundSource.PlayOneShot (kickSound);
 		AddScore (enemy.rollingShellBonus, enemy.gameObject.transform.position);
 		Debug.Log (this.name + " RollingShellTouchEnemy called on " + enemy.gameObject.name);
 	}
@@ -392,7 +424,8 @@ public class LevelManager : MonoBehaviour {
 
 	public void FireballTouchEnemy(Enemy enemy) {
 		enemy.HitByMarioFireball ();
-		soundSource.PlayOneShot (kickSound);
+		WwkickSound.Post(gameObject);
+		//soundSource.PlayOneShot (kickSound);
 		AddScore (enemy.fireballBonus, enemy.gameObject.transform.position);
 		Debug.Log (this.name + " FireballTouchEnemy called on " + enemy.gameObject.name);
 	}
@@ -534,18 +567,21 @@ public class LevelManager : MonoBehaviour {
 	/****************** Game state */
 	public void AddLife() {
 		lives++;
-		soundSource.PlayOneShot (oneUpSound);
+		WwoneUpSound.Post(gameObject);
+		//soundSource.PlayOneShot (oneUpSound);
 	}
 
 	public void AddLife(Vector3 spawnPos) {
 		lives++;
-		soundSource.PlayOneShot (oneUpSound);
+		WwoneUpSound.Post(gameObject);
+		//soundSource.PlayOneShot (oneUpSound);
 		CreateFloatingText ("1UP", spawnPos);
 	}
 
 	public void AddCoin() {
 		coins++;
-		soundSource.PlayOneShot (coinSound);
+		WwcoinSound.Post(gameObject);
+		//soundSource.PlayOneShot (coinSound);
 		if (coins == 100) {
 			AddLife ();
 			coins = 0;
@@ -556,7 +592,8 @@ public class LevelManager : MonoBehaviour {
 
 	public void AddCoin(Vector3 spawnPos) {
 		coins++;
-		soundSource.PlayOneShot (coinSound);
+		WwcoinSound.Post(gameObject);
+		//soundSource.PlayOneShot (coinSound);
 		if (coins == 100) {
 			AddLife ();
 			coins = 0;
