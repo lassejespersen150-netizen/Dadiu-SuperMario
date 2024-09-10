@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Platform="Mac" BasePlatform="Mac">
 	<PluginLibs>
+		<PluginLib LibName="Wwise Tremolo" LibId="8585219" Type="Effect" DLL="AkTremolo" StaticLib="AkTremoloFX"/>
+		<PluginLib LibName="Wwise Harmonizer" LibId="9043971" Type="Effect" DLL="AkHarmonizer" StaticLib="AkHarmonizerFX"/>
 		<PluginLib LibName="Wwise Synth One" LibId="9699330" Type="Source" DLL="AkSynthOne" StaticLib="AkSynthOneSource"/>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
 	</PluginLibs>
-	<FileHash>{FBE480EF-8F16-8967-DBB2-C22A7FB5A4E1}</FileHash>
+	<FileHash>{9A74AF23-38B3-70E3-3280-70D5C2485510}</FileHash>
 </PluginInfo>

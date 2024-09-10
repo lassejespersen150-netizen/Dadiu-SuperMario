@@ -64,6 +64,7 @@ Transform:
   - {fileID: 4312357550188140}
   - {fileID: 4859203279597676}
   - {fileID: 4570357380273396}
+  - {fileID: 4498529935746383737}
   m_Father: {fileID: 4083944694453744}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -104,12 +105,11 @@ MonoBehaviour:
   WwMusicSource:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f8e465558a0829d48888311bfccd1c81,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   WwLevelMusic:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f8e465558a0829d48888311bfccd1c81,
+    WwiseObjectReference: {fileID: 11400000, guid: 8312ebbcbfb6410468d9b88cd7c4d09c,
       type: 2}
   WwLevelMusicHurry:
     idInternal: 0
@@ -159,7 +159,8 @@ MonoBehaviour:
   WwdeadSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 86254cf85cd3a2e45b5a481f63d98118,
+      type: 2}
   WwfireballSound:
     idInternal: 0
     valueGuidInternal: 
@@ -2548,3 +2549,59 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &8143491590119134143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4498529935746383737}
+  - component: {fileID: 3796992302264682586}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4498529935746383737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143491590119134143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4200383187230866}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3796992302264682586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143491590119134143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdea4699c0f3184192b7c31b008fc87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level101:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  Level102:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

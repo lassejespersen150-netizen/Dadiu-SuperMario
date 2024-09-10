@@ -13,6 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID EVT_MARIOALIVE = 1048818656U;
+        static const AkUniqueID EVT_MARIODEAD = 2306134771U;
+        static const AkUniqueID MUS_LEVEL101 = 2723243971U;
+        static const AkUniqueID MUS_LEVEL102 = 2723243968U;
+        static const AkUniqueID MUS_PLAYMAINPLAYLIST = 2115743526U;
         static const AkUniqueID PLAY_DB_SYNTH_2D_LP = 2517391619U;
         static const AkUniqueID PLAY_DB_SYNTH_2D_OS = 2534169461U;
         static const AkUniqueID PLAY_DB_SYNTH_2D_OS_P100 = 2834276857U;
@@ -21,7 +26,6 @@ namespace AK
         static const AkUniqueID PLAY_DB_SYNTH_2D_OS_P400 = 3136715220U;
         static const AkUniqueID PLAY_DB_SYNTH_200HZ_2D_LP = 318505690U;
         static const AkUniqueID PLAY_DB_SYNTH_400HZ_3D_LP = 3266186833U;
-        static const AkUniqueID PLAY_OVERWORLD_1_1 = 3782120104U;
     } // namespace EVENTS
 
     namespace STATES
@@ -37,6 +41,34 @@ namespace AK
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace DAYNIGHT
+
+        namespace LEVELS
+        {
+            static const AkUniqueID GROUP = 2678230316U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ST_LEVEL_101 = 2673545494U;
+                static const AkUniqueID ST_LEVEL_102 = 2673545493U;
+                static const AkUniqueID ST_LEVEL_103 = 2673545492U;
+                static const AkUniqueID ST_LEVEL_104 = 2673545491U;
+            } // namespace STATE
+        } // namespace LEVELS
+
+        namespace MARIOLIVES
+        {
+            static const AkUniqueID GROUP = 2055629040U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ST_MARIOLIVE_00 = 826997358U;
+                static const AkUniqueID ST_MARIOLIVE_01 = 826997359U;
+                static const AkUniqueID ST_MARIOLIVE_02 = 826997356U;
+                static const AkUniqueID ST_MARIOLIVE_03 = 826997357U;
+            } // namespace STATE
+        } // namespace MARIOLIVES
 
         namespace MARIOSTATE
         {

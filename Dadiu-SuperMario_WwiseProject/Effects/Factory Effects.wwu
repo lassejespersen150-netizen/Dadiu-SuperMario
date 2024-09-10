@@ -1679,10 +1679,49 @@
 						<Effect Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
 							<PropertyList>
 								<Property Name="DryLevel" Type="Real32" Value="-3"/>
-								<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
-								<Property Name="Voice2Enable" Type="bool" Value="True"/>
+								<Property Name="Voice1Pitch" Type="Real32" Value="-1200"/>
 								<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
 							</PropertyList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="WetLevel"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="MarioState" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="ST_MarioSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
+										<CustomState Name="" ID="{B53A3103-3BA1-41A5-8C5C-85CF0FC0F176}" ShortID="36827872">
+											<PropertyList>
+												<Property Name="WetLevel" Type="Real32" Value="-120"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}"/>
+										<CustomState Name="" ID="{AD048594-5732-4E27-8394-7EB5A6DB1F40}" ShortID="393185286">
+											<PropertyList>
+												<Property Name="WetLevel" Type="Real32" Value="-120"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ST_MarioStar" ID="{1AC40DB2-2F79-4C08-BF8A-7DFB7CD269BC}"/>
+										<CustomState Name="" ID="{A9FCFB87-0F63-45F9-BE9A-7C42BBE95090}" ShortID="976674999">
+											<PropertyList>
+												<Property Name="WetLevel" Type="Real32" Value="-120"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ST_MarioLarge" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
+										<CustomState Name="" ID="{9206EC0F-BC81-4AA9-B21B-864CB8B0C121}" ShortID="461557595"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Effect>
 						<Effect Name="Secret_message" ID="{2F5DE612-1AAD-4A84-8FB4-3E66521C920E}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
 							<PropertyList>
@@ -1914,13 +1953,58 @@
 						</Effect>
 						<Effect Name="Aliasing" ID="{4CCC0D23-78CD-4B09-A62B-D3CB5E071A2F}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModFrequency" Type="Real32" Value="20000"/>
+								<Property Name="ModDepth" Type="Real32" Value="84.8"/>
+								<Property Name="ModFrequency" Type="Real32" Value="1283.92"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
 								<Property Name="ModPhaseSpread" Type="Real32" Value="19"/>
-								<Property Name="ModSmoothing" Type="Real32" Value="100"/>
+								<Property Name="ModSmoothing" Type="Real32" Value="56"/>
 								<Property Name="ModWaveform" Type="int32" Value="4"/>
 							</PropertyList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="ModDepth"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="MarioLives" ID="{7F3A3E64-93D3-4566-B395-B0C49DB9EA3D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="ST_MarioLive_00" ID="{FCA76125-2630-4155-A204-5AB8B3E1178C}"/>
+										<CustomState Name="" ID="{9868A362-BEC0-4460-971D-AAF47BD00961}" ShortID="587151173">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="-2.1"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ST_MarioLive_03" ID="{95883DBB-D04F-49BD-BA82-1E2C6F353C0A}"/>
+										<CustomState Name="" ID="{9BA920C4-0DCF-4BBB-BD16-9902B06683AC}" ShortID="662965617">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ST_MarioLive_01" ID="{A01518A2-9C7C-4B6D-81B1-A9DBEEB09C4F}"/>
+										<CustomState Name="" ID="{2910B593-05CC-46EF-9046-65A78BB83A04}" ShortID="645724875">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="-14.7"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ST_MarioLive_02" ID="{78DB9B8C-D777-4C0B-9989-BC130DA4966D}"/>
+										<CustomState Name="" ID="{E499BC96-8933-4F60-B772-8A0D45C9A53E}" ShortID="716215285">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="-77.9"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Effect>
 						<Effect Name="Fast_LF_Tremolo" ID="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>

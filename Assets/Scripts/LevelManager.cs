@@ -133,6 +133,8 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		WwMusicSource.Post(gameObject);
+		ST_MarioSmall.SetValue();
 		t_GameStateManager = FindObjectOfType<GameStateManager>();
 		RetrieveGameState ();
 
@@ -151,10 +153,11 @@ public class LevelManager : MonoBehaviour {
 		SetHudScore ();
 		SetHudTime ();
 		if (hurryUp) {
+
 			ChangeMusic (levelMusicHurry);
 		} else {
-			//ChangeMusic (levelMusic);
-			WwLevelMusic.Post(gameObject);
+			ChangeMusic (levelMusic);
+			ChangeMusicEvent (WwLevelMusic);
 		}
 
 		Debug.Log (this.name + " Start: current scene is " + SceneManager.GetActiveScene ().name);
@@ -340,6 +343,7 @@ public class LevelManager : MonoBehaviour {
 		marioSize++;
 		mario.UpdateSize ();
 		mario_Animator.SetBool ("isPoweringUp", false);
+		Debug.Log ("Mario is yuge");
 	
 	}
 
@@ -556,6 +560,30 @@ public class LevelManager : MonoBehaviour {
 		}
 		Debug.Log (this.name + " ChangeMusicCo: done changing music to " + clip.name);
 	}
+
+public void ChangeMusicEvent(AK.Wwise.Event newEvent, float delay = 0) {
+    StartCoroutine(ChangeMusicEventCo(newEvent, delay)); // Ensure the coroutine is correctly named and called
+}
+
+IEnumerator ChangeMusicEventCo(AK.Wwise.Event newEvent, float delay) {
+    Debug.Log(this.name + " ChangeMusicEventCo: starts changing music to " + newEvent.Name);
+
+    yield return new WaitWhile(() => gamePaused);
+    yield return new WaitForSecondsRealtime(delay);
+    yield return new WaitWhile(() => gamePaused || musicPaused);
+
+    if (!isRespawning) {
+        if (newEvent != null) {
+            newEvent.Post(gameObject); // Correctly post the Wwise event
+            Debug.Log(this.name + " ChangeMusicEventCo: done changing music to " + newEvent.Name);
+        } else {
+            Debug.LogError("The newEvent is not assigned.");
+        }
+    }
+}
+
+
+
 
 	public void PauseMusicPlaySound(AudioClip clip, bool resumeMusic) {
 		StartCoroutine (PauseMusicPlaySoundCo (clip, resumeMusic));

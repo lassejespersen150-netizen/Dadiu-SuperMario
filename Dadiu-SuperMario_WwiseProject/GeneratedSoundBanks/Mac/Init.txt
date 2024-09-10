@@ -1,11 +1,23 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	1705516017	DayNight			\Default Work Unit\DayNight	
-	3891672790	MarioState			\Default Work Unit\MarioState	
+	1705516017	DayNight			\GameStates\DayNight	
+	2055629040	MarioLives			\GameStates\MarioLives	
+	2678230316	Levels			\GameStates\Levels	
+	3891672790	MarioState			\GameStates\MarioState	
 
 State	ID	Name	State Group			Notes
 	311764537	Day	DayNight			
 	748895195	None	DayNight			
 	1011622525	Night	DayNight			
+	748895195	None	MarioLives			
+	826997356	ST_MarioLive_02	MarioLives			
+	826997357	ST_MarioLive_03	MarioLives			
+	826997358	ST_MarioLive_00	MarioLives			
+	826997359	ST_MarioLive_01	MarioLives			
+	748895195	None	Levels			
+	2673545491	ST_Level_104	Levels			
+	2673545492	ST_Level_103	Levels			
+	2673545493	ST_Level_102	Levels			
+	2673545494	ST_Level_101	Levels			
 	748895195	None	MarioState			
 	1268394730	ST_MarioLarge	MarioState			
 	2935428005	ST_MarioStar	MarioState			
