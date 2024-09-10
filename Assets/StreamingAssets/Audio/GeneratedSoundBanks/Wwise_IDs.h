@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID PLAY_DB_SYNTH_2D_OS_P300 = 3035902443U;
         static const AkUniqueID PLAY_DB_SYNTH_2D_OS_P400 = 3136715220U;
         static const AkUniqueID PLAY_DB_SYNTH_200HZ_2D_LP = 318505690U;
+        static const AkUniqueID PLAY_DB_SYNTH_400HZ_3D_LP = 3266186833U;
         static const AkUniqueID PLAY_OVERWORLD_1_1 = 3782120104U;
     } // namespace EVENTS
 

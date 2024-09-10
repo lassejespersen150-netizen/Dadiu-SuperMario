@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1020463552" Type="User" Language="SFX" Hash="{AD145F4C-DBA6-3D69-DFF2-15A92768B72E}">
+		<SoundBank Id="1020463552" Type="User" Language="SFX" Hash="{CB45D852-5501-3CD4-8F23-38DFF49B27FF}">
 			<ShortName>BNK_Main</ShortName>
 			<Path>BNK_Main.bnk</Path>
 			<Media>
@@ -20,6 +20,7 @@
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="337734695" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
 					<Plugin Id="482002093" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
 					<Plugin Id="509538054" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
 					<Plugin Id="560563047" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
@@ -72,6 +73,13 @@
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3266186833" Name="Play_DB_Synth_400Hz_3D_Lp" MaxAttenuation="20" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="337734695"/>
 						</Custom>
 					</PluginRefs>
 				</Event>
@@ -130,5 +138,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DB45F642-11F9-9BE0-929D-BE588525E4C1}</FileHash>
+	<FileHash>{A255001D-2E55-384D-4438-DBE7F089C48A}</FileHash>
 </SoundBanksInfo>

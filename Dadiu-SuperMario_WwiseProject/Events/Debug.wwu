@@ -126,6 +126,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_DB_Synth_400Hz_3D_Lp" ID="{B9C7AC51-C7D1-4CCB-A45A-987DEC15E217}">
+							<ChildrenList>
+								<Action Name="" ID="{9EF32566-40B4-4D32-B0D9-FE2CCFC6DF6D}" ShortID="471854080">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DB_Synth_400Hz_3D_Lp" ID="{C7972DCE-732D-46BA-9A8D-E1428A3D1339}" WorkUnitID="{A2D3A40E-C757-48BE-BE4F-C2A7443D6802}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
