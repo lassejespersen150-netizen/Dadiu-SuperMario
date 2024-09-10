@@ -6,6 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2935089634	Play_DB_Synth_2D_Os_p200			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p200	
 	3035902443	Play_DB_Synth_2D_Os_p300			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p300	
 	3136715220	Play_DB_Synth_2D_Os_p400			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p400	
+	3782120104	Play_Overworld_1_1			\Music\Play_Overworld_1_1	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2826881650	RTPC_MarioSpeed			\Mario\RTPC_MarioSpeed	
@@ -23,4 +24,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	482002093	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_400Hz_2D_Lp\Synth One	
 	509538054	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_2D_Os\Synth One	
 	560563047	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_200Hz_2D_Lp\Synth One	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	149108280	Track	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\Windows\SFX\(01-41) Super Mario Bros. 1,2,VS_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld_1-1\Track		58583904
 

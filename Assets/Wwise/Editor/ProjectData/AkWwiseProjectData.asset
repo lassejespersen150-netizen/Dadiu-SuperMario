@@ -79,7 +79,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Soundbanks
     guid: 2b248c1807126d4da58bf81dd9e1e1e0
     GuidInternal: 
-    m_lastTime: -8584757297366775446
+    m_lastTime: -8584756516148768841
     List:
     - name: BNK_Main
       guid: 770abb4f429b2043bfc9ca6642c05aba
@@ -307,8 +307,8 @@ MonoBehaviour:
         guid: 485cd832519964479044f9d0506f0c8b
       Path: Events\Music\Play_Overworld_1_1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 305.90225
+      minDuration: 305.90225
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

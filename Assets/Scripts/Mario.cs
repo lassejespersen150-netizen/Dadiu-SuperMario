@@ -20,7 +20,7 @@ public class Mario : MonoBehaviour {
 	private Rigidbody2D m_Rigidbody2D;
 	private CircleCollider2D m_CircleCollider2D;
 	
-
+	public GameObject LevelManager; 
 	public LayerMask GroundLayers;
 	public GameObject Fireball;
 	public Transform FirePos;
@@ -31,7 +31,7 @@ public class Mario : MonoBehaviour {
 	private float moveDirectionX;
 	private float normalGravity;
 
-	private float currentSpeedX;
+	public float currentSpeedX;
 	private float speedXBeforeJump;
 
 	private float minWalkSpeedX = .28f;
@@ -127,8 +127,8 @@ public class Mario : MonoBehaviour {
 
 	void FixedUpdate () {
 		{
-			MarioSpeed.SetValue(gameObject, currentSpeedX);
-			Debug.Log(currentSpeedX);
+			MarioSpeed.SetValue(LevelManager, currentSpeedX);
+			//Debug.Log(currentSpeedX);
 		}
 		/******** Horizontal movement on ground */
 		if (isGrounded) {

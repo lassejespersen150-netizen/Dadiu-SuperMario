@@ -92,15 +92,20 @@ MonoBehaviour:
   timeText: {fileID: 114793167711461314}
   FloatingTextEffect: {fileID: 1196479104050882, guid: 1ad1e9f06ef1b47b0ba83ef5484e63cf,
     type: 3}
+  WwMusicSource:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f8e465558a0829d48888311bfccd1c81,
+      type: 2}
+  WwLevelMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f8e465558a0829d48888311bfccd1c81,
+      type: 2}
   WwJumpSmallSound:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 06b8c3c8b6b8ff64c899b883c4b488d2,
-      type: 2}
-  WwlevelMusic:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f8e465558a0829d48888311bfccd1c81,
       type: 2}
   musicSource: {fileID: 82793086007151078}
   soundSource: {fileID: 82989831986403836}
@@ -679,6 +684,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 225a957932186fe4abfa7d7b3260f3de,
       type: 2}
+  LevelManager: {fileID: 1004064948157000}
   GroundLayers:
     serializedVersion: 2
     m_Bits: 136841728

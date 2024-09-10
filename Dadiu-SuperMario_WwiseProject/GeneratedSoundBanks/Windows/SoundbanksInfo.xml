@@ -9,9 +9,15 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1020463552" Type="User" Language="SFX" Hash="{B75CAE88-06D0-F3DA-1818-1D9C491A6544}">
+		<SoundBank Id="1020463552" Type="User" Language="SFX" Hash="{CCF28FF1-0B2C-74B3-EB6F-1ACBF6A13D7D}">
 			<ShortName>BNK_Main</ShortName>
 			<Path>BNK_Main.bnk</Path>
+			<Media>
+				<File Id="149108280" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>(01-41) Super Mario Bros. 1,2,VS.wav</ShortName>
+					<CachePath>SFX/(01-41) Super Mario Bros. 1,2,VS_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
 			<Plugins>
 				<Custom>
 					<Plugin Id="482002093" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
@@ -69,6 +75,11 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="3782120104" Name="Play_Overworld_1_1" DurationType="OneShot" DurationMin="305.90225" DurationMax="305.90225">
+					<MediaRefs>
+						<MediaRef Id="149108280"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="2826881650" Name="RTPC_MarioSpeed"/>
@@ -109,5 +120,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{081EC792-EB3C-EF83-F3E9-F9CA52E49256}</FileHash>
+	<FileHash>{74A53577-C544-87FF-E658-CFEE991790E4}</FileHash>
 </SoundBanksInfo>

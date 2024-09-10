@@ -39,6 +39,9 @@ public class LevelManager : MonoBehaviour {
 
 	//Wwise Sounds are added here
 
+	public AK.Wwise.Event WwMusicSource;
+	public AK.Wwise.Event WwLevelMusic;
+
 	public AK.Wwise.Event WwJumpSmallSound;
 
 	public AudioSource musicSource;
@@ -109,7 +112,8 @@ public class LevelManager : MonoBehaviour {
 		if (hurryUp) {
 			ChangeMusic (levelMusicHurry);
 		} else {
-			ChangeMusic (levelMusic);
+			//ChangeMusic (levelMusic);
+			WwLevelMusic.Post(gameObject);
 		}
 
 		Debug.Log (this.name + " Start: current scene is " + SceneManager.GetActiveScene ().name);
@@ -154,8 +158,20 @@ public class LevelManager : MonoBehaviour {
 			}
 		}
 
-	}
+		if (mario.currentSpeedX == 0) // Corrected the if statement syntax and property access
+			{
+   				 AkSoundEngine.ExecuteActionOnEvent(WwLevelMusic.Id, AkActionOnEventType.AkActionOnEventType_Pause, gameObject);
+			}
+		else
+			{
+    			AkSoundEngine.ExecuteActionOnEvent(WwLevelMusic.Id, AkActionOnEventType.AkActionOnEventType_Resume, gameObject);
+			}
 
+			}
+
+	void PauseMusicFromScript(){
+				 AkSoundEngine.ExecuteActionOnEvent(WwLevelMusic.Id, AkActionOnEventType.AkActionOnEventType_Pause, gameObject);
+	}
 
 	/****************** Game pause */
 	List<Animator> unscaledAnimators = new List<Animator> ();
@@ -169,6 +185,7 @@ public class LevelManager : MonoBehaviour {
 		Time.timeScale = 0;
 		pausePrevMusicPaused = musicPaused;
 		musicSource.Pause ();
+		 AkSoundEngine.ExecuteActionOnEvent(WwMusicSource.Id, AkActionOnEventType.AkActionOnEventType_Pause, gameObject);
 		musicPaused = true;
 		soundSource.Pause ();
 
@@ -234,7 +251,8 @@ public class LevelManager : MonoBehaviour {
 		if (hurryUp) {
 			ChangeMusic (levelMusicHurry);
 		} else {
-			ChangeMusic (levelMusic);
+			WwLevelMusic.Post(gameObject);
+			//ChangeMusic (levelMusic);
 		}
 	}
 
