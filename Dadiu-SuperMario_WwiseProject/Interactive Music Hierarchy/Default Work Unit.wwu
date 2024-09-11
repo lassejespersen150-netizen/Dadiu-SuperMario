@@ -1337,6 +1337,9 @@
 													<Reference>
 														<Local>
 															<EffectSlot Name="" ID="{77120C77-B585-49F0-8DB6-6C65289F81A5}" ShortID="626603323">
+																<PropertyList>
+																	<Property Name="Bypass" Type="bool" Value="True"/>
+																</PropertyList>
 																<ReferenceList>
 																	<Reference Name="Effect" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
 																		<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
