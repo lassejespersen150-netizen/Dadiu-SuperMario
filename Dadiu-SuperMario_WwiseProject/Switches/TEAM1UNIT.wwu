@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{721D2C02-F569-4FAF-8FF7-1C65FF8141AD}" SchemaVersion="119">
+	<Switches>
+		<WorkUnit Name="TEAM1UNIT" ID="{721D2C02-F569-4FAF-8FF7-1C65FF8141AD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="SW_PlayerSize" ID="{982AE19A-5080-4B2F-9D48-816236445372}">
+					<ChildrenList>
+						<Switch Name="Big" ID="{05A3C91E-5183-411D-AF19-C8F3923C4FB2}"/>
+						<Switch Name="Small" ID="{C730D47E-5A49-4F92-B89E-AFAE595A6D6A}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="SW_block" ID="{5921575B-9B24-4B08-914F-A8516702DCD5}">
+					<ChildrenList>
+						<Switch Name="Break" ID="{C9834F18-C162-40D9-97B0-CBF92CB30108}"/>
+						<Switch Name="Impact" ID="{6A22FE6B-DF5A-4D06-8FE4-1FB47F43EA96}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

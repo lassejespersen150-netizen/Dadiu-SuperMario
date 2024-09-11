@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1A91741A-B6D1-41A0-AB5E-52A04E2C7FC3}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="TEAM1UNIT" ID="{1A91741A-B6D1-41A0-AB5E-52A04E2C7FC3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_EnemyDies" ID="{7F62EFDA-8B18-4CA1-9647-162EE18D2C71}">
+					<ChildrenList>
+						<Action Name="" ID="{B08EE104-00DC-49DA-80CB-76014C5322EE}" ShortID="532129172">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyDies" ID="{BE7C32CB-AE30-4197-A14E-7F839A50A1CE}" WorkUnitID="{B595745C-817B-4A79-AFD8-5CC96B641617}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_pickup_flower" ID="{46537C85-0279-4438-9122-69DCC43FE931}">
+					<ChildrenList>
+						<Action Name="" ID="{9FA27648-5BEF-46E0-AFB7-C1559A654149}" ShortID="227041911">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pickup_flower" ID="{D86BF16B-D4D1-4B23-8A20-4ECD198EF03B}" WorkUnitID="{C9AB1E3E-7BC5-450D-B804-B3053ACF4D83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_pickup_star" ID="{7D46AD9B-B4C6-48E5-9677-200D2D255085}">
+					<ChildrenList>
+						<Action Name="" ID="{507DD045-97D4-46D2-B434-9CA4C94A4C49}" ShortID="571280869">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pickup_star" ID="{E9DFB989-AC21-43A7-AAD3-9AB9693D82D3}" WorkUnitID="{C9AB1E3E-7BC5-450D-B804-B3053ACF4D83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_pickup_coin" ID="{27C82648-F138-49A4-9EB9-B4140FD411B8}">
+					<ChildrenList>
+						<Action Name="" ID="{9B50FF93-90A4-4091-B83F-81D87064E4F4}" ShortID="995913614">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pickup_coin" ID="{7634EC4C-FCB0-469A-9C9F-8D9F7A1487B2}" WorkUnitID="{C9AB1E3E-7BC5-450D-B804-B3053ACF4D83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_pickup_mushroom" ID="{48D0D175-4134-4006-87F4-AD7902992B06}">
+					<ChildrenList>
+						<Action Name="" ID="{1BF753BD-255E-4A04-BB70-4C9454DCE4B5}" ShortID="760313035">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pickup_mushroom" ID="{BAFE984B-1DE2-4FE9-AB80-C6EC78265A5C}" WorkUnitID="{C9AB1E3E-7BC5-450D-B804-B3053ACF4D83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_pipe_enter" ID="{E76DC9AA-CBF0-400B-BE31-40EA4BE801E9}">
+					<ChildrenList>
+						<Action Name="" ID="{20F99865-D62A-43F0-96CD-812C0C73D518}" ShortID="520502870">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pipe_enter" ID="{3025D5ED-9E5F-4084-85BB-647D85813BC7}" WorkUnitID="{945006D3-281D-425A-B5E6-26AE3C5225D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_pipe_exit" ID="{75A9F624-77E0-4B12-A4C1-1A430278B50A}">
+					<ChildrenList>
+						<Action Name="" ID="{06CAB3FA-4239-49BE-9507-F221DBF31706}" ShortID="138803254">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pipe_exit" ID="{E677A149-6BB7-47B1-9B25-611F3C49EBB0}" WorkUnitID="{945006D3-281D-425A-B5E6-26AE3C5225D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SW_Block" ID="{066F3EE1-F92D-40B1-B823-7C4216836FD8}">
+					<ChildrenList>
+						<Action Name="" ID="{676EBB69-20C2-4F24-ABE1-BA65EB72624B}" ShortID="208580846">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SW_Block" ID="{4E1FAA44-04B5-427B-8C46-661DF8DC1365}" WorkUnitID="{945006D3-281D-425A-B5E6-26AE3C5225D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SW_Jump" ID="{ECD48BD2-01B1-437A-9A56-EFC527058022}">
+					<ChildrenList>
+						<Action Name="" ID="{08859809-B5B6-4025-96F9-759F6529ADD9}" ShortID="288323149">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SW_Jump" ID="{08EA0EF8-A0EE-4472-9FFF-282AFD05DA00}" WorkUnitID="{C9AB1E3E-7BC5-450D-B804-B3053ACF4D83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
