@@ -1,19 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AK.Wwise;
 
 
 /* Mario physics reference: http://s276.photobucket.com/user/jdaster64/media/smb_playerphysics.png.html */
 
 
 public class Mario : MonoBehaviour {
+
+
+	//Wwise Events
+	public AK.Wwise.RTPC MarioSpeed;
+	public AK.Wwise.Event InAirSound;
+
 	private LevelManager t_LevelManager;
 	private Transform m_GroundCheck1, m_GroundCheck2;
 	private GameObject m_StompBox;
 	private Animator m_Animator;
 	private Rigidbody2D m_Rigidbody2D;
 	private CircleCollider2D m_CircleCollider2D;
-
+	
+	public GameObject LevelManager; 
 	public LayerMask GroundLayers;
 	public GameObject Fireball;
 	public Transform FirePos;
@@ -24,7 +32,7 @@ public class Mario : MonoBehaviour {
 	private float moveDirectionX;
 	private float normalGravity;
 
-	private float currentSpeedX;
+	public float currentSpeedX;
 	private float speedXBeforeJump;
 
 	private float minWalkSpeedX = .28f;
@@ -119,6 +127,10 @@ public class Mario : MonoBehaviour {
 
 
 	void FixedUpdate () {
+		{
+			MarioSpeed.SetValue(LevelManager, currentSpeedX);
+			//Debug.Log(currentSpeedX);
+		}
 		/******** Horizontal movement on ground */
 		if (isGrounded) {
 			// If holding directional button, accelerate until reach max walk speed
@@ -127,6 +139,7 @@ public class Mario : MonoBehaviour {
 				if (currentSpeedX == 0) {
 					currentSpeedX = minWalkSpeedX;
 				} else if (currentSpeedX < maxWalkSpeedX) {
+					
 					currentSpeedX = IncreaseWithinBound (currentSpeedX, walkAccelerationX, maxWalkSpeedX);
 				} else if (isDashing && currentSpeedX < maxRunSpeedX) {
 					currentSpeedX = IncreaseWithinBound (currentSpeedX, runAccelerationX, maxRunSpeedX);
@@ -157,9 +170,14 @@ public class Mario : MonoBehaviour {
 				currentSpeedX = 0;
 			}
 
+			{
+			
+			}
+
 
 		/******** Horizontal movement on air */
 		} else {
+		
 			SetMidairParams ();
 
 			// Holding Dash while in midair has no effect
@@ -198,9 +216,9 @@ public class Mario : MonoBehaviour {
 				speedXBeforeJump = currentSpeedX;
 				wasDashingBeforeJump = isDashing;
 				if (t_LevelManager.marioSize == 0) {
-					t_LevelManager.soundSource.PlayOneShot (t_LevelManager.jumpSmallSound);
+					t_LevelManager.WwjumpSmallSound.Post(t_LevelManager.gameObject);
 				} else {
-					t_LevelManager.soundSource.PlayOneShot (t_LevelManager.jumpSuperSound);
+					t_LevelManager.WwjumpSmallSound.Post(t_LevelManager.gameObject);
 				}
 			}
 		} else {  // lower gravity if Jump button held; increased gravity if released

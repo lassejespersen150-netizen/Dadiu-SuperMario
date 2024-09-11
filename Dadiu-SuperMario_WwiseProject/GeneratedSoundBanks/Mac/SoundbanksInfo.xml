@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1020463552" Type="User" Language="SFX" Hash="{0A74979D-1A06-195C-D6AC-007E40121421}">
+			<ShortName>BNK_Main</ShortName>
+			<Path>BNK_Main.bnk</Path>
+			<Media>
+				<File Id="149108280" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>(01-41) Super Mario Bros. 1,2,VS.wav</ShortName>
+					<CachePath>SFX/(01-41) Super Mario Bros. 1,2,VS_3B7822A8.wem</CachePath>
+				</File>
+				<File Id="892213981" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>(13-41) Super Mario Bros. 1,2,VS.wav</ShortName>
+					<CachePath>SFX/(13-41) Super Mario Bros. 1,2,VS_3B7822A8.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="337734695" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="482002093" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="509538054" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="560563047" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="819943492" Name="Fear_no_Evil" LibName="Wwise Harmonizer" LibId="9043971"/>
+					<Plugin Id="1735130781" Name="Aliasing" LibName="Wwise Tremolo" LibId="8585219"/>
+				</ShareSets>
+			</Plugins>
+			<Events>
+				<Event Id="1048818656" Name="EVT_MarioAlive" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3891672790" Id="3407194134" Name="ST_MarioSmall"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2306134771" Name="EVT_MarioDead" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3891672790" Id="3280622839" Name="ST_MarioDead"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2723243971" Name="MUS_Level101" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="2678230316" Id="2673545494" Name="ST_Level_101"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2723243968" Name="MUS_Level102" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="2678230316" Id="2673545493" Name="ST_Level_102"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2115743526" Name="MUS_PlayMainPlaylist" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3891672790" Id="0"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="2678230316" Id="2673545493"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="3280622839"/>
+											<MediaRefs>
+												<MediaRef Id="149108280"/>
+											</MediaRefs>
+										</SwitchContainer>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="1268394730"/>
+											<MediaRefs>
+												<MediaRef Id="892213981"/>
+											</MediaRefs>
+										</SwitchContainer>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="3407194134"/>
+											<MediaRefs>
+												<MediaRef Id="892213981"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="2678230316" Id="2673545494"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="3280622839"/>
+											<MediaRefs>
+												<MediaRef Id="149108280"/>
+											</MediaRefs>
+										</SwitchContainer>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="1268394730"/>
+											<MediaRefs>
+												<MediaRef Id="149108280"/>
+											</MediaRefs>
+											<PluginRefs>
+												<ShareSets>
+													<PluginRef Id="819943492"/>
+													<PluginRef Id="1735130781"/>
+												</ShareSets>
+											</PluginRefs>
+										</SwitchContainer>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="3407194134"/>
+											<MediaRefs>
+												<MediaRef Id="149108280"/>
+											</MediaRefs>
+											<PluginRefs>
+												<ShareSets>
+													<PluginRef Id="819943492"/>
+													<PluginRef Id="1735130781"/>
+												</ShareSets>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3891672790" Id="748895195"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="2678230316" Id="2673545493"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="3280622839"/>
+											<MediaRefs>
+												<MediaRef Id="149108280"/>
+											</MediaRefs>
+										</SwitchContainer>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="1268394730"/>
+											<MediaRefs>
+												<MediaRef Id="892213981"/>
+											</MediaRefs>
+										</SwitchContainer>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="3407194134"/>
+											<MediaRefs>
+												<MediaRef Id="892213981"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="2678230316" Id="2673545494"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="3280622839"/>
+											<MediaRefs>
+												<MediaRef Id="149108280"/>
+											</MediaRefs>
+										</SwitchContainer>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="1268394730"/>
+											<MediaRefs>
+												<MediaRef Id="149108280"/>
+											</MediaRefs>
+											<PluginRefs>
+												<ShareSets>
+													<PluginRef Id="819943492"/>
+													<PluginRef Id="1735130781"/>
+												</ShareSets>
+											</PluginRefs>
+										</SwitchContainer>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="3891672790" Id="3407194134"/>
+											<MediaRefs>
+												<MediaRef Id="149108280"/>
+											</MediaRefs>
+											<PluginRefs>
+												<ShareSets>
+													<PluginRef Id="819943492"/>
+													<PluginRef Id="1735130781"/>
+												</ShareSets>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="318505690" Name="Play_DB_Synth_200Hz_2D_Lp" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="560563047"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2517391619" Name="Play_DB_Synth_2D_Lp" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="482002093"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2534169461" Name="Play_DB_Synth_2D_Os" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2834276857" Name="Play_DB_Synth_2D_Os_p100" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2935089634" Name="Play_DB_Synth_2D_Os_p200" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3035902443" Name="Play_DB_Synth_2D_Os_p300" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3136715220" Name="Play_DB_Synth_2D_Os_p400" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="509538054"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3266186833" Name="Play_DB_Synth_400Hz_3D_Lp" MaxAttenuation="20" DurationType="Unknown">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="337734695"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="2826881650" Name="RTPC_MarioSpeed"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2678230316" Name="Levels">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2673545491" Name="ST_Level_104"/>
+						<State Id="2673545492" Name="ST_Level_103"/>
+						<State Id="2673545493" Name="ST_Level_102"/>
+						<State Id="2673545494" Name="ST_Level_101"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3891672790" Name="MarioState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1268394730" Name="ST_MarioLarge"/>
+						<State Id="2935428005" Name="ST_MarioStar"/>
+						<State Id="3280622839" Name="ST_MarioDead"/>
+						<State Id="3407194134" Name="ST_MarioSmall"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F0151075-35AC-3784-61DF-352452768A14}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="2826881650" Name="RTPC_MarioSpeed"/>
+				<GameParameter Id="3058023719" Name="RTPC_TimeLeft"/>
+				<GameParameter Id="3729505769" Name="TimeOfDay"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1705516017" Name="DayNight">
+					<States>
+						<State Id="311764537" Name="Day"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1011622525" Name="Night"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2055629040" Name="MarioLives">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="826997356" Name="ST_MarioLive_02"/>
+						<State Id="826997357" Name="ST_MarioLive_03"/>
+						<State Id="826997358" Name="ST_MarioLive_00"/>
+						<State Id="826997359" Name="ST_MarioLive_01"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2678230316" Name="Levels">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2673545491" Name="ST_Level_104"/>
+						<State Id="2673545492" Name="ST_Level_103"/>
+						<State Id="2673545493" Name="ST_Level_102"/>
+						<State Id="2673545494" Name="ST_Level_101"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3891672790" Name="MarioState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1268394730" Name="ST_MarioLarge"/>
+						<State Id="2935428005" Name="ST_MarioStar"/>
+						<State Id="3280622839" Name="ST_MarioDead"/>
+						<State Id="3407194134" Name="ST_MarioSmall"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="206060290" Name="SwitchGroup">
+					<Switches>
+						<Switch Id="833827773" Name="DB_Switch_Two"/>
+						<Switch Id="1220551583" Name="DB_Switch_One"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{F25A044A-2353-EA37-F231-A18224EB0BFC}</FileHash>
+</SoundBanksInfo>
