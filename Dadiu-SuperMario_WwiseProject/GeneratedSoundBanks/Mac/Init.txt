@@ -3,6 +3,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2055629040	MarioLives			\GameStates\MarioLives	
 	2678230316	Levels			\GameStates\Levels	
 	3891672790	MarioState			\GameStates\MarioState	
+	4091656514	GameState			\TEAM1UNIT\GameState	
 
 State	ID	Name	State Group			Notes
 	311764537	Day	DayNight			
@@ -23,6 +24,9 @@ State	ID	Name	State Group			Notes
 	2935428005	ST_MarioStar	MarioState			
 	3280622839	ST_MarioDead	MarioState			
 	3407194134	ST_MarioSmall	MarioState			
+	89505537	GamePlay	GameState			
+	748895195	None	GameState			
+	4158285989	GameOver	GameState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

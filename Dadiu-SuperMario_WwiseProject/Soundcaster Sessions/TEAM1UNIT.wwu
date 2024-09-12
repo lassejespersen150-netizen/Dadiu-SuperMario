@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{264DDA7A-F814-434A-8165-136015C902BE}" SchemaVersion="119">
+	<SoundcasterSessions>
+		<WorkUnit Name="TEAM1UNIT" ID="{264DDA7A-F814-434A-8165-136015C902BE}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{FE0F1FAF-F0D4-4E3A-AE9D-3E2F0AB8D566}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_EnemyDies" ID="{7F62EFDA-8B18-4CA1-9647-162EE18D2C71}" WorkUnitID="{1A91741A-B6D1-41A0-AB5E-52A04E2C7FC3}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SW_Jump" ID="{ECD48BD2-01B1-437A-9A56-EFC527058022}" WorkUnitID="{1A91741A-B6D1-41A0-AB5E-52A04E2C7FC3}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_pickup_coin" ID="{27C82648-F138-49A4-9EB9-B4140FD411B8}" WorkUnitID="{1A91741A-B6D1-41A0-AB5E-52A04E2C7FC3}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Level101" ID="{52CDB955-A5C5-4EED-88A5-FEC7A04BD239}" WorkUnitID="{5BFE89BA-852C-4B44-8206-423618247DE9}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_pickup_powerup" ID="{46537C85-0279-4438-9122-69DCC43FE931}" WorkUnitID="{1A91741A-B6D1-41A0-AB5E-52A04E2C7FC3}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_PlayMainPlaylist" ID="{32D85C48-9951-4764-9044-F9D0506F0C8B}" WorkUnitID="{5BFE89BA-852C-4B44-8206-423618247DE9}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_pipe_enter" ID="{E76DC9AA-CBF0-400B-BE31-40EA4BE801E9}" WorkUnitID="{1A91741A-B6D1-41A0-AB5E-52A04E2C7FC3}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SW_Block" ID="{066F3EE1-F92D-40B1-B823-7C4216836FD8}" WorkUnitID="{1A91741A-B6D1-41A0-AB5E-52A04E2C7FC3}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="DB_Switch_Two" ID="{2571B26D-60E5-47DC-8F17-80DEC28D94BB}"/>
+						<CurrentSwitchRef Name="Break" ID="{C9834F18-C162-40D9-97B0-CBF92CB30108}"/>
+						<CurrentSwitchRef Name="Big" ID="{05A3C91E-5183-411D-AF19-C8F3923C4FB2}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

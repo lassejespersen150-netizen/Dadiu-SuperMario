@@ -38,6 +38,18 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="smb_bump" ID="{48575ABD-BD53-4DF7-8157-3ADB74EFDE95}">
+											<Language>SFX</Language>
+											<AudioFile>smb_bump.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="218579439"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="smb_bump" ID="{48575ABD-BD53-4DF7-8157-3ADB74EFDE95}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Block_break" ID="{B2403EA0-EC46-4E97-ACBE-E543F07CEE0C}" ShortID="832846798">
 									<ReferenceList>
@@ -48,6 +60,18 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="smb_breakblock" ID="{3EBB917D-944F-40A2-A87B-02ED1EE54095}">
+											<Language>SFX</Language>
+											<AudioFile>smb_breakblock.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417637269"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="smb_breakblock" ID="{3EBB917D-944F-40A2-A87B-02ED1EE54095}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
@@ -96,16 +120,18 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 								</Reference>
 							</ReferenceList>
-						</Sound>
-						<Sound Name="pipe_exit" ID="{E677A149-6BB7-47B1-9B25-611F3C49EBB0}" ShortID="297301520">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
-								</Reference>
-							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="smb_pipe_powerdown" ID="{3337498D-1727-4F6C-AAF9-D3378975D5E2}">
+									<Language>SFX</Language>
+									<AudioFile>smb_pipe_powerdown.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="796469194"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="smb_pipe_powerdown" ID="{3337498D-1727-4F6C-AAF9-D3378975D5E2}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>

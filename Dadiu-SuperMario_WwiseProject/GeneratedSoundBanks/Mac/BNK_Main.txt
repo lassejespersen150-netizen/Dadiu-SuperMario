@@ -60,6 +60,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	560563047	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_200Hz_2D_Lp\Synth One	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	149108280	Track	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\Mac\SFX\(01-41) Super Mario Bros. 1,2,VS_3B7822A8.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_MainSwitch\MUS_Levels_Sw\MUS_Level101_Sw\MUS_Level01_Playlist\MUS_101_B2\Track		5175990
-	892213981	Track	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\Mac\SFX\(13-41) Super Mario Bros. 1,2,VS_3B7822A8.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_MainSwitch\MUS_Levels_Sw\MUS_Level102_Sw_01\MUS_Mario_Alive\Track		7858676
+	149108280	Track	Y:\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\Mac\SFX\(01-41) Super Mario Bros. 1,2,VS_3B7822A8.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_MainSwitch\MUS_Levels_Sw\MUS_Level101_Sw\MUS_Level01_Playlist\MUS_101_B2\Track		5175990
+	892213981	Track	Y:\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\Mac\SFX\(13-41) Super Mario Bros. 1,2,VS_3B7822A8.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_MainSwitch\MUS_Levels_Sw\MUS_Level102_Sw_01\MUS_Mario_Alive\Track		7858676
 

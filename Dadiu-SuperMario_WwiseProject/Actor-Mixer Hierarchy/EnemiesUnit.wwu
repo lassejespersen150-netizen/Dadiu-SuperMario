@@ -22,6 +22,18 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="smb_kick" ID="{B832E2B6-D8CD-4F0F-9D01-1C445794F237}">
+									<Language>SFX</Language>
+									<AudioFile>smb_kick.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="440737474"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="smb_kick" ID="{B832E2B6-D8CD-4F0F-9D01-1C445794F237}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>

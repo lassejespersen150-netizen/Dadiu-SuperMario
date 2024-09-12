@@ -14,23 +14,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_pickup_flower" ID="{46537C85-0279-4438-9122-69DCC43FE931}">
+				<Event Name="Play_pickup_powerup" ID="{46537C85-0279-4438-9122-69DCC43FE931}">
 					<ChildrenList>
 						<Action Name="" ID="{9FA27648-5BEF-46E0-AFB7-C1559A654149}" ShortID="227041911">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="pickup_flower" ID="{D86BF16B-D4D1-4B23-8A20-4ECD198EF03B}" WorkUnitID="{C9AB1E3E-7BC5-450D-B804-B3053ACF4D83}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_pickup_star" ID="{7D46AD9B-B4C6-48E5-9677-200D2D255085}">
-					<ChildrenList>
-						<Action Name="" ID="{507DD045-97D4-46D2-B434-9CA4C94A4C49}" ShortID="571280869">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="pickup_star" ID="{E9DFB989-AC21-43A7-AAD3-9AB9693D82D3}" WorkUnitID="{C9AB1E3E-7BC5-450D-B804-B3053ACF4D83}"/>
+									<ObjectRef Name="pickup_powerup" ID="{D86BF16B-D4D1-4B23-8A20-4ECD198EF03B}" WorkUnitID="{C9AB1E3E-7BC5-450D-B804-B3053ACF4D83}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -47,34 +36,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_pickup_mushroom" ID="{48D0D175-4134-4006-87F4-AD7902992B06}">
-					<ChildrenList>
-						<Action Name="" ID="{1BF753BD-255E-4A04-BB70-4C9454DCE4B5}" ShortID="760313035">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="pickup_mushroom" ID="{BAFE984B-1DE2-4FE9-AB80-C6EC78265A5C}" WorkUnitID="{C9AB1E3E-7BC5-450D-B804-B3053ACF4D83}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_pipe_enter" ID="{E76DC9AA-CBF0-400B-BE31-40EA4BE801E9}">
 					<ChildrenList>
 						<Action Name="" ID="{20F99865-D62A-43F0-96CD-812C0C73D518}" ShortID="520502870">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="pipe_enter" ID="{3025D5ED-9E5F-4084-85BB-647D85813BC7}" WorkUnitID="{945006D3-281D-425A-B5E6-26AE3C5225D6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_pipe_exit" ID="{75A9F624-77E0-4B12-A4C1-1A430278B50A}">
-					<ChildrenList>
-						<Action Name="" ID="{06CAB3FA-4239-49BE-9507-F221DBF31706}" ShortID="138803254">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="pipe_exit" ID="{E677A149-6BB7-47B1-9B25-611F3C49EBB0}" WorkUnitID="{945006D3-281D-425A-B5E6-26AE3C5225D6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

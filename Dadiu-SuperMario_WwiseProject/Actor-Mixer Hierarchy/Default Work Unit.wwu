@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BDFF0EB7-5FA4-4319-B674-260A2555852E}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{BDFF0EB7-5FA4-4319-B674-260A2555852E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BDFF0EB7-5FA4-4319-B674-260A2555852E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="smb_powerup" ID="{85AAC75D-05A2-46CE-A300-A59469991469}" ShortID="106080704">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="smb_powerup" ID="{4047A8B1-387F-4F0F-87F2-BC6084C231B1}">
+							<Language>SFX</Language>
+							<AudioFile>smb_powerup.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="894211471"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="smb_powerup" ID="{4047A8B1-387F-4F0F-87F2-BC6084C231B1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
