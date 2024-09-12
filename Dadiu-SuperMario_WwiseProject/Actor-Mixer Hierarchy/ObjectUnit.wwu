@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{945006D3-281D-425A-B5E6-26AE3C5225D6}" SchemaVersion="119" RootDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" ParentDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}">
+	<AudioObjects>
+		<WorkUnit Name="ObjectUnit" ID="{945006D3-281D-425A-B5E6-26AE3C5225D6}" OwnerID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Mixer_block" ID="{49F0ADA4-C213-4D9E-861A-4DA495D14AEB}" ShortID="612928199">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="SW_Block" ID="{4E1FAA44-04B5-427B-8C46-661DF8DC1365}" ShortID="369284660">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Impact" ID="{6A22FE6B-DF5A-4D06-8FE4-1FB47F43EA96}" WorkUnitID="{721D2C02-F569-4FAF-8FF7-1C65FF8141AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="SW_block" ID="{5921575B-9B24-4B08-914F-A8516702DCD5}" WorkUnitID="{721D2C02-F569-4FAF-8FF7-1C65FF8141AD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Block_impact" ID="{1B8AD6B2-77DB-45BE-AD36-7A0262A1FB6B}" ShortID="184501979">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="smb_bump" ID="{48575ABD-BD53-4DF7-8157-3ADB74EFDE95}">
+											<Language>SFX</Language>
+											<AudioFile>smb_bump.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="218579439"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="smb_bump" ID="{48575ABD-BD53-4DF7-8157-3ADB74EFDE95}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Block_break" ID="{B2403EA0-EC46-4E97-ACBE-E543F07CEE0C}" ShortID="832846798">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="smb_breakblock" ID="{3EBB917D-944F-40A2-A87B-02ED1EE54095}">
+											<Language>SFX</Language>
+											<AudioFile>smb_breakblock.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417637269"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="smb_breakblock" ID="{3EBB917D-944F-40A2-A87B-02ED1EE54095}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Block_break" ID="{B2403EA0-EC46-4E97-ACBE-E543F07CEE0C}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Block_impact" ID="{1B8AD6B2-77DB-45BE-AD36-7A0262A1FB6B}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Break" ID="{C9834F18-C162-40D9-97B0-CBF92CB30108}"/>
+										<ItemList>
+											<ItemRef Name="Block_break" ID="{B2403EA0-EC46-4E97-ACBE-E543F07CEE0C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Impact" ID="{6A22FE6B-DF5A-4D06-8FE4-1FB47F43EA96}"/>
+										<ItemList>
+											<ItemRef Name="Block_impact" ID="{1B8AD6B2-77DB-45BE-AD36-7A0262A1FB6B}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Mixer_pipe" ID="{AB1C1747-0972-4573-B78E-AF84F2C2AC04}" ShortID="190946666">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="pipe_enter" ID="{3025D5ED-9E5F-4084-85BB-647D85813BC7}" ShortID="564435457">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="smb_pipe_powerdown" ID="{3337498D-1727-4F6C-AAF9-D3378975D5E2}">
+									<Language>SFX</Language>
+									<AudioFile>smb_pipe_powerdown.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="796469194"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="smb_pipe_powerdown" ID="{3337498D-1727-4F6C-AAF9-D3378975D5E2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

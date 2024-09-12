@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9FFB9F88-79AA-4737-8137-BFA0F11C8F81}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="ActorMixerUnit" ID="{9FFB9F88-79AA-4737-8137-BFA0F11C8F81}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="SW_Mario" ID="{BF5D6D14-9D2F-41FD-95D9-757D0C42366F}" ShortID="237543032">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+						</Reference>
+					</ReferenceList>
+					<GroupingInfo/>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B595745C-817B-4A79-AFD8-5CC96B641617}" SchemaVersion="119" RootDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" ParentDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}">
+	<AudioObjects>
+		<WorkUnit Name="EnemiesUnit" ID="{B595745C-817B-4A79-AFD8-5CC96B641617}" OwnerID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="EnemyMixer" ID="{B6790F56-DFFA-4B1E-9451-4FD9AEEFEA68}" ShortID="103555675">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="EnemyDies" ID="{BE7C32CB-AE30-4197-A14E-7F839A50A1CE}" ShortID="125117269">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="smb_kick" ID="{B832E2B6-D8CD-4F0F-9D01-1C445794F237}">
+									<Language>SFX</Language>
+									<AudioFile>smb_kick.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="440737474"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="smb_kick" ID="{B832E2B6-D8CD-4F0F-9D01-1C445794F237}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

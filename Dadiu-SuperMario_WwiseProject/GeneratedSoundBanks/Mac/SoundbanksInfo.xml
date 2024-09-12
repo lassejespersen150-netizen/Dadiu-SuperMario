@@ -9,7 +9,113 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1020463552" Type="User" Language="SFX" Hash="{0A74979D-1A06-195C-D6AC-007E40121421}">
+		<SoundBank Id="573035958" Type="User" Language="SFX" Hash="{0D2C9505-6EDA-2525-36B8-472A34B0A48A}">
+			<ShortName>TEAM1SoundBAnk</ShortName>
+			<Path>TEAM1SoundBAnk.bnk</Path>
+			<Media>
+				<File Id="84202536" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>smb_coin.wav</ShortName>
+					<CachePath>SFX/smb_coin_B032A71E.wem</CachePath>
+				</File>
+				<File Id="218579439" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>smb_bump.wav</ShortName>
+					<CachePath>SFX/smb_bump_B032A71E.wem</CachePath>
+				</File>
+				<File Id="417637269" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>smb_breakblock.wav</ShortName>
+					<CachePath>SFX/smb_breakblock_B032A71E.wem</CachePath>
+				</File>
+				<File Id="440737474" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>smb_kick.wav</ShortName>
+					<CachePath>SFX/smb_kick_B032A71E.wem</CachePath>
+				</File>
+				<File Id="603146149" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>smb_jump-super.wav</ShortName>
+					<CachePath>SFX/smb_jump-super_B032A71E.wem</CachePath>
+				</File>
+				<File Id="747135558" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>smb_jump-small.wav</ShortName>
+					<CachePath>SFX/smb_jump-small_B032A71E.wem</CachePath>
+				</File>
+				<File Id="796469194" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>smb_pipe_powerdown.wav</ShortName>
+					<CachePath>SFX/smb_pipe_powerdown_B032A71E.wem</CachePath>
+				</File>
+				<File Id="894211471" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>smb_powerup.wav</ShortName>
+					<CachePath>SFX/smb_powerup_B032A71E.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1049787687" Name="Play_EnemyDies" DurationType="OneShot" DurationMin="0.18117914" DurationMax="0.18117914">
+					<MediaRefs>
+						<MediaRef Id="440737474"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1785783294" Name="Play_pickup_coin" DurationType="OneShot" DurationMin="0.9454875" DurationMax="0.9454875">
+					<MediaRefs>
+						<MediaRef Id="84202536"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3450217415" Name="Play_pickup_powerup" DurationType="OneShot" DurationMin="0.989161" DurationMax="0.989161">
+					<MediaRefs>
+						<MediaRef Id="894211471"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="55862385" Name="Play_pipe_enter" DurationType="OneShot" DurationMin="0.784127" DurationMax="0.784127">
+					<MediaRefs>
+						<MediaRef Id="796469194"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3889222070" Name="Play_SW_Block" DurationType="OneShot" DurationMin="0.21469387" DurationMax="0.5472109">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3347557693" Id="941442534"/>
+							<MediaRefs>
+								<MediaRef Id="417637269"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3347557693" Id="3257506471" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="218579439"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="4224832959" Name="Play_SW_Jump" DurationType="OneShot" DurationMin="0.58399093" DurationMax="0.5901134">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1608312894" Id="647611021"/>
+							<MediaRefs>
+								<MediaRef Id="603146149"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1608312894" Id="1846755610" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="747135558"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1608312894" Name="SW_PlayerSize">
+					<Switches>
+						<Switch Id="647611021" Name="Big"/>
+						<Switch Id="1846755610" Name="Small"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3347557693" Name="SW_block">
+					<Switches>
+						<Switch Id="941442534" Name="Break"/>
+						<Switch Id="3257506471" Name="Impact"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1020463552" Type="User" Language="SFX" Hash="{45D8632A-C7D6-3DCE-00A8-A9E79EB586A3}">
 			<ShortName>BNK_Main</ShortName>
 			<Path>BNK_Main.bnk</Path>
 			<Media>
@@ -266,7 +372,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F0151075-35AC-3784-61DF-352452768A14}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{574EED21-BBE2-2413-AC8A-17993632F85E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -318,6 +424,13 @@
 						<State Id="3407194134" Name="ST_MarioSmall"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="4091656514" Name="GameState">
+					<States>
+						<State Id="89505537" Name="GamePlay"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="4158285989" Name="GameOver"/>
+					</States>
+				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="206060290" Name="SwitchGroup">
@@ -326,8 +439,20 @@
 						<Switch Id="1220551583" Name="DB_Switch_One"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="1608312894" Name="SW_PlayerSize">
+					<Switches>
+						<Switch Id="647611021" Name="Big"/>
+						<Switch Id="1846755610" Name="Small"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3347557693" Name="SW_block">
+					<Switches>
+						<Switch Id="941442534" Name="Break"/>
+						<Switch Id="3257506471" Name="Impact"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F25A044A-2353-EA37-F231-A18224EB0BFC}</FileHash>
+	<FileHash>{0E1AE1D7-9609-C9D9-027C-9D6A23C476E9}</FileHash>
 </SoundBanksInfo>
