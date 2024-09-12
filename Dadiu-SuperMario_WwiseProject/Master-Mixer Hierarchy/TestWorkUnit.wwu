@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E809A722-B2F4-41C5-838F-D019CF0A11C7}" SchemaVersion="119">
+	<Busses>
+		<WorkUnit Name="TestWorkUnit" ID="{E809A722-B2F4-41C5-838F-D019CF0A11C7}" PersistMode="Standalone"/>
+	</Busses>
+</WwiseDocument>
