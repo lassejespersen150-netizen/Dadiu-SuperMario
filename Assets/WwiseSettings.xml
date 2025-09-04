@@ -12,7 +12,7 @@
     <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
     <WwiseInstallationPathMac></WwiseInstallationPathMac>
     <WwiseInstallationPathWindows>C:\Apps\Wwise2024.1.7.8863</WwiseInstallationPathWindows>
-    <WwiseProjectPath>../../Dadi2025-SuperMario/Dadiu-SuperMario_WwiseProject/Dadiu-SuperMario_WwiseProject.wproj</WwiseProjectPath>
+    <WwiseProjectPath>../../Dadiu-SuperMario/Dadiu-SuperMario_WwiseProject/Dadiu-SuperMario_WwiseProject.wproj</WwiseProjectPath>
     <UseWaapi>true</UseWaapi>
     <WaapiPort>8080</WaapiPort>
     <WaapiIP>127.0.0.1</WaapiIP>

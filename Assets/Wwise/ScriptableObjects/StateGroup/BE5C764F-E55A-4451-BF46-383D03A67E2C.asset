@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee94072565e8994f89b4744a99c2e85, type: 3}
   m_Name: BE5C764F-E55A-4451-BF46-383D03A67E2C
   m_EditorClassIdentifier: 
-  objectName: MarioState
-  id: 3891672790
+  objectName: MarioSize
+  id: 866639936
   guid: BE5C764F-E55A-4451-BF46-383D03A67E2C

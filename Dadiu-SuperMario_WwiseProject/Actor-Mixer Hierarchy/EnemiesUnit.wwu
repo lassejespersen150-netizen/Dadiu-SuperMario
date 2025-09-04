@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{B595745C-817B-4A79-AFD8-5CC96B641617}" SchemaVersion="123" RootDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" ParentDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}">
+<WwiseDocument Type="WorkUnit" ID="{94BB964B-D572-4C1E-B9A6-71E82ABC6E5E}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="EnemiesUnit" ID="{B595745C-817B-4A79-AFD8-5CC96B641617}" OwnerID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" PersistMode="Nested">
+		<WorkUnit Name="EnemiesUnit" ID="{94BB964B-D572-4C1E-B9A6-71E82ABC6E5E}" PersistMode="Standalone">
 			<ChildrenList>
-				<ActorMixer Name="EnemyMixer" ID="{B6790F56-DFFA-4B1E-9451-4FD9AEEFEA68}" ShortID="103555675">
+				<ActorMixer Name="EnemyMixer" ID="{479C956F-D84A-440A-8067-41C8FC68333E}" ShortID="103555676">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
@@ -13,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="EnemyDies" ID="{BE7C32CB-AE30-4197-A14E-7F839A50A1CE}" ShortID="125117269">
+						<Sound Name="EnemyDies" ID="{05FC7BFD-92F9-4A05-A7AC-E0559B37350E}" ShortID="125117270">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
@@ -23,7 +23,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="smb_kick" ID="{B832E2B6-D8CD-4F0F-9D01-1C445794F237}">
+								<AudioFileSource Name="smb_kick" ID="{9549B16C-8FC3-4EC1-A074-888DC8FAAC03}">
 									<Language>SFX</Language>
 									<AudioFile>smb_kick.wav</AudioFile>
 									<MediaIDList>
@@ -32,7 +32,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="smb_kick" ID="{B832E2B6-D8CD-4F0F-9D01-1C445794F237}" Platform="Linked"/>
+								<ActiveSource Name="smb_kick" ID="{9549B16C-8FC3-4EC1-A074-888DC8FAAC03}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

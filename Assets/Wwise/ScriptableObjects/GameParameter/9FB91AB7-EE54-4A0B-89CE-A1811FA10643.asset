@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7403d19dc6b274298389f56fa17c4c, type: 3}
   m_Name: 9FB91AB7-EE54-4A0B-89CE-A1811FA10643
   m_EditorClassIdentifier: 
-  objectName: RTPC_TimeLeft
-  id: 3058023719
+  objectName: TimeLeft
+  id: 2486342905
   guid: 9FB91AB7-EE54-4A0B-89CE-A1811FA10643

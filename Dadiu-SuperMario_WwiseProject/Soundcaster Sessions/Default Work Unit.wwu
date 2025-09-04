@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="MusicCaster" ID="{42E57D5A-D234-4180-BE15-706894DF5C0D}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Overworld_1-1" ID="{C7406E71-750B-4677-9BD0-069B1FF715D9}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+							<ObjectRef Name="Overworld_1-1" ID="{C7406E71-750B-4677-9BD0-069B1FF715D9}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
@@ -16,15 +16,11 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}"/>
 						<CurrentStateRef Name="ST_MarioLive_00" ID="{FCA76125-2630-4155-A204-5AB8B3E1178C}"/>
-						<CurrentStateRef Name="GamePlay" ID="{EFD02A02-7F83-4F41-A933-F0C0F586ED4E}"/>
 						<CurrentStateRef Name="ST_Level_101" ID="{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="DB_Switch_Two" ID="{2571B26D-60E5-47DC-8F17-80DEC28D94BB}"/>
-						<CurrentSwitchRef Name="Break" ID="{C9834F18-C162-40D9-97B0-CBF92CB30108}"/>
-						<CurrentSwitchRef Name="Big" ID="{05A3C91E-5183-411D-AF19-C8F3923C4FB2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -342,27 +342,6 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="DayNight" ID="{973C3DD8-15BA-44DF-91AA-FCA495C43A88}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="Night" ID="{FFA973F7-CDD0-421D-B3AF-B06F2DF40F93}"/>
-										<CustomState Name="" ID="{12689F17-C907-4115-B602-59E726A83704}" ShortID="466789271">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="64"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="Day" ID="{F6824946-CA3F-4EB4-BD82-F931449AD7A6}"/>
-										<CustomState Name="" ID="{26990D20-4CBD-40B8-B3C6-49D133CB05AE}" ShortID="955248287"/>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
@@ -988,7 +967,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="RTPC_MarioSpeed" ID="{966CA1C4-99E1-47D1-875D-46278331CCA5}" WorkUnitID="{4C6CF63E-8105-470C-A820-EC50E4FE9245}"/>
+														<ObjectRef Name="MarioSpeed" ID="{966CA1C4-99E1-47D1-875D-46278331CCA5}" WorkUnitID="{4C6CF63E-8105-470C-A820-EC50E4FE9245}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>

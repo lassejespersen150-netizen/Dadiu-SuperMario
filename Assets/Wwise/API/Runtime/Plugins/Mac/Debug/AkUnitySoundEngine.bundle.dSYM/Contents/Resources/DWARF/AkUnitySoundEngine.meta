@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 846d2902f8b275143b5a72862085b9a2
+<<<<<<<< HEAD:Assets/Wwise/API/Runtime/Plugins/Mac/Debug/AkUnitySoundEngine.bundle.dSYM/Contents/Resources/Relocations/aarch64/AkUnitySoundEngine.yml.meta
+guid: 5852eb949f5ceeb438b080bfb4f8c855
+========
+guid: cad343302d48e604eba55d6e631928ca
+>>>>>>>> WwiseImplemented:Assets/Wwise/API/Runtime/Plugins/Mac/Debug/AkUnitySoundEngine.bundle.dSYM/Contents/Resources/DWARF/AkUnitySoundEngine.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

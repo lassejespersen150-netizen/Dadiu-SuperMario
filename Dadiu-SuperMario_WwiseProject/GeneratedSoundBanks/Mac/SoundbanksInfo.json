@@ -18,11 +18,27 @@
     "Type": "User",
     "GUID": "{4FBB0A77-9B42-4320-BFC9-CA6642C05ABA}",
     "Language": "SFX",
-    "Hash": "{EF0FB272-4EFD-9C3E-FEEB-9323C0DD055F}",
+    "Hash": "{AD41D30D-3A79-59DF-CFA6-057DD14EEE1E}",
     "ObjectPath": "\\SoundBanks\\Soundbanks\\BNK_Main",
     "ShortName": "BNK_Main",
     "Path": "BNK_Main.bnk",
     "Media": [
+     {
+      "Id": "42424667",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ENV\\env_coin_pickup_01.wav",
+      "CachePath": "81/{8139EA57-345F-8D52-D671-64BB1233BA07}.wem"
+     },
+     {
+      "Id": "69380797",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ENV\\env_brick_break_04.wav",
+      "CachePath": "C5/{C53C4F21-6660-88E4-369E-A9CF1ACD8A78}.wem"
+     },
      {
       "Id": "149108280",
       "Language": "SFX",
@@ -32,12 +48,44 @@
       "CachePath": "B6/{B688A1F1-6DDC-B07D-699C-C183C5607A37}.wem"
      },
      {
+      "Id": "370438222",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ENV\\env_brick_break_02.wav",
+      "CachePath": "19/{19F6A1B0-1E7F-041A-C1A5-55B345878C99}.wem"
+     },
+     {
+      "Id": "746759707",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ENV\\env_brick_break_05.wav",
+      "CachePath": "7F/{7FE499B2-ED34-6D34-332B-BA3252A1A221}.wem"
+     },
+     {
       "Id": "892213981",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "(13-41) Super Mario Bros. 1,2,VS.wav",
       "CachePath": "84/{845ACE36-3DEB-A0B1-0976-41432FAD99E9}.wem"
+     },
+     {
+      "Id": "907230537",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ENV\\env_brick_break_01.wav",
+      "CachePath": "AF/{AFD48077-F490-D296-5740-B9E9DB51D883}.wem"
+     },
+     {
+      "Id": "1048884391",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ENV\\env_brick_break_03.wav",
+      "CachePath": "98/{98DE46FB-D5A3-68F4-AEA8-B585A082196B}.wem"
      }
     ],
     "Plugins": {
@@ -104,40 +152,42 @@
     },
     "Events": [
      {
-      "Id": "1048818656",
-      "Name": "EVT_MarioAlive",
-      "ObjectPath": "\\Events\\MarioStates\\EVT_MarioAlive",
-      "GUID": "{B1FB8FAE-8C53-4E95-9BA9-5501A8CCCA30}",
-      "MaxAttenuation": "0",
+      "Id": "951086285",
+      "Name": "BrickBreak",
+      "ObjectPath": "\\Events\\Sjúrður\\BrickBreak",
+      "GUID": "{5F8DD258-4259-442C-918A-42B936F56240}",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
-      "ActionSetState": [
+      "DurationMin": "2",
+      "DurationMax": "2",
+      "MediaRefs": [
        {
-        "GroupId": "3891672790",
-        "Id": "3407194134",
-        "Name": "ST_MarioSmall",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\ST_MarioSmall",
-        "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"
+        "Id": "69380797"
+       },
+       {
+        "Id": "370438222"
+       },
+       {
+        "Id": "746759707"
+       },
+       {
+        "Id": "907230537"
+       },
+       {
+        "Id": "1048884391"
        }
       ]
      },
      {
-      "Id": "2306134771",
-      "Name": "EVT_MarioDead",
-      "ObjectPath": "\\Events\\MarioStates\\EVT_MarioDead",
-      "GUID": "{1BB3792C-EEE4-4BB8-84D2-5596A5A49AB2}",
-      "MaxAttenuation": "0",
+      "Id": "2752428610",
+      "Name": "CoinPickup",
+      "ObjectPath": "\\Events\\Sjúrður\\CoinPickup",
+      "GUID": "{609A07D6-0A88-49B7-98AC-C303C90F1734}",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
-      "ActionSetState": [
+      "DurationMin": "0.7812925",
+      "DurationMax": "0.7812925",
+      "MediaRefs": [
        {
-        "GroupId": "3891672790",
-        "Id": "3280622839",
-        "Name": "ST_MarioDead",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\ST_MarioDead",
-        "GUID": "{B8856D92-7800-449E-8763-F6D2F43E1D6B}"
+        "Id": "42424667"
        }
       ]
      },
@@ -189,7 +239,7 @@
        {
         "SwitchValue": {
          "GroupType": "State",
-         "GroupId": "3891672790",
+         "GroupId": "866639936",
          "Id": "0",
          "GUID": "{BE5C764F-E55A-4451-BF46-383D03A67E2C}"
         },
@@ -205,21 +255,8 @@
            {
             "SwitchValue": {
              "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "3280622839",
-             "GUID": "{B8856D92-7800-449E-8763-F6D2F43E1D6B}"
-            },
-            "MediaRefs": [
-             {
-              "Id": "149108280"
-             }
-            ]
-           },
-           {
-            "SwitchValue": {
-             "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "1268394730",
+             "GroupId": "866639936",
+             "Id": "1915863002",
              "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
             },
             "MediaRefs": [
@@ -231,8 +268,8 @@
            {
             "SwitchValue": {
              "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "3407194134",
+             "GroupId": "866639936",
+             "Id": "2458678061",
              "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"
             },
             "MediaRefs": [
@@ -254,21 +291,8 @@
            {
             "SwitchValue": {
              "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "3280622839",
-             "GUID": "{B8856D92-7800-449E-8763-F6D2F43E1D6B}"
-            },
-            "MediaRefs": [
-             {
-              "Id": "149108280"
-             }
-            ]
-           },
-           {
-            "SwitchValue": {
-             "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "1268394730",
+             "GroupId": "866639936",
+             "Id": "1915863002",
              "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
             },
             "MediaRefs": [
@@ -290,8 +314,8 @@
            {
             "SwitchValue": {
              "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "3407194134",
+             "GroupId": "866639936",
+             "Id": "2458678061",
              "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"
             },
             "MediaRefs": [
@@ -317,7 +341,7 @@
        {
         "SwitchValue": {
          "GroupType": "State",
-         "GroupId": "3891672790",
+         "GroupId": "866639936",
          "Id": "748895195",
          "GUID": "{3E17C817-C60B-4D39-987A-9E75AABF8251}"
         },
@@ -333,21 +357,8 @@
            {
             "SwitchValue": {
              "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "3280622839",
-             "GUID": "{B8856D92-7800-449E-8763-F6D2F43E1D6B}"
-            },
-            "MediaRefs": [
-             {
-              "Id": "149108280"
-             }
-            ]
-           },
-           {
-            "SwitchValue": {
-             "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "1268394730",
+             "GroupId": "866639936",
+             "Id": "1915863002",
              "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
             },
             "MediaRefs": [
@@ -359,8 +370,8 @@
            {
             "SwitchValue": {
              "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "3407194134",
+             "GroupId": "866639936",
+             "Id": "2458678061",
              "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"
             },
             "MediaRefs": [
@@ -382,21 +393,8 @@
            {
             "SwitchValue": {
              "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "3280622839",
-             "GUID": "{B8856D92-7800-449E-8763-F6D2F43E1D6B}"
-            },
-            "MediaRefs": [
-             {
-              "Id": "149108280"
-             }
-            ]
-           },
-           {
-            "SwitchValue": {
-             "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "1268394730",
+             "GroupId": "866639936",
+             "Id": "1915863002",
              "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
             },
             "MediaRefs": [
@@ -418,8 +416,8 @@
            {
             "SwitchValue": {
              "GroupType": "State",
-             "GroupId": "3891672790",
-             "Id": "3407194134",
+             "GroupId": "866639936",
+             "Id": "2458678061",
              "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"
             },
             "MediaRefs": [
@@ -602,6 +600,32 @@
     ],
     "StateGroups": [
      {
+      "Id": "866639936",
+      "Name": "MarioSize",
+      "ObjectPath": "\\States\\MarioStates\\MarioSize",
+      "GUID": "{BE5C764F-E55A-4451-BF46-383D03A67E2C}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\MarioStates\\MarioSize\\None",
+        "GUID": "{3E17C817-C60B-4D39-987A-9E75AABF8251}"
+       },
+       {
+        "Id": "1915863002",
+        "Name": "MarioSizeBig",
+        "ObjectPath": "\\States\\MarioStates\\MarioSize\\MarioSizeBig",
+        "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
+       },
+       {
+        "Id": "2458678061",
+        "Name": "MarioSizeSmall",
+        "ObjectPath": "\\States\\MarioStates\\MarioSize\\MarioSizeSmall",
+        "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"
+       }
+      ]
+     },
+     {
       "Id": "2678230316",
       "Name": "Levels",
       "ObjectPath": "\\States\\GameStates\\Levels",
@@ -638,44 +662,6 @@
         "GUID": "{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"
        }
       ]
-     },
-     {
-      "Id": "3891672790",
-      "Name": "MarioState",
-      "ObjectPath": "\\States\\GameStates\\MarioState",
-      "GUID": "{BE5C764F-E55A-4451-BF46-383D03A67E2C}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\None",
-        "GUID": "{3E17C817-C60B-4D39-987A-9E75AABF8251}"
-       },
-       {
-        "Id": "1268394730",
-        "Name": "ST_MarioLarge",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\ST_MarioLarge",
-        "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
-       },
-       {
-        "Id": "2935428005",
-        "Name": "ST_MarioStar",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\ST_MarioStar",
-        "GUID": "{1AC40DB2-2F79-4C08-BF8A-7DFB7CD269BC}"
-       },
-       {
-        "Id": "3280622839",
-        "Name": "ST_MarioDead",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\ST_MarioDead",
-        "GUID": "{B8856D92-7800-449E-8763-F6D2F43E1D6B}"
-       },
-       {
-        "Id": "3407194134",
-        "Name": "ST_MarioSmall",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\ST_MarioSmall",
-        "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"
-       }
-      ]
      }
     ]
    },
@@ -684,7 +670,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{BC1D604F-79E9-D4DD-6274-3B43A46E0BE4}",
+    "Hash": "{56FA2520-8809-B38C-09BD-1C01856AE7E0}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -710,13 +696,37 @@
     },
     "Busses": [
      {
+      "Id": "2680856269",
+      "Name": "Music_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Mix\\Music_Bus",
+      "GUID": "{B9C1E40E-2789-4B69-9FA6-35DCF36A5F9A}"
+     },
+     {
+      "Id": "3193046343",
+      "Name": "New Master Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\New Master Bus",
+      "GUID": "{5FB45733-0281-4DA5-81D9-1A3702772F3E}"
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music",
+      "GUID": "{51E79F4D-0B85-45A7-A545-0E2DCDC11C32}"
      }
     ],
     "GameParameters": [
+     {
+      "Id": "855296609",
+      "Name": "Wind_Intensity",
+      "ObjectPath": "\\Game Parameters\\Sjurdur\\Wind_Intensity",
+      "GUID": "{CC40CEFB-10AF-4158-8F5D-166BD1C4213E}"
+     },
      {
       "Id": "2252070993",
       "Name": "MarioJumpAir",
@@ -742,6 +752,12 @@
       "GUID": "{F595FAD7-C02E-449A-9E57-9BBB525AF95C}"
      },
      {
+      "Id": "2752428610",
+      "Name": "CoinPickup",
+      "ObjectPath": "\\Game Parameters\\Sjurdur\\CoinPickup",
+      "GUID": "{005B8D1B-DDC4-4C6F-90D5-A5B991CF0E48}"
+     },
+     {
       "Id": "3729505769",
       "Name": "TimeOfDay",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\TimeOfDay",
@@ -756,65 +772,65 @@
     ],
     "StateGroups": [
      {
-      "Id": "1705516017",
-      "Name": "DayNight",
-      "ObjectPath": "\\States\\GameStates\\DayNight",
-      "GUID": "{973C3DD8-15BA-44DF-91AA-FCA495C43A88}",
+      "Id": "866639936",
+      "Name": "MarioSize",
+      "ObjectPath": "\\States\\MarioStates\\MarioSize",
+      "GUID": "{BE5C764F-E55A-4451-BF46-383D03A67E2C}",
       "States": [
-       {
-        "Id": "311764537",
-        "Name": "Day",
-        "ObjectPath": "\\States\\GameStates\\DayNight\\Day",
-        "GUID": "{F6824946-CA3F-4EB4-BD82-F931449AD7A6}"
-       },
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\GameStates\\DayNight\\None",
-        "GUID": "{6AE72741-DD39-4A5D-AA89-CF7CB1689428}"
+        "ObjectPath": "\\States\\MarioStates\\MarioSize\\None",
+        "GUID": "{3E17C817-C60B-4D39-987A-9E75AABF8251}"
        },
        {
-        "Id": "1011622525",
-        "Name": "Night",
-        "ObjectPath": "\\States\\GameStates\\DayNight\\Night",
-        "GUID": "{FFA973F7-CDD0-421D-B3AF-B06F2DF40F93}"
+        "Id": "1915863002",
+        "Name": "MarioSizeBig",
+        "ObjectPath": "\\States\\MarioStates\\MarioSize\\MarioSizeBig",
+        "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
+       },
+       {
+        "Id": "2458678061",
+        "Name": "MarioSizeSmall",
+        "ObjectPath": "\\States\\MarioStates\\MarioSize\\MarioSizeSmall",
+        "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"
        }
       ]
      },
      {
       "Id": "2055629040",
       "Name": "MarioLives",
-      "ObjectPath": "\\States\\GameStates\\MarioLives",
+      "ObjectPath": "\\States\\MarioStates\\MarioLives",
       "GUID": "{7F3A3E64-93D3-4566-B395-B0C49DB9EA3D}",
       "States": [
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\GameStates\\MarioLives\\None",
+        "ObjectPath": "\\States\\MarioStates\\MarioLives\\None",
         "GUID": "{37B0DC00-19B7-470A-B20F-561DDC4372C5}"
        },
        {
         "Id": "826997356",
         "Name": "ST_MarioLive_02",
-        "ObjectPath": "\\States\\GameStates\\MarioLives\\ST_MarioLive_02",
+        "ObjectPath": "\\States\\MarioStates\\MarioLives\\ST_MarioLive_02",
         "GUID": "{78DB9B8C-D777-4C0B-9989-BC130DA4966D}"
        },
        {
         "Id": "826997357",
         "Name": "ST_MarioLive_03",
-        "ObjectPath": "\\States\\GameStates\\MarioLives\\ST_MarioLive_03",
+        "ObjectPath": "\\States\\MarioStates\\MarioLives\\ST_MarioLive_03",
         "GUID": "{95883DBB-D04F-49BD-BA82-1E2C6F353C0A}"
        },
        {
         "Id": "826997358",
         "Name": "ST_MarioLive_00",
-        "ObjectPath": "\\States\\GameStates\\MarioLives\\ST_MarioLive_00",
+        "ObjectPath": "\\States\\MarioStates\\MarioLives\\ST_MarioLive_00",
         "GUID": "{FCA76125-2630-4155-A204-5AB8B3E1178C}"
        },
        {
         "Id": "826997359",
         "Name": "ST_MarioLive_01",
-        "ObjectPath": "\\States\\GameStates\\MarioLives\\ST_MarioLive_01",
+        "ObjectPath": "\\States\\MarioStates\\MarioLives\\ST_MarioLive_01",
         "GUID": "{A01518A2-9C7C-4B6D-81B1-A9DBEEB09C4F}"
        }
       ]
@@ -856,44 +872,6 @@
         "GUID": "{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"
        }
       ]
-     },
-     {
-      "Id": "3891672790",
-      "Name": "MarioState",
-      "ObjectPath": "\\States\\GameStates\\MarioState",
-      "GUID": "{BE5C764F-E55A-4451-BF46-383D03A67E2C}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\None",
-        "GUID": "{3E17C817-C60B-4D39-987A-9E75AABF8251}"
-       },
-       {
-        "Id": "1268394730",
-        "Name": "ST_MarioLarge",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\ST_MarioLarge",
-        "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
-       },
-       {
-        "Id": "2935428005",
-        "Name": "ST_MarioStar",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\ST_MarioStar",
-        "GUID": "{1AC40DB2-2F79-4C08-BF8A-7DFB7CD269BC}"
-       },
-       {
-        "Id": "3280622839",
-        "Name": "ST_MarioDead",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\ST_MarioDead",
-        "GUID": "{B8856D92-7800-449E-8763-F6D2F43E1D6B}"
-       },
-       {
-        "Id": "3407194134",
-        "Name": "ST_MarioSmall",
-        "ObjectPath": "\\States\\GameStates\\MarioState\\ST_MarioSmall",
-        "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"
-       }
-      ]
      }
     ],
     "SwitchGroups": [
@@ -916,50 +894,10 @@
         "GUID": "{66995346-05B9-4944-9F93-7E717E803547}"
        }
       ]
-     },
-     {
-      "Id": "1608312894",
-      "Name": "SW_PlayerSize",
-      "ObjectPath": "\\Switches\\TEAM1UNIT\\SW_PlayerSize",
-      "GUID": "{982AE19A-5080-4B2F-9D48-816236445372}",
-      "Switches": [
-       {
-        "Id": "647611021",
-        "Name": "Big",
-        "ObjectPath": "\\Switches\\TEAM1UNIT\\SW_PlayerSize\\Big",
-        "GUID": "{05A3C91E-5183-411D-AF19-C8F3923C4FB2}"
-       },
-       {
-        "Id": "1846755610",
-        "Name": "Small",
-        "ObjectPath": "\\Switches\\TEAM1UNIT\\SW_PlayerSize\\Small",
-        "GUID": "{C730D47E-5A49-4F92-B89E-AFAE595A6D6A}"
-       }
-      ]
-     },
-     {
-      "Id": "3347557693",
-      "Name": "SW_block",
-      "ObjectPath": "\\Switches\\TEAM1UNIT\\SW_block",
-      "GUID": "{5921575B-9B24-4B08-914F-A8516702DCD5}",
-      "Switches": [
-       {
-        "Id": "941442534",
-        "Name": "Break",
-        "ObjectPath": "\\Switches\\TEAM1UNIT\\SW_block\\Break",
-        "GUID": "{C9834F18-C162-40D9-97B0-CBF92CB30108}"
-       },
-       {
-        "Id": "3257506471",
-        "Name": "Impact",
-        "ObjectPath": "\\Switches\\TEAM1UNIT\\SW_block\\Impact",
-        "GUID": "{6A22FE6B-DF5A-4D06-8FE4-1FB47F43EA96}"
-       }
-      ]
      }
     ]
    }
   ],
-  "FileHash": "{868FCC0C-1422-7C37-62BF-E34546B5D43D}"
+  "FileHash": "{7F7484D2-78A9-C98E-DEDA-B4D5CBFB2239}"
  }
 }

@@ -65,6 +65,102 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="MarioBig" ID="{869EEF3A-F5A9-4EF7-A5B2-F795AF0A2267}" ShortID="255331493">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{8CC9651A-096C-4769-B4A2-3835DB12185A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
+														<CustomState Name="" ID="{3AFD4BBA-F11E-4488-AD56-9BE53861EEE0}" ShortID="441341468">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="MarioSizeBig" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
+														<CustomState Name="" ID="{2D2FF27D-EE5E-4299-AFF7-FCA74F8EC906}" ShortID="255271342"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4B713812-B31C-45CA-BB64-42D379B4BDE2}"/>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="MarioSmall" ID="{F7F3B252-4225-4258-BB9E-A29DEC3ED059}" ShortID="906976527">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{A2CF6B19-DBFC-43FF-AB8C-6B12F44B5F1A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
+														<CustomState Name="" ID="{8C5E00C5-EE68-4C09-9927-20ACB2D62292}" ShortID="150540047"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="MarioSizeBig" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
+														<CustomState Name="" ID="{EA40CAD5-379C-41A2-A58C-181BDB1C4D32}" ShortID="156461335">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{890CB005-B847-4BB8-B721-3883F2FD1805}"/>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Cues">
 											<Reference>
@@ -397,6 +493,9 @@
 												<Reference Name="PlaylistRoot">
 													<Custom>
 														<MusicPlaylistItem Name="" ID="{6F665873-D5B3-4981-B6E7-7BB2A27B9B89}" ShortID="316304295">
+															<PropertyList>
+																<Property Name="PlayMode" Type="int16" Value="2"/>
+															</PropertyList>
 															<ChildrenList>
 																<MusicPlaylistItem Name="" ID="{98E20A05-1E40-4C1D-B629-91934D0A2984}" ShortID="841522590">
 																	<PropertyList>
@@ -1269,28 +1368,10 @@
 									<ObjectLists>
 										<ObjectList Name="Arguments">
 											<Reference>
-												<ObjectRef Name="MarioState" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+												<ObjectRef Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 											</Reference>
 										</ObjectList>
 										<ObjectList Name="Entries">
-											<Reference>
-												<Local>
-													<MultiSwitchEntry Name="" ID="{7221071B-73DA-4349-A46A-372A3ACC0DCD}">
-														<ReferenceList>
-															<Reference Name="AudioNode">
-																<ObjectRef Name="MUS_Mario_Dead" ID="{7C43C639-9402-4A5A-B19C-EE914E90D2AF}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
-															</Reference>
-														</ReferenceList>
-														<ObjectLists>
-															<ObjectList Name="EntryPath">
-																<Reference>
-																	<ObjectRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MultiSwitchEntry>
-												</Local>
-											</Reference>
 											<Reference>
 												<Local>
 													<MultiSwitchEntry Name="" ID="{2BB04B94-0402-41D8-8DC8-02F46C354DAA}">
@@ -1302,7 +1383,7 @@
 														<ObjectLists>
 															<ObjectList Name="EntryPath">
 																<Reference>
-																	<ObjectRef Name="ST_MarioLarge" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+																	<ObjectRef Name="MarioSizeBig" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 																</Reference>
 															</ObjectList>
 														</ObjectLists>
@@ -1320,7 +1401,7 @@
 														<ObjectLists>
 															<ObjectList Name="EntryPath">
 																<Reference>
-																	<ObjectRef Name="ST_MarioSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+																	<ObjectRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 																</Reference>
 															</ObjectList>
 														</ObjectLists>
@@ -1628,28 +1709,10 @@
 									<ObjectLists>
 										<ObjectList Name="Arguments">
 											<Reference>
-												<ObjectRef Name="MarioState" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+												<ObjectRef Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 											</Reference>
 										</ObjectList>
 										<ObjectList Name="Entries">
-											<Reference>
-												<Local>
-													<MultiSwitchEntry Name="" ID="{20B30C04-431A-4012-8D67-02A0547F826C}">
-														<ReferenceList>
-															<Reference Name="AudioNode">
-																<ObjectRef Name="MUS_Mario_Dead" ID="{6E8F8F04-4C49-4547-BF5C-AF48AC2955D7}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
-															</Reference>
-														</ReferenceList>
-														<ObjectLists>
-															<ObjectList Name="EntryPath">
-																<Reference>
-																	<ObjectRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MultiSwitchEntry>
-												</Local>
-											</Reference>
 											<Reference>
 												<Local>
 													<MultiSwitchEntry Name="" ID="{5170A5C3-30D4-43B6-A3E3-76E102399061}">
@@ -1661,7 +1724,7 @@
 														<ObjectLists>
 															<ObjectList Name="EntryPath">
 																<Reference>
-																	<ObjectRef Name="ST_MarioLarge" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+																	<ObjectRef Name="MarioSizeBig" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 																</Reference>
 															</ObjectList>
 														</ObjectLists>
@@ -1679,7 +1742,7 @@
 														<ObjectLists>
 															<ObjectList Name="EntryPath">
 																<Reference>
-																	<ObjectRef Name="ST_MarioSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+																	<ObjectRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 																</Reference>
 															</ObjectList>
 														</ObjectLists>
@@ -1776,7 +1839,7 @@
 					<ObjectLists>
 						<ObjectList Name="Arguments">
 							<Reference>
-								<ObjectRef Name="MarioState" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+								<ObjectRef Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 							</Reference>
 						</ObjectList>
 						<ObjectList Name="Entries">
@@ -1791,7 +1854,7 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="MarioState" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+													<ObjectRef Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -1809,7 +1872,7 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="None" ID="{3E17C817-C60B-4D39-987A-9E75AABF8251}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+													<ObjectRef Name="None" ID="{3E17C817-C60B-4D39-987A-9E75AABF8251}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
