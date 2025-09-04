@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B53B8670-B792-43F6-97B3-06198FC027B3}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="MarioMovement" ID="{B53B8670-B792-43F6-97B3-06198FC027B3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Mario_Upgrade_Mushroom" ID="{9FDD8FBB-3CC9-4BCB-B52E-F358D419391D}">
+					<ChildrenList>
+						<Action Name="" ID="{17C184F0-F29D-4C51-91C6-6AF4CEE98C80}" ShortID="652573244">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mario_Upgrade_Mushroom" ID="{C049C6B8-EB13-4F17-9416-CF10C5C921E9}" WorkUnitID="{9B07DA12-1E2A-4277-B29A-7C9ECD89FED6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Mario_Jump_Air" ID="{D57D062B-A1E5-4174-9B65-CE6090DFC085}">
+					<ChildrenList>
+						<Action Name="" ID="{4946729F-D8CF-4FDA-A7D1-AEDAE50A679F}" ShortID="479244454">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mario_Jump_Air" ID="{4897DB64-F53F-4190-8D86-6C6A4B36A167}" WorkUnitID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Mario_Jump" ID="{15304030-EBCB-4C43-95CD-F1E779AFA0CB}">
+					<ChildrenList>
+						<Action Name="" ID="{B59A1080-23FD-4508-BE58-8562B9C20752}" ShortID="840377591">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mario_Jump" ID="{91FB8166-72F3-4DAD-BF42-C0471EB1990F}" WorkUnitID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Mario_Landing" ID="{048D1209-ED04-4E8F-A566-B1F948891F86}">
+					<ChildrenList>
+						<Action Name="" ID="{30438FC5-EE38-4CC2-9EFB-46D2DB65C023}" ShortID="462101372">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mario_Landing" ID="{96606A77-D21C-4BEF-B56F-430C41D354CB}" WorkUnitID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Mario_Running" ID="{EB3DE42D-2154-4545-9988-21DC83E127E9}">
+					<ChildrenList>
+						<Action Name="" ID="{F7D480D2-DCFB-47A2-9B6E-FA6FBCD794B1}" ShortID="387350090">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mario_Running" ID="{EFF40A94-0427-484E-983B-0DCE4B807185}" WorkUnitID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
