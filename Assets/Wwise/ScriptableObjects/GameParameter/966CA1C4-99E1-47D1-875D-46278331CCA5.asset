@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7403d19dc6b274298389f56fa17c4c, type: 3}
   m_Name: 966CA1C4-99E1-47D1-875D-46278331CCA5
   m_EditorClassIdentifier: 
-  objectName: RTPC_MarioSpeed
-  id: 2826881650
+  objectName: MarioSpeed
+  id: 2335757700
   guid: 966CA1C4-99E1-47D1-875D-46278331CCA5

@@ -64,14 +64,8 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 						</Reference>
-						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="Small" ID="{C730D47E-5A49-4F92-B89E-AFAE595A6D6A}" WorkUnitID="{721D2C02-F569-4FAF-8FF7-1C65FF8141AD}"/>
-						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
-						</Reference>
-						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="SW_PlayerSize" ID="{982AE19A-5080-4B2F-9D48-816236445372}" WorkUnitID="{721D2C02-F569-4FAF-8FF7-1C65FF8141AD}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -129,20 +123,6 @@
 								<ItemRef Name="jump_small" ID="{DAC40561-7498-40F6-ACDC-D2E42EEBCA3B}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
-						<GroupingList>
-							<Grouping>
-								<SwitchRef Name="Big" ID="{05A3C91E-5183-411D-AF19-C8F3923C4FB2}"/>
-								<ItemList>
-									<ItemRef Name="jump_big" ID="{93D6C700-EF38-4907-B663-316BDC041029}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Small" ID="{C730D47E-5A49-4F92-B89E-AFAE595A6D6A}"/>
-								<ItemList>
-									<ItemRef Name="jump_small" ID="{DAC40561-7498-40F6-ACDC-D2E42EEBCA3B}"/>
-								</ItemList>
-							</Grouping>
-						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 			</ChildrenList>

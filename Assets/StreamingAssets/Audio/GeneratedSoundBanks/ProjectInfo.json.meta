@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Wwise/API/Runtime/Plugins/Mac/Debug/AkUnitySoundEngine.bundle.dSYM/Contents/Resources/DWARF/AkUnitySoundEngine.meta
+guid: 846d2902f8b275143b5a72862085b9a2
+========
+guid: e79a3ec2fe6dff64197bfd997b79f3cc
+>>>>>>>> WwiseImplemented:Assets/StreamingAssets/Audio/GeneratedSoundBanks/ProjectInfo.json.meta
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

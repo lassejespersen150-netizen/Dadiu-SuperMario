@@ -26,12 +26,8 @@ namespace AK
         static const AkUniqueID PLAY_DB_SYNTH_2D_OS_P400 = 3136715220U;
         static const AkUniqueID PLAY_DB_SYNTH_200HZ_2D_LP = 318505690U;
         static const AkUniqueID PLAY_DB_SYNTH_400HZ_3D_LP = 3266186833U;
-        static const AkUniqueID PLAY_ENEMYDIES = 1049787687U;
-        static const AkUniqueID PLAY_PICKUP_COIN = 1785783294U;
-        static const AkUniqueID PLAY_PICKUP_POWERUP = 3450217415U;
-        static const AkUniqueID PLAY_PIPE_ENTER = 55862385U;
-        static const AkUniqueID PLAY_SW_BLOCK = 3889222070U;
-        static const AkUniqueID PLAY_SW_JUMP = 4224832959U;
+        static const AkUniqueID PLAY_FLAGPOLE = 3011457342U;
+        static const AkUniqueID PLAY_PIPE_IDLE = 653287783U;
     } // namespace EVENTS
 
     namespace STATES
@@ -47,18 +43,6 @@ namespace AK
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace DAYNIGHT
-
-        namespace GAMESTATE
-        {
-            static const AkUniqueID GROUP = 4091656514U;
-
-            namespace STATE
-            {
-                static const AkUniqueID GAMEOVER = 4158285989U;
-                static const AkUniqueID GAMEPLAY = 89505537U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace GAMESTATE
 
         namespace LEVELS
         {
@@ -143,8 +127,11 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID RTPC_MARIOSPEED = 2826881650U;
-        static const AkUniqueID RTPC_TIMELEFT = 3058023719U;
+        static const AkUniqueID MARIODISTANCETOFLAGPOLE = 2489148713U;
+        static const AkUniqueID MARIODISTANCETOPIPE = 4279643429U;
+        static const AkUniqueID MARIOJUMPAIR = 2252070993U;
+        static const AkUniqueID MARIOSPEED = 2335757700U;
+        static const AkUniqueID TIMELEFT = 2486342905U;
         static const AkUniqueID TIMEOFDAY = 3729505769U;
     } // namespace GAME_PARAMETERS
 
@@ -152,7 +139,6 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID BNK_MAIN = 1020463552U;
-        static const AkUniqueID TEAM1SOUNDBANK = 573035958U;
     } // namespace BANKS
 
     namespace BUSSES
