@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 947c78a7c21ada841b75140f84388f8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 327abab0399b3304082c4d018d2681af, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
@@ -22,9 +22,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: 052dccbae81d3343a2f17ded9462f37d
     ParentPath: Virtual Acoustics\Default Work Unit
-    guid: 052dccbae81d3343a2f17ded9462f37d
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584757321680140509
+    m_lastTime: -8584446312764333711
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -36,9 +36,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: 3ebcbf1e8cc6d64480e621b11fc75df9
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
-    guid: 3ebcbf1e8cc6d64480e621b11fc75df9
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584757321680860951
+    m_lastTime: -8584446312777087582
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,13 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  - PhysicalPath: Master-Mixer Hierarchy\TestWorkUnit.wwu
+    PathAndIcons: []
+    ParentPath: Master-Mixer Hierarchy\TestWorkUnit
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8584446312777087582
+    List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -64,9 +71,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: 02f7410ab97ef146ab512498035c6ce4
     ParentPath: SoundBanks\Default Work Unit
-    guid: 02f7410ab97ef146ab512498035c6ce4
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584757297490801226
+    m_lastTime: -8584446312764383741
     List: []
   - PhysicalPath: SoundBanks\Soundbanks.wwu
     PathAndIcons:
@@ -77,9 +84,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: 2b248c1807126d4da58bf81dd9e1e1e0
     ParentPath: SoundBanks\Soundbanks
-    guid: 2b248c1807126d4da58bf81dd9e1e1e0
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584756157687080215
+    m_lastTime: -8584446312764383741
     List:
     - name: BNK_Main
       guid: 770abb4f429b2043bfc9ca6642c05aba
@@ -95,6 +102,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 770abb4f429b2043bfc9ca6642c05aba
       Path: SoundBanks\Soundbanks\BNK_Main
+    - name: TEAM1SoundBAnk
+      guid: d2fa21593ca2fa48b205b2d241ac3ed3
+      id: 573035958
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Soundbanks
+        ObjectType: 12
+        guid: 2b248c1807126d4da58bf81dd9e1e1e0
+      - ElementName: TEAM1SoundBAnk
+        ObjectType: 7
+        guid: d2fa21593ca2fa48b205b2d241ac3ed3
+      Path: SoundBanks\Soundbanks\TEAM1SoundBAnk
   EventWwu:
   - PhysicalPath: Events\Debug.wwu
     PathAndIcons:
@@ -105,9 +126,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: fcbc16d4bdbe1642901ddb504af6c02b
     ParentPath: Events\Debug
-    guid: fcbc16d4bdbe1642901ddb504af6c02b
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584756341806046564
+    m_lastTime: -8584446312779209500
     List:
     - name: DebugEvents
       guid: 48f1f12c111cd14f88629d5aa9a50b3e
@@ -283,7 +304,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 51acc7b9d1c7cb4ca45a987dec15e217
       Path: Events\Debug\DebugEvents\Play_DB_Synth_400Hz_3D_Lp
-      maxAttenuation: 20
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -295,9 +316,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: 49d2996c306e7742af87c05271be0944
     ParentPath: Events\Default Work Unit
-    guid: 49d2996c306e7742af87c05271be0944
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584756341805961471
+    m_lastTime: -8584446312779209500
     List: []
   - PhysicalPath: Events\MarioStates.wwu
     PathAndIcons:
@@ -308,9 +329,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: bc020ac3b3d7594f950f9f64cbbdbf13
     ParentPath: Events\MarioStates
-    guid: bc020ac3b3d7594f950f9f64cbbdbf13
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584756156644214506
+    m_lastTime: -8584446312779199496
     List:
     - name: EVT_MarioAlive
       guid: ae8ffbb1538c954e9ba95501a8ccca30
@@ -327,8 +348,8 @@ MonoBehaviour:
         guid: ae8ffbb1538c954e9ba95501a8ccca30
       Path: Events\MarioStates\EVT_MarioAlive
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: EVT_MarioDead
       guid: 2c79b31be4eeb84b84d25596a5a49ab2
       id: 2306134771
@@ -344,8 +365,8 @@ MonoBehaviour:
         guid: 2c79b31be4eeb84b84d25596a5a49ab2
       Path: Events\MarioStates\EVT_MarioDead
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -355,9 +376,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: ba89fe5b2c85444b8206423618247de9
     ParentPath: Events\Music
-    guid: ba89fe5b2c85444b8206423618247de9
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584756142155387265
+    m_lastTime: -8584446312779199496
     List:
     - name: MUS_Level101
       guid: 55b9cd52c5a5ed4e88a5fec7a04bd239
@@ -374,8 +395,8 @@ MonoBehaviour:
         guid: 55b9cd52c5a5ed4e88a5fec7a04bd239
       Path: Events\Music\MUS_Level101
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: MUS_Level102
       guid: b317be7ca8168f4693b046cde551edba
       id: 2723243968
@@ -391,8 +412,8 @@ MonoBehaviour:
         guid: b317be7ca8168f4693b046cde551edba
       Path: Events\Music\MUS_Level102
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: MUS_PlayMainPlaylist
       guid: 485cd832519964479044f9d0506f0c8b
       id: 2115743526
@@ -410,6 +431,121 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\TEAM1UNIT.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: TEAM1UNIT
+      ObjectType: 12
+      guid: 1a74911ad1b6a041ab5e52a04e2c7fc3
+    ParentPath: Events\TEAM1UNIT
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8584446312779189503
+    List:
+    - name: Play_EnemyDies
+      guid: daef627f188ba14c9647162ee18d2c71
+      id: 1049787687
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: 1a74911ad1b6a041ab5e52a04e2c7fc3
+      - ElementName: Play_EnemyDies
+        ObjectType: 3
+        guid: daef627f188ba14c9647162ee18d2c71
+      Path: Events\TEAM1UNIT\Play_EnemyDies
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_pickup_coin
+      guid: 4826c82738f1a4499eb9b4140fd411b8
+      id: 1785783294
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: 1a74911ad1b6a041ab5e52a04e2c7fc3
+      - ElementName: Play_pickup_coin
+        ObjectType: 3
+        guid: 4826c82738f1a4499eb9b4140fd411b8
+      Path: Events\TEAM1UNIT\Play_pickup_coin
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_pickup_powerup
+      guid: 857c534679023844912269dcc43fe931
+      id: 3450217415
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: 1a74911ad1b6a041ab5e52a04e2c7fc3
+      - ElementName: Play_pickup_powerup
+        ObjectType: 3
+        guid: 857c534679023844912269dcc43fe931
+      Path: Events\TEAM1UNIT\Play_pickup_powerup
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_pipe_enter
+      guid: aac96de7f0cb0b40be3140ea4be801e9
+      id: 55862385
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: 1a74911ad1b6a041ab5e52a04e2c7fc3
+      - ElementName: Play_pipe_enter
+        ObjectType: 3
+        guid: aac96de7f0cb0b40be3140ea4be801e9
+      Path: Events\TEAM1UNIT\Play_pipe_enter
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SW_Block
+      guid: e13e6f062df9b140b8237c4216836fd8
+      id: 3889222070
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: 1a74911ad1b6a041ab5e52a04e2c7fc3
+      - ElementName: Play_SW_Block
+        ObjectType: 3
+        guid: e13e6f062df9b140b8237c4216836fd8
+      Path: Events\TEAM1UNIT\Play_SW_Block
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SW_Jump
+      guid: d28bd4ecb1017a439a56efc527058022
+      id: 4224832959
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: 1a74911ad1b6a041ab5e52a04e2c7fc3
+      - ElementName: Play_SW_Jump
+        ObjectType: 3
+        guid: d28bd4ecb1017a439a56efc527058022
+      Path: Events\TEAM1UNIT\Play_SW_Jump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -420,9 +556,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: 62c2f836d84ae242b1d8dbe80cbe507e
     ParentPath: Game Parameters\Default Work Unit
-    guid: 62c2f836d84ae242b1d8dbe80cbe507e
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584757289789010899
+    m_lastTime: -8584446312779189503
     List:
     - name: TimeOfDay
       guid: 0420d4074aa8784fa8ad8a572424b611
@@ -447,9 +583,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: a625a6f63fe41f4f9c5af3c48c713750
     ParentPath: Game Parameters\GameStates
-    guid: a625a6f63fe41f4f9c5af3c48c713750
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584756423568547952
+    m_lastTime: -8584446312779179503
     List:
     - name: RTPC_TimeLeft
       guid: b71ab99f54ee0b4a89cea1811fa10643
@@ -474,9 +610,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: 3ef66c4c05810c47a820ec50e4fe9245
     ParentPath: Game Parameters\Mario
-    guid: 3ef66c4c05810c47a820ec50e4fe9245
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584757028524754676
+    m_lastTime: -8584446312779179503
     List:
     - name: RTPC_MarioSpeed
       guid: c4a16c96e199d147875d46278331cca5
@@ -502,9 +638,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: 0ffdf406761fc24da56d7c1e7c297c93
     ParentPath: States\Default Work Unit
-    guid: 0ffdf406761fc24da56d7c1e7c297c93
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584756162730120869
+    m_lastTime: -8584446312764363725
     List: []
   - PhysicalPath: States\GameStates.wwu
     PathAndIcons:
@@ -515,9 +651,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: b9aff0bdf6d9884791eabf4aaf44b00c
     ParentPath: States\GameStates
-    guid: b9aff0bdf6d9884791eabf4aaf44b00c
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584756127245603917
+    m_lastTime: -8584446312764363725
     List:
     - name: DayNight
       guid: d83d3c97ba15df4491aafca495c43a88
@@ -879,6 +1015,85 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+  - PhysicalPath: States\TEAM1UNIT.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: TEAM1UNIT
+      ObjectType: 12
+      guid: c1fc378f192ccd49a0c977b8ea12e0aa
+    ParentPath: States\TEAM1UNIT
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8584446312764363725
+    List:
+    - name: GameState
+      guid: db84d7cae58273498ad5961514127beb
+      id: 4091656514
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: c1fc378f192ccd49a0c977b8ea12e0aa
+      - ElementName: GameState
+        ObjectType: 9
+        guid: db84d7cae58273498ad5961514127beb
+      Path: States\TEAM1UNIT\GameState
+      values:
+      - name: GameOver
+        guid: 1d9d112339c38942b23bdc5ea7c8999b
+        id: 4158285989
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: c1fc378f192ccd49a0c977b8ea12e0aa
+        - ElementName: GameState
+          ObjectType: 9
+          guid: db84d7cae58273498ad5961514127beb
+        - ElementName: GameOver
+          ObjectType: 8
+          guid: 1d9d112339c38942b23bdc5ea7c8999b
+      - name: GamePlay
+        guid: 022ad0ef837f414fa933f0c0f586ed4e
+        id: 89505537
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: c1fc378f192ccd49a0c977b8ea12e0aa
+        - ElementName: GameState
+          ObjectType: 9
+          guid: db84d7cae58273498ad5961514127beb
+        - ElementName: GamePlay
+          ObjectType: 8
+          guid: 022ad0ef837f414fa933f0c0f586ed4e
+      - name: None
+        guid: 89795f7ff27a57469dc472d101829e31
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: c1fc378f192ccd49a0c977b8ea12e0aa
+        - ElementName: GameState
+          ObjectType: 9
+          guid: db84d7cae58273498ad5961514127beb
+        - ElementName: None
+          ObjectType: 8
+          guid: 89795f7ff27a57469dc472d101829e31
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -889,9 +1104,9 @@ MonoBehaviour:
       ObjectType: 12
       guid: 7094c8337df30a46a03432e80f44db67
     ParentPath: Switches\Default Work Unit
-    guid: 7094c8337df30a46a03432e80f44db67
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584757294288425562
+    m_lastTime: -8584446312764353761
     List:
     - name: SwitchGroup
       guid: 2ac66a6dcead0240821eaa467115b747
@@ -943,6 +1158,119 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+  - PhysicalPath: Switches\TEAM1UNIT.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: TEAM1UNIT
+      ObjectType: 12
+      guid: 022c1d7269f5af4f8ff71c65ff8141ad
+    ParentPath: Switches\TEAM1UNIT
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8584446312764353761
+    List:
+    - name: SW_block
+      guid: 5b572159249b084b914fa8516702dcd5
+      id: 3347557693
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: 022c1d7269f5af4f8ff71c65ff8141ad
+      - ElementName: SW_block
+        ObjectType: 11
+        guid: 5b572159249b084b914fa8516702dcd5
+      Path: Switches\TEAM1UNIT\SW_block
+      values:
+      - name: Break
+        guid: 184f83c962c1d94097b0cbf92cb30108
+        id: 941442534
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: 022c1d7269f5af4f8ff71c65ff8141ad
+        - ElementName: SW_block
+          ObjectType: 11
+          guid: 5b572159249b084b914fa8516702dcd5
+        - ElementName: Break
+          ObjectType: 10
+          guid: 184f83c962c1d94097b0cbf92cb30108
+      - name: Impact
+        guid: 6bfe226a5adf064d8fe41fb47f43ea96
+        id: 3257506471
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: 022c1d7269f5af4f8ff71c65ff8141ad
+        - ElementName: SW_block
+          ObjectType: 11
+          guid: 5b572159249b084b914fa8516702dcd5
+        - ElementName: Impact
+          ObjectType: 10
+          guid: 6bfe226a5adf064d8fe41fb47f43ea96
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: SW_PlayerSize
+      guid: 9ae12a9880502f4b9d48816236445372
+      id: 1608312894
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: 022c1d7269f5af4f8ff71c65ff8141ad
+      - ElementName: SW_PlayerSize
+        ObjectType: 11
+        guid: 9ae12a9880502f4b9d48816236445372
+      Path: Switches\TEAM1UNIT\SW_PlayerSize
+      values:
+      - name: Big
+        guid: 1ec9a30583511d41af19c8f3923c4fb2
+        id: 647611021
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: 022c1d7269f5af4f8ff71c65ff8141ad
+        - ElementName: SW_PlayerSize
+          ObjectType: 11
+          guid: 9ae12a9880502f4b9d48816236445372
+        - ElementName: Big
+          ObjectType: 10
+          guid: 1ec9a30583511d41af19c8f3923c4fb2
+      - name: Small
+        guid: 7ed430c7495a924fb89eafae595a6d6a
+        id: 1846755610
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: 022c1d7269f5af4f8ff71c65ff8141ad
+        - ElementName: SW_PlayerSize
+          ObjectType: 11
+          guid: 9ae12a9880502f4b9d48816236445372
+        - ElementName: Small
+          ObjectType: 10
+          guid: 7ed430c7495a924fb89eafae595a6d6a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -953,12 +1281,12 @@ MonoBehaviour:
       ObjectType: 12
       guid: 6cf02459ff2f5a4d95f851ec589f9712
     ParentPath: Triggers\Default Work Unit
-    guid: 6cf02459ff2f5a4d95f851ec589f9712
+    guid: 00000000000000000000000000000000
     GuidInternal: 
-    m_lastTime: -8584757321680220547
+    m_lastTime: -8584446312764343725
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000d0000000f000000170000001a0000001d000000b5000000b9000000d9000000da000000db000000dd0000002c0100002d0100002e010000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
