@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E6ECDAC9-277B-4668-BD64-DC05D259945B}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Sjurdur" ID="{E6ECDAC9-277B-4668-BD64-DC05D259945B}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="CoinPickup" ID="{005B8D1B-DDC4-4C6F-90D5-A5B991CF0E48}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Wind_Intensity" ID="{CC40CEFB-10AF-4158-8F5D-166BD1C4213E}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="3"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="90"/>
+						<Property Name="Min" Type="Real64" Value="-90"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

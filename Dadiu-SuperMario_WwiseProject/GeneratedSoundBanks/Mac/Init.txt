@@ -1,14 +1,12 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	1705516017	DayNight			\GameStates\DayNight	
-	2055629040	MarioLives			\GameStates\MarioLives	
+	866639936	MarioSize			\MarioStates\MarioSize	
+	2055629040	MarioLives			\MarioStates\MarioLives	
 	2678230316	Levels			\GameStates\Levels	
-	3891672790	MarioState			\GameStates\MarioState	
-	4091656514	GameState			\TEAM1UNIT\GameState	
 
 State	ID	Name	State Group			Notes
-	311764537	Day	DayNight			
-	748895195	None	DayNight			
-	1011622525	Night	DayNight			
+	748895195	None	MarioSize			
+	1915863002	MarioSizeBig	MarioSize			
+	2458678061	MarioSizeSmall	MarioSize			
 	748895195	None	MarioLives			
 	826997356	ST_MarioLive_02	MarioLives			
 	826997357	ST_MarioLive_03	MarioLives			
@@ -19,17 +17,12 @@ State	ID	Name	State Group			Notes
 	2673545492	ST_Level_103	Levels			
 	2673545493	ST_Level_102	Levels			
 	2673545494	ST_Level_101	Levels			
-	748895195	None	MarioState			
-	1268394730	ST_MarioLarge	MarioState			
-	2935428005	ST_MarioStar	MarioState			
-	3280622839	ST_MarioDead	MarioState			
-	3407194134	ST_MarioSmall	MarioState			
-	89505537	GamePlay	GameState			
-	748895195	None	GameState			
-	4158285989	GameOver	GameState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	2680856269	Music_Bus			\Mix\Music_Bus	
+	3193046343	New Master Bus			\Default Work Unit\New Master Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

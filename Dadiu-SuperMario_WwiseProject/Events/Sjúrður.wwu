@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{699CB3A2-2654-4A90-88B3-5D4B22CD13DC}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Sjúrður" ID="{699CB3A2-2654-4A90-88B3-5D4B22CD13DC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="CoinPickup" ID="{609A07D6-0A88-49B7-98AC-C303C90F1734}">
+					<ChildrenList>
+						<Action Name="" ID="{9F1039B9-C2CB-4264-A508-41D5A70D4C86}" ShortID="823855496">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="env_coin_pickup_01" ID="{BB801BAB-1405-41E8-8C56-4AE28A3EC0A6}" WorkUnitID="{934BE93B-CAA9-4DB3-817E-0911337EBB1D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DBE4FF5C-02C4-44F3-9C91-F8D6485595BB}" ShortID="716363492">
+							<PropertyList>
+								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="13"/>
+								<Property Name="Pitch" Type="int32" Value="75"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="env_coin_pickup_01" ID="{BB801BAB-1405-41E8-8C56-4AE28A3EC0A6}" WorkUnitID="{934BE93B-CAA9-4DB3-817E-0911337EBB1D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BrickBreak" ID="{5F8DD258-4259-442C-918A-42B936F56240}">
+					<ChildrenList>
+						<Action Name="" ID="{BE9FE9A3-F382-48D2-B54E-0C352377B58A}" ShortID="404500236">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Brick_Break" ID="{8B6310B1-1A1C-4B36-8A0B-347FC58B8831}" WorkUnitID="{934BE93B-CAA9-4DB3-817E-0911337EBB1D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

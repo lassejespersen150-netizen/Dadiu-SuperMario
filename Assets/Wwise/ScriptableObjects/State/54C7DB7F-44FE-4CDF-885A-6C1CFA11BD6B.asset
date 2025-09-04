@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbfd54f71e67cd40b1b1b337ba4f5ee, type: 3}
   m_Name: 54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B
   m_EditorClassIdentifier: 
-  objectName: ST_MarioLarge
-  id: 1268394730
+  objectName: MarioSizeBig
+  id: 1915863002
   guid: 54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B
   WwiseStateGroupReference: {fileID: 11400000, guid: 70a560c9be3e9a849b22ce45d2b7ca02,
     type: 2}

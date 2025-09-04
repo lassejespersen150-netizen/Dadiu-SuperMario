@@ -6,16 +6,10 @@
 				<SoundBank Name="BNK_Main" ID="{4FBB0A77-9B42-4320-BFC9-CA6642C05ABA}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Objects" ID="{C4DF7127-4263-4525-941C-8C81A7EA1467}" WorkUnitID="{C4DF7127-4263-4525-941C-8C81A7EA1467}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Sjúrður" ID="{699CB3A2-2654-4A90-88B3-5D4B22CD13DC}" WorkUnitID="{699CB3A2-2654-4A90-88B3-5D4B22CD13DC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{5BFE89BA-852C-4B44-8206-423618247DE9}" WorkUnitID="{5BFE89BA-852C-4B44-8206-423618247DE9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MarioStates" ID="{C30A02BC-D7B3-4F59-950F-9F64CBBDBF13}" WorkUnitID="{C30A02BC-D7B3-4F59-950F-9F64CBBDBF13}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DebugEvents" ID="{2CF1F148-1C11-4FD1-8862-9D5AA9A50B3E}" WorkUnitID="{D416BCFC-BEBD-4216-901D-DB504AF6C02B}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="TEAM1SoundBAnk" ID="{5921FAD2-A23C-48FA-B205-B2D241AC3ED3}">
-					<ObjectInclusionList>
-						<ObjectRef Name="TEAM1UNIT" ID="{1A91741A-B6D1-41A0-AB5E-52A04E2C7FC3}" WorkUnitID="{1A91741A-B6D1-41A0-AB5E-52A04E2C7FC3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

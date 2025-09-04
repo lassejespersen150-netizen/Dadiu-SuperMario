@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 947c78a7c21ada841b75140f84388f8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 327abab0399b3304082c4d018d2681af, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3ebcbf1e8cc6d64480e621b11fc75df9
     GuidInternal: 
-    m_lastTime: -8584446295408065383
+    m_lastTime: -8584446205634855247
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,64 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 4d9fe751850ba745a5450e2dcdc11c32
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3ebcbf1e8cc6d64480e621b11fc75df9
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 4d9fe751850ba745a5450e2dcdc11c32
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: New Master Bus
+      guid: 3357b45f8102a54d81d91a3702772f3e
+      id: 3193046343
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3ebcbf1e8cc6d64480e621b11fc75df9
+      - ElementName: New Master Bus
+        ObjectType: 2
+        guid: 3357b45f8102a54d81d91a3702772f3e
+      Path: Master-Mixer Hierarchy\Default Work Unit\New Master Bus
+  - PhysicalPath: Master-Mixer Hierarchy\Mix.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Mix
+      ObjectType: 12
+      guid: c51e1109c2cfcb429c813707d2a1b291
+    ParentPath: Master-Mixer Hierarchy\Mix
+    guid: c51e1109c2cfcb429c813707d2a1b291
+    GuidInternal: 
+    m_lastTime: -8584446231446177317
+    List:
+    - name: Music_Bus
+      guid: 0ee4c1b98927694b9fa635dcf36a5f9a
+      id: 2680856269
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Mix
+        ObjectType: 12
+        guid: c51e1109c2cfcb429c813707d2a1b291
+      - ElementName: Music_Bus
+        ObjectType: 2
+        guid: 0ee4c1b98927694b9fa635dcf36a5f9a
+      Path: Master-Mixer Hierarchy\Mix\Music_Bus
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -79,7 +137,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Soundbanks
     guid: 2b248c1807126d4da58bf81dd9e1e1e0
     GuidInternal: 
-    m_lastTime: -8584446282306109149
+    m_lastTime: -8584446195732498457
     List:
     - name: BNK_Main
       guid: 770abb4f429b2043bfc9ca6642c05aba
@@ -310,42 +368,8 @@ MonoBehaviour:
     ParentPath: Events\MarioStates
     guid: bc020ac3b3d7594f950f9f64cbbdbf13
     GuidInternal: 
-    m_lastTime: -8584446295408100704
-    List:
-    - name: EVT_MarioAlive
-      guid: ae8ffbb1538c954e9ba95501a8ccca30
-      id: 1048818656
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: MarioStates
-        ObjectType: 12
-        guid: bc020ac3b3d7594f950f9f64cbbdbf13
-      - ElementName: EVT_MarioAlive
-        ObjectType: 3
-        guid: ae8ffbb1538c954e9ba95501a8ccca30
-      Path: Events\MarioStates\EVT_MarioAlive
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: EVT_MarioDead
-      guid: 2c79b31be4eeb84b84d25596a5a49ab2
-      id: 2306134771
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: MarioStates
-        ObjectType: 12
-        guid: bc020ac3b3d7594f950f9f64cbbdbf13
-      - ElementName: EVT_MarioDead
-        ObjectType: 3
-        guid: 2c79b31be4eeb84b84d25596a5a49ab2
-      Path: Events\MarioStates\EVT_MarioDead
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+    m_lastTime: -8584446195506704439
+    List: []
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -357,7 +381,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: ba89fe5b2c85444b8206423618247de9
     GuidInternal: 
-    m_lastTime: -8584446292431166936
+    m_lastTime: -8584446205635085231
     List:
     - name: MUS_Level101
       guid: 55b9cd52c5a5ed4e88a5fec7a04bd239
@@ -457,6 +481,53 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+  - PhysicalPath: "Events\\Sj\xFAr\xF0ur.wwu"
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: "Sj\xFAr\xF0ur"
+      ObjectType: 12
+      guid: a2b39c695426904a88b35d4b22cd13dc
+    ParentPath: "Events\\Sj\xFAr\xF0ur"
+    guid: a2b39c695426904a88b35d4b22cd13dc
+    GuidInternal: 
+    m_lastTime: -8584446198721408378
+    List:
+    - name: BrickBreak
+      guid: 58d28d5f59422c44918a42b936f56240
+      id: 951086285
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: "Sj\xFAr\xF0ur"
+        ObjectType: 12
+        guid: a2b39c695426904a88b35d4b22cd13dc
+      - ElementName: BrickBreak
+        ObjectType: 3
+        guid: 58d28d5f59422c44918a42b936f56240
+      Path: "Events\\Sj\xFAr\xF0ur\\BrickBreak"
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
+    - name: CoinPickup
+      guid: d6079a60880ab74998acc303c90f1734
+      id: 2752428610
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: "Sj\xFAr\xF0ur"
+        ObjectType: 12
+        guid: a2b39c695426904a88b35d4b22cd13dc
+      - ElementName: CoinPickup
+        ObjectType: 3
+        guid: d6079a60880ab74998acc303c90f1734
+      Path: "Events\\Sj\xFAr\xF0ur\\CoinPickup"
+      maxAttenuation: 0
+      maxDuration: 0.7812925
+      minDuration: 0.7812925
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -496,7 +567,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\GameStates
     guid: a625a6f63fe41f4f9c5af3c48c713750
     GuidInternal: 
-    m_lastTime: -8584446284199445663
+    m_lastTime: -8584446205635075255
     List:
     - name: TimeLeft
       guid: b71ab99f54ee0b4a89cea1811fa10643
@@ -523,7 +594,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Mario
     guid: 3ef66c4c05810c47a820ec50e4fe9245
     GuidInternal: 
-    m_lastTime: -8584446274116709380
+    m_lastTime: -8584446205635075255
     List:
     - name: MarioDistanceToFlagPole
       guid: d7fa95f52ec09a449e579bbb525af95c
@@ -581,6 +652,47 @@ MonoBehaviour:
         ObjectType: 13
         guid: c4a16c96e199d147875d46278331cca5
       Path: Game Parameters\Mario\MarioSpeed
+  - PhysicalPath: Game Parameters\Sjurdur.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Sjurdur
+      ObjectType: 12
+      guid: c9daece67b276846bd64dc05d259945b
+    ParentPath: Game Parameters\Sjurdur
+    guid: c9daece67b276846bd64dc05d259945b
+    GuidInternal: 
+    m_lastTime: -8584446274774775808
+    List:
+    - name: CoinPickup
+      guid: 1b8d5b00c4dd6f4c90d5a5b991cf0e48
+      id: 2752428610
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Sjurdur
+        ObjectType: 12
+        guid: c9daece67b276846bd64dc05d259945b
+      - ElementName: CoinPickup
+        ObjectType: 13
+        guid: 1b8d5b00c4dd6f4c90d5a5b991cf0e48
+      Path: Game Parameters\Sjurdur\CoinPickup
+    - name: Wind_Intensity
+      guid: fbce40ccaf1058418f5d166bd1c4213e
+      id: 855296609
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Sjurdur
+        ObjectType: 12
+        guid: c9daece67b276846bd64dc05d259945b
+      - ElementName: Wind_Intensity
+        ObjectType: 13
+        guid: fbce40ccaf1058418f5d166bd1c4213e
+      Path: Game Parameters\Sjurdur\Wind_Intensity
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -606,74 +718,8 @@ MonoBehaviour:
     ParentPath: States\GameStates
     guid: b9aff0bdf6d9884791eabf4aaf44b00c
     GuidInternal: 
-    m_lastTime: -8584446295408015388
+    m_lastTime: -8584446205634655227
     List:
-    - name: DayNight
-      guid: d83d3c97ba15df4491aafca495c43a88
-      id: 1705516017
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: GameStates
-        ObjectType: 12
-        guid: b9aff0bdf6d9884791eabf4aaf44b00c
-      - ElementName: DayNight
-        ObjectType: 9
-        guid: d83d3c97ba15df4491aafca495c43a88
-      Path: States\GameStates\DayNight
-      values:
-      - name: Day
-        guid: 464982f63fcab44ebd82f931449ad7a6
-        id: 311764537
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: GameStates
-          ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
-        - ElementName: DayNight
-          ObjectType: 9
-          guid: d83d3c97ba15df4491aafca495c43a88
-        - ElementName: Day
-          ObjectType: 8
-          guid: 464982f63fcab44ebd82f931449ad7a6
-      - name: Night
-        guid: f773a9ffd0cd1d42b3afb06f2df40f93
-        id: 1011622525
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: GameStates
-          ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
-        - ElementName: DayNight
-          ObjectType: 9
-          guid: d83d3c97ba15df4491aafca495c43a88
-        - ElementName: Night
-          ObjectType: 8
-          guid: f773a9ffd0cd1d42b3afb06f2df40f93
-      - name: None
-        guid: 4127e76a39dd5d4aaa89cf7cb1689428
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: GameStates
-          ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
-        - ElementName: DayNight
-          ObjectType: 9
-          guid: d83d3c97ba15df4491aafca495c43a88
-        - ElementName: None
-          ObjectType: 8
-          guid: 4127e76a39dd5d4aaa89cf7cb1689428
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
     - name: Levels
       guid: 716a955072681e4abd8890c21e3ba32d
       id: 2678230316
@@ -772,6 +818,19 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+  - PhysicalPath: States\MarioStates.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: MarioStates
+      ObjectType: 12
+      guid: dd9820ff9e19f4498d4fa281c196dd31
+    ParentPath: States\MarioStates
+    guid: dd9820ff9e19f4498d4fa281c196dd31
+    GuidInternal: 
+    m_lastTime: -8584446205634645238
+    List:
     - name: MarioLives
       guid: 643e3a7fd3936645b395b0c49db9ea3d
       id: 2055629040
@@ -779,13 +838,13 @@ MonoBehaviour:
       - ElementName: States
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: GameStates
+      - ElementName: MarioStates
         ObjectType: 12
-        guid: b9aff0bdf6d9884791eabf4aaf44b00c
+        guid: dd9820ff9e19f4498d4fa281c196dd31
       - ElementName: MarioLives
         ObjectType: 9
         guid: 643e3a7fd3936645b395b0c49db9ea3d
-      Path: States\GameStates\MarioLives
+      Path: States\MarioStates\MarioLives
       values:
       - name: None
         guid: 00dcb037b7190a47b20f561ddc4372c5
@@ -794,9 +853,9 @@ MonoBehaviour:
         - ElementName: States
           ObjectType: 5
           guid: 00000000000000000000000000000000
-        - ElementName: GameStates
+        - ElementName: MarioStates
           ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
+          guid: dd9820ff9e19f4498d4fa281c196dd31
         - ElementName: MarioLives
           ObjectType: 9
           guid: 643e3a7fd3936645b395b0c49db9ea3d
@@ -810,9 +869,9 @@ MonoBehaviour:
         - ElementName: States
           ObjectType: 5
           guid: 00000000000000000000000000000000
-        - ElementName: GameStates
+        - ElementName: MarioStates
           ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
+          guid: dd9820ff9e19f4498d4fa281c196dd31
         - ElementName: MarioLives
           ObjectType: 9
           guid: 643e3a7fd3936645b395b0c49db9ea3d
@@ -826,9 +885,9 @@ MonoBehaviour:
         - ElementName: States
           ObjectType: 5
           guid: 00000000000000000000000000000000
-        - ElementName: GameStates
+        - ElementName: MarioStates
           ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
+          guid: dd9820ff9e19f4498d4fa281c196dd31
         - ElementName: MarioLives
           ObjectType: 9
           guid: 643e3a7fd3936645b395b0c49db9ea3d
@@ -842,9 +901,9 @@ MonoBehaviour:
         - ElementName: States
           ObjectType: 5
           guid: 00000000000000000000000000000000
-        - ElementName: GameStates
+        - ElementName: MarioStates
           ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
+          guid: dd9820ff9e19f4498d4fa281c196dd31
         - ElementName: MarioLives
           ObjectType: 9
           guid: 643e3a7fd3936645b395b0c49db9ea3d
@@ -858,9 +917,9 @@ MonoBehaviour:
         - ElementName: States
           ObjectType: 5
           guid: 00000000000000000000000000000000
-        - ElementName: GameStates
+        - ElementName: MarioStates
           ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
+          guid: dd9820ff9e19f4498d4fa281c196dd31
         - ElementName: MarioLives
           ObjectType: 9
           guid: 643e3a7fd3936645b395b0c49db9ea3d
@@ -870,21 +929,53 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: MarioState
+    - name: MarioSize
       guid: 4f765cbe5ae55144bf46383d03a67e2c
-      id: 3891672790
+      id: 866639936
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: GameStates
+      - ElementName: MarioStates
         ObjectType: 12
-        guid: b9aff0bdf6d9884791eabf4aaf44b00c
-      - ElementName: MarioState
+        guid: dd9820ff9e19f4498d4fa281c196dd31
+      - ElementName: MarioSize
         ObjectType: 9
         guid: 4f765cbe5ae55144bf46383d03a67e2c
-      Path: States\GameStates\MarioState
+      Path: States\MarioStates\MarioSize
       values:
+      - name: MarioSizeBig
+        guid: 7fdbc754fe44df4c885a6c1cfa11bd6b
+        id: 1915863002
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MarioStates
+          ObjectType: 12
+          guid: dd9820ff9e19f4498d4fa281c196dd31
+        - ElementName: MarioSize
+          ObjectType: 9
+          guid: 4f765cbe5ae55144bf46383d03a67e2c
+        - ElementName: MarioSizeBig
+          ObjectType: 8
+          guid: 7fdbc754fe44df4c885a6c1cfa11bd6b
+      - name: MarioSizeSmall
+        guid: 12efebc17227dd4095f96a27a31a36ee
+        id: 2458678061
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MarioStates
+          ObjectType: 12
+          guid: dd9820ff9e19f4498d4fa281c196dd31
+        - ElementName: MarioSize
+          ObjectType: 9
+          guid: 4f765cbe5ae55144bf46383d03a67e2c
+        - ElementName: MarioSizeSmall
+          ObjectType: 8
+          guid: 12efebc17227dd4095f96a27a31a36ee
       - name: None
         guid: 17c8173e0bc6394d987a9e75aabf8251
         id: 748895195
@@ -892,79 +983,15 @@ MonoBehaviour:
         - ElementName: States
           ObjectType: 5
           guid: 00000000000000000000000000000000
-        - ElementName: GameStates
+        - ElementName: MarioStates
           ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
-        - ElementName: MarioState
+          guid: dd9820ff9e19f4498d4fa281c196dd31
+        - ElementName: MarioSize
           ObjectType: 9
           guid: 4f765cbe5ae55144bf46383d03a67e2c
         - ElementName: None
           ObjectType: 8
           guid: 17c8173e0bc6394d987a9e75aabf8251
-      - name: ST_MarioDead
-        guid: 926d85b800789e448763f6d2f43e1d6b
-        id: 3280622839
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: GameStates
-          ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
-        - ElementName: MarioState
-          ObjectType: 9
-          guid: 4f765cbe5ae55144bf46383d03a67e2c
-        - ElementName: ST_MarioDead
-          ObjectType: 8
-          guid: 926d85b800789e448763f6d2f43e1d6b
-      - name: ST_MarioLarge
-        guid: 7fdbc754fe44df4c885a6c1cfa11bd6b
-        id: 1268394730
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: GameStates
-          ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
-        - ElementName: MarioState
-          ObjectType: 9
-          guid: 4f765cbe5ae55144bf46383d03a67e2c
-        - ElementName: ST_MarioLarge
-          ObjectType: 8
-          guid: 7fdbc754fe44df4c885a6c1cfa11bd6b
-      - name: ST_MarioSmall
-        guid: 12efebc17227dd4095f96a27a31a36ee
-        id: 3407194134
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: GameStates
-          ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
-        - ElementName: MarioState
-          ObjectType: 9
-          guid: 4f765cbe5ae55144bf46383d03a67e2c
-        - ElementName: ST_MarioSmall
-          ObjectType: 8
-          guid: 12efebc17227dd4095f96a27a31a36ee
-      - name: ST_MarioStar
-        guid: b20dc41a792f084cbf8a7dfb7cd269bc
-        id: 2935428005
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: GameStates
-          ObjectType: 12
-          guid: b9aff0bdf6d9884791eabf4aaf44b00c
-        - ElementName: MarioState
-          ObjectType: 9
-          guid: 4f765cbe5ae55144bf46383d03a67e2c
-        - ElementName: ST_MarioStar
-          ObjectType: 8
-          guid: b20dc41a792f084cbf8a7dfb7cd269bc
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1032,119 +1059,6 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-  - PhysicalPath: Switches\TEAM1UNIT.wwu
-    PathAndIcons:
-    - ElementName: Switches
-      ObjectType: 5
-      guid: 00000000000000000000000000000000
-    - ElementName: TEAM1UNIT
-      ObjectType: 12
-      guid: 022c1d7269f5af4f8ff71c65ff8141ad
-    ParentPath: Switches\TEAM1UNIT
-    guid: 022c1d7269f5af4f8ff71c65ff8141ad
-    GuidInternal: 
-    m_lastTime: -8584446295408005376
-    List:
-    - name: SW_block
-      guid: 5b572159249b084b914fa8516702dcd5
-      id: 3347557693
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: TEAM1UNIT
-        ObjectType: 12
-        guid: 022c1d7269f5af4f8ff71c65ff8141ad
-      - ElementName: SW_block
-        ObjectType: 11
-        guid: 5b572159249b084b914fa8516702dcd5
-      Path: Switches\TEAM1UNIT\SW_block
-      values:
-      - name: Break
-        guid: 184f83c962c1d94097b0cbf92cb30108
-        id: 941442534
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: TEAM1UNIT
-          ObjectType: 12
-          guid: 022c1d7269f5af4f8ff71c65ff8141ad
-        - ElementName: SW_block
-          ObjectType: 11
-          guid: 5b572159249b084b914fa8516702dcd5
-        - ElementName: Break
-          ObjectType: 10
-          guid: 184f83c962c1d94097b0cbf92cb30108
-      - name: Impact
-        guid: 6bfe226a5adf064d8fe41fb47f43ea96
-        id: 3257506471
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: TEAM1UNIT
-          ObjectType: 12
-          guid: 022c1d7269f5af4f8ff71c65ff8141ad
-        - ElementName: SW_block
-          ObjectType: 11
-          guid: 5b572159249b084b914fa8516702dcd5
-        - ElementName: Impact
-          ObjectType: 10
-          guid: 6bfe226a5adf064d8fe41fb47f43ea96
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: SW_PlayerSize
-      guid: 9ae12a9880502f4b9d48816236445372
-      id: 1608312894
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: TEAM1UNIT
-        ObjectType: 12
-        guid: 022c1d7269f5af4f8ff71c65ff8141ad
-      - ElementName: SW_PlayerSize
-        ObjectType: 11
-        guid: 9ae12a9880502f4b9d48816236445372
-      Path: Switches\TEAM1UNIT\SW_PlayerSize
-      values:
-      - name: Big
-        guid: 1ec9a30583511d41af19c8f3923c4fb2
-        id: 647611021
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: TEAM1UNIT
-          ObjectType: 12
-          guid: 022c1d7269f5af4f8ff71c65ff8141ad
-        - ElementName: SW_PlayerSize
-          ObjectType: 11
-          guid: 9ae12a9880502f4b9d48816236445372
-        - ElementName: Big
-          ObjectType: 10
-          guid: 1ec9a30583511d41af19c8f3923c4fb2
-      - name: Small
-        guid: 7ed430c7495a924fb89eafae595a6d6a
-        id: 1846755610
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: TEAM1UNIT
-          ObjectType: 12
-          guid: 022c1d7269f5af4f8ff71c65ff8141ad
-        - ElementName: SW_PlayerSize
-          ObjectType: 11
-          guid: 9ae12a9880502f4b9d48816236445372
-        - ElementName: Small
-          ObjectType: 10
-          guid: 7ed430c7495a924fb89eafae595a6d6a
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -1160,7 +1074,7 @@ MonoBehaviour:
     m_lastTime: -8584446295408005376
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000010000000f7000000f8000000f9000000fb000000fe00000002010000
+  ExpandedWaapiItemIds: 0800000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

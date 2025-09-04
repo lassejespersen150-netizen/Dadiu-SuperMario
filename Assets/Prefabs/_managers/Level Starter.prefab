@@ -146,7 +146,8 @@ MonoBehaviour:
   WwbreakBlockSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 1971d2043c4f6a844ae1bb58fecdba3b,
+      type: 2}
   WwbumpSound:
     idInternal: 0
     valueGuidInternal: 
@@ -154,7 +155,7 @@ MonoBehaviour:
   WwcoinSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e6804f00af900f94dbccbc8cfd61c244,
+    WwiseObjectReference: {fileID: 11400000, guid: 81975d59b8c733f418a0fa9aea001d53,
       type: 2}
   WwdeadSound:
     idInternal: 0
