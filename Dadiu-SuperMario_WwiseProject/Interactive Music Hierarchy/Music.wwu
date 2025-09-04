@@ -1,94 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{A7692E89-6CA9-4120-A730-DAA994081A7A}" SchemaVersion="123">
+<WwiseDocument Type="WorkUnit" ID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}" SchemaVersion="123">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{A7692E89-6CA9-4120-A730-DAA994081A7A}" PersistMode="Standalone">
+		<WorkUnit Name="Music" ID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSegment Name="Overworld_1-1" ID="{C7406E71-750B-4677-9BD0-069B1FF715D9}" ShortID="746429923">
-					<PropertyList>
-						<Property Name="EndPosition" Type="Real64" Value="338963.265168887"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<MusicTrack Name="Track" ID="{C46DE2DD-6839-4BC9-AB5E-5804F20564D4}" ShortID="679764361">
-							<ReferenceList>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
-								</Reference>
-								<Reference Name="TransitionRoot">
-									<Custom>
-										<MusicTransition Name="Root" ID="{002EE0F2-EC2A-4795-8211-BA152BAD3FB7}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</Custom>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="(01-41) Super Mario Bros_ 1,2,VS" ID="{C36A4525-087A-4781-A597-43F47422CAFA}">
-									<Language>SFX</Language>
-									<AudioFile>(01-41) Super Mario Bros. 1,2,VS.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="149108280"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Sequences">
-									<Reference>
-										<Local>
-											<MusicTrackSequence Name="" ID="{39440A12-D668-4BDA-9541-B385AEFB0F5F}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<Reference>
-															<Local>
-																<MusicClip Name="(01-41) Super Mario Bros_ 1,2,VS" ID="{55F767E3-072E-4D76-A3B3-AC434C6F7196}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="305124"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="(01-41) Super Mario Bros_ 1,2,VS" ID="{C36A4525-087A-4781-A597-43F47422CAFA}"/>
-																</MusicClip>
-															</Local>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicTrack>
-					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="Cues">
-							<Reference>
-								<Local>
-									<MusicCue Name="Entry Cue" ID="{369BE174-10C9-482D-A648-8B2C82ADBED9}"/>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MusicCue Name="Exit Cue" ID="{4B6178B7-F2B2-4F3C-99FA-54CF1B57447A}">
-										<PropertyList>
-											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="305902.244923785"/>
-										</PropertyList>
-									</MusicCue>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-				</MusicSegment>
 				<MusicSwitchContainer Name="MUS_MainSwitch" ID="{DCFDDEB1-6A15-46DD-A3AB-EEFAE2A3A159}" ShortID="574721293">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -291,10 +205,10 @@
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="DestinationContextObject">
-																	<ObjectRef Name="MUS_Mario_Dead" ID="{7C43C639-9402-4A5A-B19C-EE914E90D2AF}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																	<ObjectRef Name="MUS_Mario_Dead" ID="{7C43C639-9402-4A5A-B19C-EE914E90D2AF}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																</Reference>
 																<Reference Name="SourceContextObject">
-																	<ObjectRef Name="MUS_Level01_Playlist" ID="{732EB2D2-E37A-4FCD-BDA0-9316A46DDE04}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																	<ObjectRef Name="MUS_Level01_Playlist" ID="{732EB2D2-E37A-4FCD-BDA0-9316A46DDE04}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																</Reference>
 															</ReferenceList>
 															<TransitionInfo/>
@@ -307,10 +221,10 @@
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="DestinationContextObject">
-																	<ObjectRef Name="MUS_Level01_Playlist" ID="{732EB2D2-E37A-4FCD-BDA0-9316A46DDE04}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																	<ObjectRef Name="MUS_Level01_Playlist" ID="{732EB2D2-E37A-4FCD-BDA0-9316A46DDE04}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																</Reference>
 																<Reference Name="SourceContextObject">
-																	<ObjectRef Name="MUS_Mario_Dead" ID="{7C43C639-9402-4A5A-B19C-EE914E90D2AF}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																	<ObjectRef Name="MUS_Mario_Dead" ID="{7C43C639-9402-4A5A-B19C-EE914E90D2AF}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																</Reference>
 															</ReferenceList>
 															<TransitionInfo/>
@@ -490,7 +404,7 @@
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Segment">
-																			<ObjectRef Name="MUS_101_Intro" ID="{B0483731-64CF-465A-8F6F-D868042D0542}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																			<ObjectRef Name="MUS_101_Intro" ID="{B0483731-64CF-465A-8F6F-D868042D0542}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																		</Reference>
 																	</ReferenceList>
 																</MusicPlaylistItem>
@@ -500,7 +414,7 @@
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Segment">
-																			<ObjectRef Name="MUS_101_A" ID="{D21D7AE7-CAE1-44C8-9281-7B03A677A458}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																			<ObjectRef Name="MUS_101_A" ID="{D21D7AE7-CAE1-44C8-9281-7B03A677A458}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																		</Reference>
 																	</ReferenceList>
 																</MusicPlaylistItem>
@@ -510,7 +424,7 @@
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Segment">
-																			<ObjectRef Name="MUS_101_B1" ID="{DAF7BC56-F9CE-45EB-9542-1071FDD15E04}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																			<ObjectRef Name="MUS_101_B1" ID="{DAF7BC56-F9CE-45EB-9542-1071FDD15E04}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																		</Reference>
 																	</ReferenceList>
 																</MusicPlaylistItem>
@@ -520,7 +434,7 @@
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Segment">
-																			<ObjectRef Name="MUS_101_C" ID="{050F8BBA-1AD2-4343-A59D-E97A51E1C837}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																			<ObjectRef Name="MUS_101_C" ID="{050F8BBA-1AD2-4343-A59D-E97A51E1C837}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																		</Reference>
 																	</ReferenceList>
 																</MusicPlaylistItem>
@@ -530,7 +444,7 @@
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Segment">
-																			<ObjectRef Name="MUS_101_Intro" ID="{B0483731-64CF-465A-8F6F-D868042D0542}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																			<ObjectRef Name="MUS_101_Intro" ID="{B0483731-64CF-465A-8F6F-D868042D0542}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																		</Reference>
 																	</ReferenceList>
 																</MusicPlaylistItem>
@@ -540,7 +454,7 @@
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Segment">
-																			<ObjectRef Name="MUS_101_A" ID="{D21D7AE7-CAE1-44C8-9281-7B03A677A458}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																			<ObjectRef Name="MUS_101_A" ID="{D21D7AE7-CAE1-44C8-9281-7B03A677A458}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																		</Reference>
 																	</ReferenceList>
 																</MusicPlaylistItem>
@@ -550,7 +464,7 @@
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Segment">
-																			<ObjectRef Name="MUS_101_B2" ID="{38126052-D31E-4B24-B81C-8954A261514B}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																			<ObjectRef Name="MUS_101_B2" ID="{38126052-D31E-4B24-B81C-8954A261514B}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																		</Reference>
 																	</ReferenceList>
 																</MusicPlaylistItem>
@@ -1364,7 +1278,7 @@
 													<MultiSwitchEntry Name="" ID="{7221071B-73DA-4349-A46A-372A3ACC0DCD}">
 														<ReferenceList>
 															<Reference Name="AudioNode">
-																<ObjectRef Name="MUS_Mario_Dead" ID="{7C43C639-9402-4A5A-B19C-EE914E90D2AF}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																<ObjectRef Name="MUS_Mario_Dead" ID="{7C43C639-9402-4A5A-B19C-EE914E90D2AF}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 															</Reference>
 														</ReferenceList>
 														<ObjectLists>
@@ -1382,7 +1296,7 @@
 													<MultiSwitchEntry Name="" ID="{2BB04B94-0402-41D8-8DC8-02F46C354DAA}">
 														<ReferenceList>
 															<Reference Name="AudioNode">
-																<ObjectRef Name="MUS_Level01_Playlist" ID="{732EB2D2-E37A-4FCD-BDA0-9316A46DDE04}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																<ObjectRef Name="MUS_Level01_Playlist" ID="{732EB2D2-E37A-4FCD-BDA0-9316A46DDE04}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 															</Reference>
 														</ReferenceList>
 														<ObjectLists>
@@ -1400,7 +1314,7 @@
 													<MultiSwitchEntry Name="" ID="{4AD7FBB5-E722-4CAE-803B-F682C0E71DFE}">
 														<ReferenceList>
 															<Reference Name="AudioNode">
-																<ObjectRef Name="MUS_Level01_Playlist" ID="{732EB2D2-E37A-4FCD-BDA0-9316A46DDE04}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																<ObjectRef Name="MUS_Level01_Playlist" ID="{732EB2D2-E37A-4FCD-BDA0-9316A46DDE04}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 															</Reference>
 														</ReferenceList>
 														<ObjectLists>
@@ -1446,10 +1360,10 @@
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="DestinationContextObject">
-																	<ObjectRef Name="MUS_Mario_Dead" ID="{6E8F8F04-4C49-4547-BF5C-AF48AC2955D7}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																	<ObjectRef Name="MUS_Mario_Dead" ID="{6E8F8F04-4C49-4547-BF5C-AF48AC2955D7}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																</Reference>
 																<Reference Name="SourceContextObject">
-																	<ObjectRef Name="MUS_Mario_Alive" ID="{86945B0D-7D08-4E09-A72D-9BB0A4D1F50F}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																	<ObjectRef Name="MUS_Mario_Alive" ID="{86945B0D-7D08-4E09-A72D-9BB0A4D1F50F}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																</Reference>
 															</ReferenceList>
 															<TransitionInfo/>
@@ -1462,10 +1376,10 @@
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="DestinationContextObject">
-																	<ObjectRef Name="MUS_Mario_Alive" ID="{86945B0D-7D08-4E09-A72D-9BB0A4D1F50F}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																	<ObjectRef Name="MUS_Mario_Alive" ID="{86945B0D-7D08-4E09-A72D-9BB0A4D1F50F}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																</Reference>
 																<Reference Name="SourceContextObject">
-																	<ObjectRef Name="MUS_Mario_Dead" ID="{6E8F8F04-4C49-4547-BF5C-AF48AC2955D7}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																	<ObjectRef Name="MUS_Mario_Dead" ID="{6E8F8F04-4C49-4547-BF5C-AF48AC2955D7}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 																</Reference>
 															</ReferenceList>
 															<TransitionInfo/>
@@ -1723,7 +1637,7 @@
 													<MultiSwitchEntry Name="" ID="{20B30C04-431A-4012-8D67-02A0547F826C}">
 														<ReferenceList>
 															<Reference Name="AudioNode">
-																<ObjectRef Name="MUS_Mario_Dead" ID="{6E8F8F04-4C49-4547-BF5C-AF48AC2955D7}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																<ObjectRef Name="MUS_Mario_Dead" ID="{6E8F8F04-4C49-4547-BF5C-AF48AC2955D7}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 															</Reference>
 														</ReferenceList>
 														<ObjectLists>
@@ -1741,7 +1655,7 @@
 													<MultiSwitchEntry Name="" ID="{5170A5C3-30D4-43B6-A3E3-76E102399061}">
 														<ReferenceList>
 															<Reference Name="AudioNode">
-																<ObjectRef Name="MUS_Mario_Alive" ID="{86945B0D-7D08-4E09-A72D-9BB0A4D1F50F}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																<ObjectRef Name="MUS_Mario_Alive" ID="{86945B0D-7D08-4E09-A72D-9BB0A4D1F50F}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 															</Reference>
 														</ReferenceList>
 														<ObjectLists>
@@ -1759,7 +1673,7 @@
 													<MultiSwitchEntry Name="" ID="{1CD1487A-235B-4914-9D66-A04AAD4B2424}">
 														<ReferenceList>
 															<Reference Name="AudioNode">
-																<ObjectRef Name="MUS_Mario_Alive" ID="{86945B0D-7D08-4E09-A72D-9BB0A4D1F50F}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+																<ObjectRef Name="MUS_Mario_Alive" ID="{86945B0D-7D08-4E09-A72D-9BB0A4D1F50F}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 															</Reference>
 														</ReferenceList>
 														<ObjectLists>
@@ -1788,7 +1702,7 @@
 											<MultiSwitchEntry Name="" ID="{7387908F-68A7-49FB-A152-368B2915B6E0}">
 												<ReferenceList>
 													<Reference Name="AudioNode">
-														<ObjectRef Name="MUS_Lvl103" ID="{124B524E-C876-464F-A549-3E002BBAA084}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+														<ObjectRef Name="MUS_Lvl103" ID="{124B524E-C876-464F-A549-3E002BBAA084}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 													</Reference>
 												</ReferenceList>
 												<ObjectLists>
@@ -1806,7 +1720,7 @@
 											<MultiSwitchEntry Name="" ID="{C7E980B0-6177-4BE4-AA63-FE140DE214DF}">
 												<ReferenceList>
 													<Reference Name="AudioNode">
-														<ObjectRef Name="MUS_Level102_Sw_01" ID="{5BFA8A01-348D-479B-9822-22C88CB61820}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+														<ObjectRef Name="MUS_Level102_Sw_01" ID="{5BFA8A01-348D-479B-9822-22C88CB61820}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 													</Reference>
 												</ReferenceList>
 												<ObjectLists>
@@ -1824,7 +1738,7 @@
 											<MultiSwitchEntry Name="" ID="{6CB21DB6-6BB2-4478-93F3-C05E7652093F}">
 												<ReferenceList>
 													<Reference Name="AudioNode">
-														<ObjectRef Name="MUS_Level101_Sw" ID="{6376D968-9BA5-4CFD-805D-FAA26FB72424}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+														<ObjectRef Name="MUS_Level101_Sw" ID="{6376D968-9BA5-4CFD-805D-FAA26FB72424}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 													</Reference>
 												</ReferenceList>
 												<ObjectLists>
@@ -1842,7 +1756,7 @@
 											<MultiSwitchEntry Name="" ID="{ABF5A59B-346B-4AAB-B5C7-4E9A911D30D1}">
 												<ReferenceList>
 													<Reference Name="AudioNode">
-														<ObjectRef Name="MUS_Lvl104" ID="{E9509D45-D38C-4040-80AE-D470673F761A}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+														<ObjectRef Name="MUS_Lvl104" ID="{E9509D45-D38C-4040-80AE-D470673F761A}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 													</Reference>
 												</ReferenceList>
 												<ObjectLists>
@@ -1871,7 +1785,7 @@
 									<MultiSwitchEntry Name="" ID="{B4147F8F-2DCB-441B-9BFD-D2A1E475867C}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="MUS_Levels_Sw" ID="{DBF042D7-B78E-43EC-9C0E-56C731BCD1C4}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+												<ObjectRef Name="MUS_Levels_Sw" ID="{DBF042D7-B78E-43EC-9C0E-56C731BCD1C4}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
@@ -1889,7 +1803,7 @@
 									<MultiSwitchEntry Name="" ID="{E540CA43-F271-4475-8574-5BE7C16F564A}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="MUS_Levels_Sw" ID="{DBF042D7-B78E-43EC-9C0E-56C731BCD1C4}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+												<ObjectRef Name="MUS_Levels_Sw" ID="{DBF042D7-B78E-43EC-9C0E-56C731BCD1C4}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
@@ -1905,6 +1819,92 @@
 						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
+				<MusicSegment Name="Overworld_1-1" ID="{C7406E71-750B-4677-9BD0-069B1FF715D9}" ShortID="746429923">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="338963.265168887"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="Track" ID="{C46DE2DD-6839-4BC9-AB5E-5804F20564D4}" ShortID="679764361">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{002EE0F2-EC2A-4795-8211-BA152BAD3FB7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="(01-41) Super Mario Bros_ 1,2,VS" ID="{C36A4525-087A-4781-A597-43F47422CAFA}">
+									<Language>SFX</Language>
+									<AudioFile>(01-41) Super Mario Bros. 1,2,VS.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="149108280"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{39440A12-D668-4BDA-9541-B385AEFB0F5F}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="(01-41) Super Mario Bros_ 1,2,VS" ID="{55F767E3-072E-4D76-A3B3-AC434C6F7196}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="305124"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="(01-41) Super Mario Bros_ 1,2,VS" ID="{C36A4525-087A-4781-A597-43F47422CAFA}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{369BE174-10C9-482D-A648-8B2C82ADBED9}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{4B6178B7-F2B2-4F3C-99FA-54CF1B57447A}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="305902.244923785"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

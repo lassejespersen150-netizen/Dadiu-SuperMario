@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{B595745C-817B-4A79-AFD8-5CC96B641617}" SchemaVersion="123" RootDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" ParentDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}">
+<WwiseDocument Type="WorkUnit" ID="{B595745C-817B-4A79-AFD8-5CC96B641617}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="EnemiesUnit" ID="{B595745C-817B-4A79-AFD8-5CC96B641617}" OwnerID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" PersistMode="Nested">
+		<WorkUnit Name="Enemies" ID="{B595745C-817B-4A79-AFD8-5CC96B641617}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="EnemyMixer" ID="{B6790F56-DFFA-4B1E-9451-4FD9AEEFEA68}" ShortID="103555675">
 					<ReferenceList>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{945006D3-281D-425A-B5E6-26AE3C5225D6}" SchemaVersion="119" RootDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" ParentDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}">
+<WwiseDocument Type="WorkUnit" ID="{945006D3-281D-425A-B5E6-26AE3C5225D6}" SchemaVersion="123" RootDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" ParentDocumentID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}">
 	<AudioObjects>
 		<WorkUnit Name="ObjectUnit" ID="{945006D3-281D-425A-B5E6-26AE3C5225D6}" OwnerID="{11125941-4ABE-4F28-9BE9-9DFDBB35DEC0}" PersistMode="Nested">
 			<ChildrenList>

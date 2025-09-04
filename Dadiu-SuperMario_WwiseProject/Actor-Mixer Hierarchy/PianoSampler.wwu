@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{6A070D54-8672-4B9A-A1C7-AA29F51229E9}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{6A070D54-8672-4B9A-A1C7-AA29F51229E9}" SchemaVersion="123">
 	<AudioObjects>
 		<WorkUnit Name="PianoSampler" ID="{6A070D54-8672-4B9A-A1C7-AA29F51229E9}" PersistMode="Standalone">
 			<ChildrenList>
