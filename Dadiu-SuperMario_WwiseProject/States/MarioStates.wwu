@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}" SchemaVersion="123">
+	<States>
+		<WorkUnit Name="MarioStates" ID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}">
+					<ChildrenList>
+						<State Name="None" ID="{3E17C817-C60B-4D39-987A-9E75AABF8251}"/>
+						<State Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
+						<State Name="MarioSizeBig" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="MarioLives" ID="{7F3A3E64-93D3-4566-B395-B0C49DB9EA3D}">
+					<ChildrenList>
+						<State Name="None" ID="{37B0DC00-19B7-470A-B20F-561DDC4372C5}"/>
+						<State Name="ST_MarioLive_00" ID="{FCA76125-2630-4155-A204-5AB8B3E1178C}"/>
+						<State Name="ST_MarioLive_01" ID="{A01518A2-9C7C-4B6D-81B1-A9DBEEB09C4F}"/>
+						<State Name="ST_MarioLive_02" ID="{78DB9B8C-D777-4C0B-9989-BC130DA4966D}"/>
+						<State Name="ST_MarioLive_03" ID="{95883DBB-D04F-49BD-BA82-1E2C6F353C0A}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

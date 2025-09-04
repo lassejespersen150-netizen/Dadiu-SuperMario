@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	318505690	Play_DB_Synth_200Hz_2D_Lp			\Debug\DebugEvents\Play_DB_Synth_200Hz_2D_Lp	
+	653287783	Play_Pipe_Idle			\Objects\Play_Pipe_Idle	
 	1048818656	EVT_MarioAlive			\MarioStates\EVT_MarioAlive	
 	2115743526	MUS_PlayMainPlaylist			\Music\MUS_PlayMainPlaylist	
 	2306134771	EVT_MarioDead			\MarioStates\EVT_MarioDead	
@@ -9,6 +10,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2723243971	MUS_Level101			\Music\MUS_Level101	
 	2834276857	Play_DB_Synth_2D_Os_p100			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p100	
 	2935089634	Play_DB_Synth_2D_Os_p200			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p200	
+	3011457342	Play_FlagPole			\Objects\Play_FlagPole	
 	3035902443	Play_DB_Synth_2D_Os_p300			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p300	
 	3136715220	Play_DB_Synth_2D_Os_p400			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p400	
 	3266186833	Play_DB_Synth_400Hz_3D_Lp			\Debug\DebugEvents\Play_DB_Synth_400Hz_3D_Lp	
@@ -36,7 +38,8 @@ State	ID	Name	State Group			Notes
 	3407194134	ST_MarioSmall	MarioState			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	2826881650	RTPC_MarioSpeed			\Mario\RTPC_MarioSpeed	
+	2335757700	MarioSpeed			\Mario\MarioSpeed	
+	2489148713	MarioDistanceToFlagPole			\Mario\MarioDistanceToFlagPole	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
 	38530114	Modulator LFO (Custom)				
@@ -58,8 +61,9 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	482002093	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_400Hz_2D_Lp\Synth One	
 	509538054	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_2D_Os\Synth One	
 	560563047	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_200Hz_2D_Lp\Synth One	
+	961520280	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Objects\FlagPole_Idle\FlagPole_Idle_Silence_Lp\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	149108280	Track	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\Windows\SFX\(01-41) Super Mario Bros. 1,2,VS_87187714.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_MainSwitch\MUS_Levels_Sw\MUS_Level101_Sw\MUS_Level01_Playlist\MUS_101_B2\Track		5182013
-	892213981	Track	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\Windows\SFX\(13-41) Super Mario Bros. 1,2,VS_87187714.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_MainSwitch\MUS_Levels_Sw\MUS_Level102_Sw_01\MUS_Mario_Alive\Track		7616106
+	149108280	Track	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\09\{094F2D99-87DE-CF28-EDFB-4CAF0FA9181F}.wem		\Interactive Music Hierarchy\Music\MUS_MainSwitch\MUS_Levels_Sw\MUS_Level101_Sw\MUS_Level01_Playlist\MUS_101_B2\Track		5182013
+	892213981	Track	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\0E\{0E633490-B895-99EF-C444-178856077471}.wem		\Interactive Music Hierarchy\Music\MUS_MainSwitch\MUS_Levels_Sw\MUS_Level102_Sw_01\MUS_Mario_Alive\Track		7616106
 

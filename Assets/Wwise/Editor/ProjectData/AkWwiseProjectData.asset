@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 052dccbae81d3343a2f17ded9462f37d
     GuidInternal: 
-    m_lastTime: -8584757321680140509
+    m_lastTime: -8584446295408005376
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3ebcbf1e8cc6d64480e621b11fc75df9
     GuidInternal: 
-    m_lastTime: -8584757321680860951
+    m_lastTime: -8584446295408065383
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 02f7410ab97ef146ab512498035c6ce4
     GuidInternal: 
-    m_lastTime: -8584757297490801226
+    m_lastTime: -8584446295408025389
     List: []
   - PhysicalPath: SoundBanks\Soundbanks.wwu
     PathAndIcons:
@@ -79,7 +79,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Soundbanks
     guid: 2b248c1807126d4da58bf81dd9e1e1e0
     GuidInternal: 
-    m_lastTime: -8584756157687080215
+    m_lastTime: -8584446282306109149
     List:
     - name: BNK_Main
       guid: 770abb4f429b2043bfc9ca6642c05aba
@@ -107,7 +107,7 @@ MonoBehaviour:
     ParentPath: Events\Debug
     guid: fcbc16d4bdbe1642901ddb504af6c02b
     GuidInternal: 
-    m_lastTime: -8584756341806046564
+    m_lastTime: -8584446295408100704
     List:
     - name: DebugEvents
       guid: 48f1f12c111cd14f88629d5aa9a50b3e
@@ -144,8 +144,8 @@ MonoBehaviour:
         guid: eecdb9575c4d1047823289307a21c23d
       Path: Events\Debug\DebugEvents\Play_DB_Synth_200Hz_2D_Lp
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_DB_Synth_2D_Lp
       guid: 47f8bca50f6f464f967ddee0f26a6e58
       id: 2517391619
@@ -164,8 +164,8 @@ MonoBehaviour:
         guid: 47f8bca50f6f464f967ddee0f26a6e58
       Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Lp
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_DB_Synth_2D_Os
       guid: 9fa105fdc448be459b0871a060a0d59d
       id: 2534169461
@@ -184,8 +184,8 @@ MonoBehaviour:
         guid: 9fa105fdc448be459b0871a060a0d59d
       Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Os
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_DB_Synth_2D_Os_p100
       guid: a484dd2cd28be040826291146a7828c8
       id: 2834276857
@@ -204,8 +204,8 @@ MonoBehaviour:
         guid: a484dd2cd28be040826291146a7828c8
       Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Os_p100
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_DB_Synth_2D_Os_p200
       guid: bcea540655659c4eaa2c83839c7cbe32
       id: 2935089634
@@ -224,8 +224,8 @@ MonoBehaviour:
         guid: bcea540655659c4eaa2c83839c7cbe32
       Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Os_p200
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_DB_Synth_2D_Os_p300
       guid: a2d6bae058238f44b508cd71d87b1b28
       id: 3035902443
@@ -244,8 +244,8 @@ MonoBehaviour:
         guid: a2d6bae058238f44b508cd71d87b1b28
       Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Os_p300
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_DB_Synth_2D_Os_p400
       guid: c153fa6dc5538d479e4f0aac4fdcf956
       id: 3136715220
@@ -264,8 +264,8 @@ MonoBehaviour:
         guid: c153fa6dc5538d479e4f0aac4fdcf956
       Path: Events\Debug\DebugEvents\Play_DB_Synth_2D_Os_p400
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_DB_Synth_400Hz_3D_Lp
       guid: 51acc7b9d1c7cb4ca45a987dec15e217
       id: 3266186833
@@ -284,8 +284,8 @@ MonoBehaviour:
         guid: 51acc7b9d1c7cb4ca45a987dec15e217
       Path: Events\Debug\DebugEvents\Play_DB_Synth_400Hz_3D_Lp
       maxAttenuation: 20
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -297,7 +297,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 49d2996c306e7742af87c05271be0944
     GuidInternal: 
-    m_lastTime: -8584756341805961471
+    m_lastTime: -8584446282418828465
     List: []
   - PhysicalPath: Events\MarioStates.wwu
     PathAndIcons:
@@ -310,7 +310,7 @@ MonoBehaviour:
     ParentPath: Events\MarioStates
     guid: bc020ac3b3d7594f950f9f64cbbdbf13
     GuidInternal: 
-    m_lastTime: -8584756156644214506
+    m_lastTime: -8584446295408100704
     List:
     - name: EVT_MarioAlive
       guid: ae8ffbb1538c954e9ba95501a8ccca30
@@ -357,7 +357,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: ba89fe5b2c85444b8206423618247de9
     GuidInternal: 
-    m_lastTime: -8584756142155387265
+    m_lastTime: -8584446292431166936
     List:
     - name: MUS_Level101
       guid: 55b9cd52c5a5ed4e88a5fec7a04bd239
@@ -408,8 +408,55 @@ MonoBehaviour:
         guid: 485cd832519964479044f9d0506f0c8b
       Path: Events\Music\MUS_PlayMainPlaylist
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
+  - PhysicalPath: Events\Objects.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Objects
+      ObjectType: 12
+      guid: 2771dfc463422545941c8c81a7ea1467
+    ParentPath: Events\Objects
+    guid: 2771dfc463422545941c8c81a7ea1467
+    GuidInternal: 
+    m_lastTime: -8584446273996797825
+    List:
+    - name: Play_FlagPole
+      guid: 277e3b7835e55c47b84789edabd94816
+      id: 3011457342
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Objects
+        ObjectType: 12
+        guid: 2771dfc463422545941c8c81a7ea1467
+      - ElementName: Play_FlagPole
+        ObjectType: 3
+        guid: 277e3b7835e55c47b84789edabd94816
+      Path: Events\Objects\Play_FlagPole
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Pipe_Idle
+      guid: 781dc1054c9192478fa3047cb961206e
+      id: 653287783
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Objects
+        ObjectType: 12
+        guid: 2771dfc463422545941c8c81a7ea1467
+      - ElementName: Play_Pipe_Idle
+        ObjectType: 3
+        guid: 781dc1054c9192478fa3047cb961206e
+      Path: Events\Objects\Play_Pipe_Idle
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -422,7 +469,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 62c2f836d84ae242b1d8dbe80cbe507e
     GuidInternal: 
-    m_lastTime: -8584757289789010899
+    m_lastTime: -8584446295408090666
     List:
     - name: TimeOfDay
       guid: 0420d4074aa8784fa8ad8a572424b611
@@ -449,11 +496,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\GameStates
     guid: a625a6f63fe41f4f9c5af3c48c713750
     GuidInternal: 
-    m_lastTime: -8584756423568547952
+    m_lastTime: -8584446284199445663
     List:
-    - name: RTPC_TimeLeft
+    - name: TimeLeft
       guid: b71ab99f54ee0b4a89cea1811fa10643
-      id: 3058023719
+      id: 2486342905
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -461,10 +508,10 @@ MonoBehaviour:
       - ElementName: GameStates
         ObjectType: 12
         guid: a625a6f63fe41f4f9c5af3c48c713750
-      - ElementName: RTPC_TimeLeft
+      - ElementName: TimeLeft
         ObjectType: 13
         guid: b71ab99f54ee0b4a89cea1811fa10643
-      Path: Game Parameters\GameStates\RTPC_TimeLeft
+      Path: Game Parameters\GameStates\TimeLeft
   - PhysicalPath: Game Parameters\Mario.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -476,11 +523,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Mario
     guid: 3ef66c4c05810c47a820ec50e4fe9245
     GuidInternal: 
-    m_lastTime: -8584757028524754676
+    m_lastTime: -8584446274116709380
     List:
-    - name: RTPC_MarioSpeed
-      guid: c4a16c96e199d147875d46278331cca5
-      id: 2826881650
+    - name: MarioDistanceToFlagPole
+      guid: d7fa95f52ec09a449e579bbb525af95c
+      id: 2489148713
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -488,10 +535,52 @@ MonoBehaviour:
       - ElementName: Mario
         ObjectType: 12
         guid: 3ef66c4c05810c47a820ec50e4fe9245
-      - ElementName: RTPC_MarioSpeed
+      - ElementName: MarioDistanceToFlagPole
+        ObjectType: 13
+        guid: d7fa95f52ec09a449e579bbb525af95c
+      Path: Game Parameters\Mario\MarioDistanceToFlagPole
+    - name: MarioDistanceToPipe
+      guid: 8594c8d00eca0c4f8a53f81cce4d6a95
+      id: 4279643429
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Mario
+        ObjectType: 12
+        guid: 3ef66c4c05810c47a820ec50e4fe9245
+      - ElementName: MarioDistanceToPipe
+        ObjectType: 13
+        guid: 8594c8d00eca0c4f8a53f81cce4d6a95
+      Path: Game Parameters\Mario\MarioDistanceToPipe
+    - name: MarioJumpAir
+      guid: ce0cdcc69568cc4fa652af5f617e930e
+      id: 2252070993
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Mario
+        ObjectType: 12
+        guid: 3ef66c4c05810c47a820ec50e4fe9245
+      - ElementName: MarioJumpAir
+        ObjectType: 13
+        guid: ce0cdcc69568cc4fa652af5f617e930e
+      Path: Game Parameters\Mario\MarioJumpAir
+    - name: MarioSpeed
+      guid: c4a16c96e199d147875d46278331cca5
+      id: 2335757700
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Mario
+        ObjectType: 12
+        guid: 3ef66c4c05810c47a820ec50e4fe9245
+      - ElementName: MarioSpeed
         ObjectType: 13
         guid: c4a16c96e199d147875d46278331cca5
-      Path: Game Parameters\Mario\RTPC_MarioSpeed
+      Path: Game Parameters\Mario\MarioSpeed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -504,7 +593,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0ffdf406761fc24da56d7c1e7c297c93
     GuidInternal: 
-    m_lastTime: -8584756162730120869
+    m_lastTime: -8584446295408015388
     List: []
   - PhysicalPath: States\GameStates.wwu
     PathAndIcons:
@@ -517,7 +606,7 @@ MonoBehaviour:
     ParentPath: States\GameStates
     guid: b9aff0bdf6d9884791eabf4aaf44b00c
     GuidInternal: 
-    m_lastTime: -8584756127245603917
+    m_lastTime: -8584446295408015388
     List:
     - name: DayNight
       guid: d83d3c97ba15df4491aafca495c43a88
@@ -891,7 +980,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 7094c8337df30a46a03432e80f44db67
     GuidInternal: 
-    m_lastTime: -8584757294288425562
+    m_lastTime: -8584446295408015388
     List:
     - name: SwitchGroup
       guid: 2ac66a6dcead0240821eaa467115b747
@@ -943,6 +1032,119 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+  - PhysicalPath: Switches\TEAM1UNIT.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: TEAM1UNIT
+      ObjectType: 12
+      guid: 022c1d7269f5af4f8ff71c65ff8141ad
+    ParentPath: Switches\TEAM1UNIT
+    guid: 022c1d7269f5af4f8ff71c65ff8141ad
+    GuidInternal: 
+    m_lastTime: -8584446295408005376
+    List:
+    - name: SW_block
+      guid: 5b572159249b084b914fa8516702dcd5
+      id: 3347557693
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: 022c1d7269f5af4f8ff71c65ff8141ad
+      - ElementName: SW_block
+        ObjectType: 11
+        guid: 5b572159249b084b914fa8516702dcd5
+      Path: Switches\TEAM1UNIT\SW_block
+      values:
+      - name: Break
+        guid: 184f83c962c1d94097b0cbf92cb30108
+        id: 941442534
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: 022c1d7269f5af4f8ff71c65ff8141ad
+        - ElementName: SW_block
+          ObjectType: 11
+          guid: 5b572159249b084b914fa8516702dcd5
+        - ElementName: Break
+          ObjectType: 10
+          guid: 184f83c962c1d94097b0cbf92cb30108
+      - name: Impact
+        guid: 6bfe226a5adf064d8fe41fb47f43ea96
+        id: 3257506471
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: 022c1d7269f5af4f8ff71c65ff8141ad
+        - ElementName: SW_block
+          ObjectType: 11
+          guid: 5b572159249b084b914fa8516702dcd5
+        - ElementName: Impact
+          ObjectType: 10
+          guid: 6bfe226a5adf064d8fe41fb47f43ea96
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: SW_PlayerSize
+      guid: 9ae12a9880502f4b9d48816236445372
+      id: 1608312894
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: TEAM1UNIT
+        ObjectType: 12
+        guid: 022c1d7269f5af4f8ff71c65ff8141ad
+      - ElementName: SW_PlayerSize
+        ObjectType: 11
+        guid: 9ae12a9880502f4b9d48816236445372
+      Path: Switches\TEAM1UNIT\SW_PlayerSize
+      values:
+      - name: Big
+        guid: 1ec9a30583511d41af19c8f3923c4fb2
+        id: 647611021
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: 022c1d7269f5af4f8ff71c65ff8141ad
+        - ElementName: SW_PlayerSize
+          ObjectType: 11
+          guid: 9ae12a9880502f4b9d48816236445372
+        - ElementName: Big
+          ObjectType: 10
+          guid: 1ec9a30583511d41af19c8f3923c4fb2
+      - name: Small
+        guid: 7ed430c7495a924fb89eafae595a6d6a
+        id: 1846755610
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: TEAM1UNIT
+          ObjectType: 12
+          guid: 022c1d7269f5af4f8ff71c65ff8141ad
+        - ElementName: SW_PlayerSize
+          ObjectType: 11
+          guid: 9ae12a9880502f4b9d48816236445372
+        - ElementName: Small
+          ObjectType: 10
+          guid: 7ed430c7495a924fb89eafae595a6d6a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -955,10 +1157,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 6cf02459ff2f5a4d95f851ec589f9712
     GuidInternal: 
-    m_lastTime: -8584757321680220547
+    m_lastTime: -8584446295408005376
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000d0000000f000000170000001a0000001d000000b5000000b9000000d9000000da000000db000000dd0000002c0100002d0100002e010000
+  ExpandedWaapiItemIds: 010000000500000010000000f7000000f8000000f9000000fb000000fe00000002010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

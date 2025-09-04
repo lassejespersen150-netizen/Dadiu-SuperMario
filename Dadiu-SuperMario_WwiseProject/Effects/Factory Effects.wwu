@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}" SchemaVersion="123">
 	<Effects>
 		<WorkUnit Name="Factory Effects" ID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}" PersistMode="Standalone">
 			<ChildrenList>
@@ -1688,12 +1688,12 @@
 								</StatePropertyList>
 								<StateGroupList>
 									<StateGroupInfo>
-										<StateGroupRef Name="MarioState" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}"/>
+										<StateGroupRef Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}"/>
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="ST_MarioSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
+										<StateRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
 										<CustomState Name="" ID="{B53A3103-3BA1-41A5-8C5C-85CF0FC0F176}" ShortID="36827872">
 											<PropertyList>
 												<Property Name="WetLevel" Type="Real32" Value="-120"/>
@@ -1701,23 +1701,7 @@
 										</CustomState>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}"/>
-										<CustomState Name="" ID="{AD048594-5732-4E27-8394-7EB5A6DB1F40}" ShortID="393185286">
-											<PropertyList>
-												<Property Name="WetLevel" Type="Real32" Value="-120"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="ST_MarioStar" ID="{1AC40DB2-2F79-4C08-BF8A-7DFB7CD269BC}"/>
-										<CustomState Name="" ID="{A9FCFB87-0F63-45F9-BE9A-7C42BBE95090}" ShortID="976674999">
-											<PropertyList>
-												<Property Name="WetLevel" Type="Real32" Value="-120"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="ST_MarioLarge" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
+										<StateRef Name="MarioSizeBig" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
 										<CustomState Name="" ID="{9206EC0F-BC81-4AA9-B21B-864CB8B0C121}" ShortID="461557595"/>
 									</CustomState>
 								</CustomStateList>

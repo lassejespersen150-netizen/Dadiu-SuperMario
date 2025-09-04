@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{5BFE89BA-852C-4B44-8206-423618247DE9}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{5BFE89BA-852C-4B44-8206-423618247DE9}" SchemaVersion="123">
 	<Events>
 		<WorkUnit Name="Music" ID="{5BFE89BA-852C-4B44-8206-423618247DE9}" PersistMode="Standalone">
 			<ChildrenList>
@@ -8,7 +8,7 @@
 						<Action Name="" ID="{975A41EE-1B03-422C-AC96-85CC91A30E1B}" ShortID="898960288">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MUS_MainSwitch" ID="{DCFDDEB1-6A15-46DD-A3AB-EEFAE2A3A159}" WorkUnitID="{A7692E89-6CA9-4120-A730-DAA994081A7A}"/>
+									<ObjectRef Name="MUS_MainSwitch" ID="{DCFDDEB1-6A15-46DD-A3AB-EEFAE2A3A159}" WorkUnitID="{8BA033A4-51CB-4880-8A3E-0502FC33387F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

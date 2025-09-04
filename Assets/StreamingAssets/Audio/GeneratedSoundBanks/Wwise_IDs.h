@@ -26,6 +26,8 @@ namespace AK
         static const AkUniqueID PLAY_DB_SYNTH_2D_OS_P400 = 3136715220U;
         static const AkUniqueID PLAY_DB_SYNTH_200HZ_2D_LP = 318505690U;
         static const AkUniqueID PLAY_DB_SYNTH_400HZ_3D_LP = 3266186833U;
+        static const AkUniqueID PLAY_FLAGPOLE = 3011457342U;
+        static const AkUniqueID PLAY_PIPE_IDLE = 653287783U;
     } // namespace EVENTS
 
     namespace STATES
@@ -88,6 +90,28 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace SW_BLOCK
+        {
+            static const AkUniqueID GROUP = 3347557693U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BREAK = 941442534U;
+                static const AkUniqueID IMPACT = 3257506471U;
+            } // namespace SWITCH
+        } // namespace SW_BLOCK
+
+        namespace SW_PLAYERSIZE
+        {
+            static const AkUniqueID GROUP = 1608312894U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BIG = 647611021U;
+                static const AkUniqueID SMALL = 1846755610U;
+            } // namespace SWITCH
+        } // namespace SW_PLAYERSIZE
+
         namespace SWITCHGROUP
         {
             static const AkUniqueID GROUP = 206060290U;
@@ -103,8 +127,11 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID RTPC_MARIOSPEED = 2826881650U;
-        static const AkUniqueID RTPC_TIMELEFT = 3058023719U;
+        static const AkUniqueID MARIODISTANCETOFLAGPOLE = 2489148713U;
+        static const AkUniqueID MARIODISTANCETOPIPE = 4279643429U;
+        static const AkUniqueID MARIOJUMPAIR = 2252070993U;
+        static const AkUniqueID MARIOSPEED = 2335757700U;
+        static const AkUniqueID TIMELEFT = 2486342905U;
         static const AkUniqueID TIMEOFDAY = 3729505769U;
     } // namespace GAME_PARAMETERS
 

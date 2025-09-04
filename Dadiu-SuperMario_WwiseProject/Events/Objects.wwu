@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C4DF7127-4263-4525-941C-8C81A7EA1467}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Objects" ID="{C4DF7127-4263-4525-941C-8C81A7EA1467}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_FlagPole" ID="{783B7E27-E535-475C-B847-89EDABD94816}">
+					<ChildrenList>
+						<Action Name="" ID="{C0B4F81F-40F5-4967-8E17-699CFD690432}" ShortID="55014831">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FlagPole_Idle" ID="{0E40E39C-B4ED-4655-9A06-749891F5E8F8}" WorkUnitID="{945006D3-281D-425A-B5E6-26AE3C5225D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pipe_Idle" ID="{05C11D78-914C-4792-8FA3-047CB961206E}">
+					<ChildrenList>
+						<Action Name="" ID="{9513A8A1-B15E-4E33-B7E3-8E3E34C71B3E}" ShortID="1072957017">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FlagPole_Idle" ID="{0E40E39C-B4ED-4655-9A06-749891F5E8F8}" WorkUnitID="{945006D3-281D-425A-B5E6-26AE3C5225D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

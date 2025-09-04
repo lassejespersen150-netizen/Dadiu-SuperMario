@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{264DDA7A-F814-434A-8165-136015C902BE}" SchemaVersion="123">
+	<SoundcasterSessions>
+		<WorkUnit Name="TEAM1UNIT" ID="{264DDA7A-F814-434A-8165-136015C902BE}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{FE0F1FAF-F0D4-4E3A-AE9D-3E2F0AB8D566}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="MUS_Level101" ID="{52CDB955-A5C5-4EED-88A5-FEC7A04BD239}" WorkUnitID="{5BFE89BA-852C-4B44-8206-423618247DE9}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_PlayMainPlaylist" ID="{32D85C48-9951-4764-9044-F9D0506F0C8B}" WorkUnitID="{5BFE89BA-852C-4B44-8206-423618247DE9}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="DB_Switch_Two" ID="{2571B26D-60E5-47DC-8F17-80DEC28D94BB}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

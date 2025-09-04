@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{C30A02BC-D7B3-4F59-950F-9F64CBBDBF13}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{C30A02BC-D7B3-4F59-950F-9F64CBBDBF13}" SchemaVersion="123">
 	<Events>
 		<WorkUnit Name="MarioStates" ID="{C30A02BC-D7B3-4F59-950F-9F64CBBDBF13}" PersistMode="Standalone">
 			<ChildrenList>
@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ST_MarioSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+									<ObjectRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -25,7 +25,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+									<ObjectRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
