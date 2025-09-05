@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{217AB993-BADA-436E-B059-2D562358B36B}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Mario Enemies" ID="{217AB993-BADA-436E-B059-2D562358B36B}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Goomba" ID="{B5AB5951-39DD-4340-B0E3-85D75FD6761A}" PersistMode="Reference"/>
+				<WorkUnit Name="Koopa" ID="{D5FE6EB8-E84B-4819-8131-50D7565DBFFD}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

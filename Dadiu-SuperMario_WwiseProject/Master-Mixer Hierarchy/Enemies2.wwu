@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}" SchemaVersion="123">
+	<Busses>
+		<WorkUnit Name="Enemies2" ID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Koopa" ID="{7DC0711F-BF09-41EB-B2A0-859030A60447}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{95FB93F8-DAD2-4164-942F-374FC52A5AA7}" WorkUnitID="{4E60F0A0-9E50-49A0-91AB-9C2C91ED12AB}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{B656FBD1-5BB4-46EC-A258-03E2F43601D4}" ShortID="644545835">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Compressor (Custom)" ID="{5DE483B7-E88A-4DFD-A8F3-79D63473FDEC}" ShortID="184307187" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+														<PropertyList>
+															<Property Name="OutputGain" Type="Real32" Value="3"/>
+															<Property Name="Ratio" Type="Real32" Value="2"/>
+															<Property Name="Threshold" Type="Real32" Value="-33.1"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+				<Bus Name="Goomba" ID="{0CDF66CA-006A-4513-9526-A198882FDD18}">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{95FB93F8-DAD2-4164-942F-374FC52A5AA7}" WorkUnitID="{4E60F0A0-9E50-49A0-91AB-9C2C91ED12AB}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{95FB93F8-DAD2-4164-942F-374FC52A5AA7}" WorkUnitID="{4E60F0A0-9E50-49A0-91AB-9C2C91ED12AB}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
