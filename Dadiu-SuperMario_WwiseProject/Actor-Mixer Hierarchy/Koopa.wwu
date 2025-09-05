@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ABDF3BCB-C4AA-4F32-8254-C0E91A216DC6}" SchemaVersion="123" RootDocumentID="{C4351AD2-79ED-44FE-80B7-35DBE544EA7D}" ParentDocumentID="{C4351AD2-79ED-44FE-80B7-35DBE544EA7D}">
+	<AudioObjects>
+		<WorkUnit Name="Koopa" ID="{ABDF3BCB-C4AA-4F32-8254-C0E91A216DC6}" OwnerID="{C4351AD2-79ED-44FE-80B7-35DBE544EA7D}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="death koopa" ID="{FC30BE0D-BC18-40EE-AC67-1FD1FE71CC06}" ShortID="398949050">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Koopa" ID="{7DC0711F-BF09-41EB-B2A0-859030A60447}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="death koopa" ID="{7EFA9B3F-DDF0-4204-BE8E-8024A5157B76}">
+							<Language>SFX</Language>
+							<AudioFile>death koopa.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="559191253"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="death koopa" ID="{7EFA9B3F-DDF0-4204-BE8E-8024A5157B76}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="kill mario" ID="{2B23AFC6-CBBB-49DF-AC37-E053FD56A6F7}" ShortID="434584452">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Koopa" ID="{7DC0711F-BF09-41EB-B2A0-859030A60447}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="kill mario" ID="{88CAA72D-912D-45C6-8EB9-EA8ADA323066}">
+							<Language>SFX</Language>
+							<AudioFile>kill mario.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="878240891"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="kill mario" ID="{88CAA72D-912D-45C6-8EB9-EA8ADA323066}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Talk koopa" ID="{85F2265E-ED7F-4FC9-B7E7-1C244E3A794F}" ShortID="433775429">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{55A3FA46-D31A-46C5-8E9C-E916172F0519}" ShortID="292855251">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{8810F2A8-D2FF-4389-BF9D-2FBE2D25D29F}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Exp3</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>77.0428</XPos>
+															<YPos>-200</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Koopa" ID="{7DC0711F-BF09-41EB-B2A0-859030A60447}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Talk koopa" ID="{D3BB0912-253D-4229-BEB7-2147FCE80377}">
+							<PropertyList>
+								<Property Name="LoopEnd" Type="Real64" Value="4.4951739373848"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Talk koopa.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="722669576"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Talk koopa" ID="{D3BB0912-253D-4229-BEB7-2147FCE80377}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<BlendContainer Name="Koopa_Footseps" ID="{9B0BF25E-BD86-4845-AEF9-2185EFA31FF8}" ShortID="84249451">
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{5A8814AF-466B-4FF5-83AD-315A7013EDE8}" ShortID="398751126">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{EADEAEED-EA37-46DE-BEE3-5025E7A838D0}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Exp3</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>76.26459</XPos>
+															<YPos>-200</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Koopa" ID="{7DC0711F-BF09-41EB-B2A0-859030A60447}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Footsteps concrete" ID="{FB10454F-73F3-47CD-91FF-76FBAF3E95EF}" ShortID="773942345">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="death koopa concrete 1" ID="{F8FAC78D-371B-4407-BEA2-65D240CF0FBA}" ShortID="62430651">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa concrete 1" ID="{33803075-B25D-49B4-A70C-A24B7D1534CA}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps concrete\death koopa concrete 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="869154652"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa concrete 1" ID="{33803075-B25D-49B4-A70C-A24B7D1534CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="death koopa concrete 2" ID="{A6EE2B95-68E8-4E11-A828-5DBAE86D9932}" ShortID="769826948">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa concrete 2" ID="{7C74FB32-AF95-4D23-BD8B-5EBC68F05E34}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps concrete\death koopa concrete 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1021197375"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa concrete 2" ID="{7C74FB32-AF95-4D23-BD8B-5EBC68F05E34}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="death koopa concrete 3" ID="{AED2DFE6-96DD-4925-8E18-E56970877F84}" ShortID="287198469">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa concrete 3" ID="{76158E0E-F107-4778-9F0E-EF63402698A0}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps concrete\death koopa concrete 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="569077383"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa concrete 3" ID="{76158E0E-F107-4778-9F0E-EF63402698A0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="death koopa concrete 4" ID="{48072E89-FB16-4A75-82FA-53E4BCFDBB1E}" ShortID="646542832">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa concrete 4" ID="{105F37CF-1729-489F-B129-CE3A7E03A7F0}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps concrete\death koopa concrete 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="882179259"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa concrete 4" ID="{105F37CF-1729-489F-B129-CE3A7E03A7F0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="death koopa concrete 5" ID="{8EC88554-D022-49A6-8EC5-39A1BDAA0656}" ShortID="393176189">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa concrete 5" ID="{6F72F7F3-27E0-4C1A-B8C4-269BE463F694}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps concrete\death koopa concrete 5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="624122929"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa concrete 5" ID="{6F72F7F3-27E0-4C1A-B8C4-269BE463F694}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="death koopa concrete 6" ID="{FB25B0C6-E296-4CBE-93E6-3DAEF545BEFB}" ShortID="932002956">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa concrete 6" ID="{F8585EA5-032B-4ED4-8B18-C130C1457236}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps concrete\death koopa concrete 6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="94172932"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa concrete 6" ID="{F8585EA5-032B-4ED4-8B18-C130C1457236}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="death koopa concrete 7" ID="{E941FC60-9CD0-43BE-871C-A7FF11A9A9E9}" ShortID="36793363">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa concrete 7" ID="{32461EE4-D1CF-4800-ADE7-8DC6DE7F14F0}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps concrete\death koopa concrete 7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="783997283"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa concrete 7" ID="{32461EE4-D1CF-4800-ADE7-8DC6DE7F14F0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Footsteps wet" ID="{1F2E4819-B126-4847-BE83-79F6176E76DD}" ShortID="682932354">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="death koopa water 1" ID="{CCB3171A-9138-4BC8-8B92-BB3A138185AD}" ShortID="276762492">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa water 1" ID="{04BB9300-EA9F-45E7-BBA3-404451DA166D}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps wet\death koopa water 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="133215935"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa water 1" ID="{04BB9300-EA9F-45E7-BBA3-404451DA166D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="death koopa water 2" ID="{99629489-A163-4504-A5AC-3CF252D862C4}" ShortID="160095064">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa water 2" ID="{73E6A2C9-80D6-421D-90EF-86879FCCDBBF}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps wet\death koopa water 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1043012642"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa water 2" ID="{73E6A2C9-80D6-421D-90EF-86879FCCDBBF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="death koopa water 3" ID="{0A395F9D-20D8-46C8-97F4-BD1FED2B5B38}" ShortID="504265222">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa water 3" ID="{E2DD5941-3EBF-42AD-8F83-39763EFAA30F}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps wet\death koopa water 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="683537307"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa water 3" ID="{E2DD5941-3EBF-42AD-8F83-39763EFAA30F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="death koopa water 4" ID="{ADCF6A81-C1D4-4842-8A9E-375B17CC1845}" ShortID="42278798">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80F6D025-F8E0-432B-9313-E8ECFC7DDBB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C8348D6-D9E0-460E-9653-D20392DE6F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="death koopa water 4" ID="{D48FE74C-0B7A-4A11-BF7B-8BB95F8ED00D}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps wet\death koopa water 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1002992499"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="death koopa water 4" ID="{D48FE74C-0B7A-4A11-BF7B-8BB95F8ED00D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
