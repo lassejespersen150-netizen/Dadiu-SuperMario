@@ -25,6 +25,184 @@
 						<ActiveSource Name="smb_powerup" ID="{4047A8B1-387F-4F0F-87F2-BC6084C231B1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="New Soundseed Air Wind" ID="{DFA3F2EE-097B-4E1F-BD7D-1471ED230CEB}" ShortID="759090880">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Soundseed Air Wind" ID="{9E70234C-BB61-496A-A8BD-E19BA6E8B947}" ShortID="952970398" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
+							<PropertyList>
+								<Property Name="AverageVelocity" Type="Real32" Value="350"/>
+								<Property Name="Direction" Type="Real32" Value="-4"/>
+								<Property Name="Gustiness" Type="Real32" Value="0.05"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<PluginData/>
+							<PluginInnerObjectList>
+								<List Name="Deflectors">
+									<PluginInnerObject Name="" ID="{9B92A5EA-5EA1-4944-9F47-1A7C1FC58FD0}" PluginName="Deflector" CompanyID="0" PluginID="121"/>
+								</List>
+							</PluginInnerObjectList>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Soundseed Air Wind" ID="{9E70234C-BB61-496A-A8BD-E19BA6E8B947}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="New Soundseed Air Woosh" ID="{D4818FF1-5FA2-43BB-8C55-024DCB6DC1AF}" ShortID="436549157">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Soundseed Air Woosh" ID="{B1C02C89-514C-4FAA-BE01-5C8324B35277}" ShortID="828396261" PluginName="SoundSeed Air Woosh" CompanyID="0" PluginID="120">
+							<PropertyList>
+								<Property Name="FrequencyScale" Type="Real32" Value="-1.92"/>
+								<Property Name="Speed" Type="Real32" Value="35"/>
+								<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+								<Property Name="SpeedRandom" Type="Real32" Value="21"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{D54282D4-FBC6-4401-A8D4-EF29F1F08DD6}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.25</XPos>
+							<YPos>100</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.5</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{44383826-9CC3-47A2-8780-51FA2D5471BE}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+							<PluginInnerObjectList>
+								<List Name="Deflectors">
+									<PluginInnerObject Name="" ID="{E7DF9498-3EE8-4FE3-8BC3-C58E7F8EC51D}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+								</List>
+							</PluginInnerObjectList>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Soundseed Air Woosh" ID="{B1C02C89-514C-4FAA-BE01-5C8324B35277}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<SwitchContainer Name="MarioDialogue" ID="{78D718C1-B85D-4489-8AC9-B8935C9BE0BD}" ShortID="939435473">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="MarioClosenessToPipe" ID="{552BBF1A-A8E4-4CD4-A6CF-371F3EF8B956}" WorkUnitID="{33C89470-F37D-460A-A034-32E80F44DB67}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="MarioCloseToPipe" ID="{3349FCC9-3007-4B52-84A4-87537F9B46A9}" ShortID="305904005">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Silence" ID="{D40F2364-10AE-4460-A03F-EEAE436B7D39}" ShortID="158729142" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Silence" ID="{D40F2364-10AE-4460-A03F-EEAE436B7D39}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MarioNotCloseToPipe" ID="{53321775-4AFE-4238-A73A-5A55B61B1EB4}" ShortID="519244548">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Silence" ID="{1BFC5C07-82E0-4594-84C3-2B452EDD7B58}" ShortID="254472999" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Silence" ID="{1BFC5C07-82E0-4594-84C3-2B452EDD7B58}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="MarioNotCloseToPipe" ID="{53321775-4AFE-4238-A73A-5A55B61B1EB4}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="MarioCloseToPipe" ID="{3349FCC9-3007-4B52-84A4-87537F9B46A9}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Running" ID="{A777380C-E87A-40A0-ADEE-F8FB1198FC05}"/>
+								<ItemList>
+									<ItemRef Name="MarioCloseToPipe" ID="{3349FCC9-3007-4B52-84A4-87537F9B46A9}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Walking" ID="{FB7BD98A-BE42-4E2C-B406-C59798D9BA29}"/>
+								<ItemList>
+									<ItemRef Name="MarioNotCloseToPipe" ID="{53321775-4AFE-4238-A73A-5A55B61B1EB4}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

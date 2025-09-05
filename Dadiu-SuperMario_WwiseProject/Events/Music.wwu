@@ -22,7 +22,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ST_Level_101" ID="{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+									<ObjectRef Name="Level_101" ID="{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -36,7 +36,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="ST_Level_102" ID="{AB2309A4-FEA6-4A3A-A499-BC87BC9EFF20}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
+									<ObjectRef Name="Level_102" ID="{AB2309A4-FEA6-4A3A-A499-BC87BC9EFF20}" WorkUnitID="{BDF0AFB9-D9F6-4788-91EA-BF4AAF44B00C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

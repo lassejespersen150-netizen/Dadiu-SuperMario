@@ -6,10 +6,12 @@
 				<StateGroup Name="Levels" ID="{50956A71-6872-4A1E-BD88-90C21E3BA32D}">
 					<ChildrenList>
 						<State Name="None" ID="{C2BE68D2-7F86-4076-866C-749FF4F7E84E}"/>
-						<State Name="ST_Level_101" ID="{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"/>
-						<State Name="ST_Level_102" ID="{AB2309A4-FEA6-4A3A-A499-BC87BC9EFF20}"/>
-						<State Name="ST_Level_103" ID="{1FE3077F-3DC1-4865-B4FB-963A98757294}"/>
-						<State Name="ST_Level_104" ID="{D0413FAB-5E97-43C5-B3C8-8DD2A16A9CC7}"/>
+						<State Name="Level_101" ID="{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"/>
+						<State Name="Level_102" ID="{AB2309A4-FEA6-4A3A-A499-BC87BC9EFF20}"/>
+						<State Name="Level_103" ID="{1FE3077F-3DC1-4865-B4FB-963A98757294}"/>
+						<State Name="Level_104" ID="{D0413FAB-5E97-43C5-B3C8-8DD2A16A9CC7}"/>
+						<State Name="Level_Menu" ID="{86711869-FF67-4EEA-B753-D388DB62B931}"/>
+						<State Name="Level_Death" ID="{4EE81454-0580-4C40-BCAF-80F095171312}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

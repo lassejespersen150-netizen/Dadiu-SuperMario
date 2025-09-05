@@ -9,6 +9,45 @@
 						<Switch Name="DB_Switch_Two" ID="{2571B26D-60E5-47DC-8F17-80DEC28D94BB}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="MarioClosenessToPipe" ID="{552BBF1A-A8E4-4CD4-A6CF-371F3EF8B956}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Walking" ID="{FB7BD98A-BE42-4E2C-B406-C59798D9BA29}"/>
+						<Switch Name="Running" ID="{A777380C-E87A-40A0-ADEE-F8FB1198FC05}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="MarioSpeed" ID="{966CA1C4-99E1-47D1-875D-46278331CCA5}"/>
+						<Curve Name="" ID="{394F1F71-52C6-42A5-87D7-D6B0C3B31F9B}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.26129</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2.44554</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>5</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

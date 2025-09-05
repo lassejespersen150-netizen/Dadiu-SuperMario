@@ -13,10 +13,10 @@
 				<StateGroup Name="MarioLives" ID="{7F3A3E64-93D3-4566-B395-B0C49DB9EA3D}">
 					<ChildrenList>
 						<State Name="None" ID="{37B0DC00-19B7-470A-B20F-561DDC4372C5}"/>
-						<State Name="ST_MarioLive_00" ID="{FCA76125-2630-4155-A204-5AB8B3E1178C}"/>
-						<State Name="ST_MarioLive_01" ID="{A01518A2-9C7C-4B6D-81B1-A9DBEEB09C4F}"/>
-						<State Name="ST_MarioLive_02" ID="{78DB9B8C-D777-4C0B-9989-BC130DA4966D}"/>
-						<State Name="ST_MarioLive_03" ID="{95883DBB-D04F-49BD-BA82-1E2C6F353C0A}"/>
+						<State Name="MarioLive_00" ID="{FCA76125-2630-4155-A204-5AB8B3E1178C}"/>
+						<State Name="MarioLive_01" ID="{A01518A2-9C7C-4B6D-81B1-A9DBEEB09C4F}"/>
+						<State Name="MarioLive_02" ID="{78DB9B8C-D777-4C0B-9989-BC130DA4966D}"/>
+						<State Name="MarioLive_03" ID="{95883DBB-D04F-49BD-BA82-1E2C6F353C0A}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
